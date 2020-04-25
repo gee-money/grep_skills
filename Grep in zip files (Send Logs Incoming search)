@@ -1,0 +1,25 @@
+FINDING A SPECIFIC STRING IN THE INCOMING LOGS DIRECTORY
+
+(Bandwidth hog -- run with care.)
+========================
+
+Go to /mnt/custdata/incoming/Rapid7 
+This command will recurse into support zip files, unzipping them to stdout and grepping for serials. It will display hits from each nsc.log, show the filepath, and move on to the next file. 
+find  '/mnt/custdata/incoming/Rapid7' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -e "Serial No:" && echo "was found in "$f ; echo "--" ; done >> serials.txt
+
+This command will recurse the current location and list out all the serials by filename
+fgrep -R -h -i -e "Serial No:" && echo "was found in "$f
+
+(zgrep is probably way easier)
+
+_________________________________
+
+SECOND WAY:
+
+fgrep -Ri '212038' /run/user/1000/gvfs/smb-share:server=fs2.tor.rapid7.com,share=custdata/incoming/Rapid7/
+
+^^ This works even when /mnt is empty or if you have things set up differently, at least for me.
+
+
+
+

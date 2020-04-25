@@ -1,0 +1,552 @@
+##################################################################
+Grep strings for log searching: Interesting phrases to search for
+##################################################################
+
+
+  ########  #######          ########   ####### 
+     ##    ##     ##         ##     ## ##     ##
+     ##    ##     ##         ##     ## ##     ##
+     ##    ##     ##         ##     ## ##     ##
+     ##    ##     ##         ##     ## ##     ##
+     ##    ##     ##         ##     ## ##     ##
+     ##     #######          ########   ####### 
+
+
+TODO: What's the 'short list' of really useful or multi-use strings here?
+TODO: add log levels for some or all of these to show what is visible at [INFO] [WARN [DEBUG] or other levels 
+TODO: lists of 'Success' and 'Failure' related strings 
+
+ 
+-------------------------------------------------------------------
+
+
+-c is Count, it shows only the count of matches.
+-o shows Only the match text and file name / path
+
+
+Look at scan logs and shows the total number of nmap commands run
+grep -Rc 'NMAP: IP' . 
+      
+Look at scan logs and shows the total number of nmap commands run on engine named 'Mercury'.
+grep -Rc 'Mercury.*NMAP: IP' . 
+
+Node timing (timestamps show time between node completions)
+ grep 'node(s) completed' '/home/dlozano/custdata-local/185732/March8-NewScan/109.6.scan.0.log' 
+
+
+Timing for all hosts, by host, just the longest time (not quite right yet)
+ sort -r '/home/dlozano/custdata-local/some.log' | cut -d"@" -f2  | sort -ru
+
+
+
+##############################################################################################################
+
+
+  ######  ########    ###    ########  ######## ##     ## ######## 
+ ##    ##    ##      ## ##   ##     ##    ##    ##     ## ##     ##
+ ##          ##     ##   ##  ##     ##    ##    ##     ## ##     ##
+  ######     ##    ##     ## ########     ##    ##     ## ######## 
+       ##    ##    ######### ##   ##      ##    ##     ## ##       
+ ##    ##    ##    ##     ## ##    ##     ##    ##     ## ##       
+  ######     ##    ##     ## ##     ##    ##     #######  ##       
+
+
+Executing SQL: INSERT INTO scan_credential_result_status(cred_result) VALUES ('SUPPLIED_SUCCESS_IS_ROOT')
+
+Security Console is launching in Maintenance Mode. Disabling update processing.
+PostgreSQL service status: 0
+PostgreSQL service status: 1
+Starting up postgresql DB system
+Performing consistency checks on database
+Checking database consistency
+Database consistency checks completed against all silos
+Performing consistency checks.
+
+------------------------------ CONSOLE INFO ------------------------------ 
+
+Using license:r7lic6243202609425663789.lic
+Expires:
+Product Version:
+Console Product Name:           NeXpose
+Console Version:                
+Console DN:                     CN=NeXpose Security Console, O=customer-namey-name
+Console Platform:               
+Console Serial No:              
+Console Last Content Update ID: 
+Console Last Product Update ID: 
+Last content update	2550603633 (Monday, March 21, 2016 10:05:35 PM GMT) - Partially Applied
+Last product update	723218714 (Tuesday, March 15, 2016 12:19:40 AM GMT)
+Console Software Revision:      
+Console Product ID:             
+Console Version ID:             
+Console VM version:             Java HotSpot(TM) 64-Bit Server VM 24.0-b56 (Windows Server 2012 amd64)
+[INFO] [Thread: Security Console] VERSION INFORMATION
+
+Current directory:               C:\Program Files\rapid7\nexpose\nse
+User name:                       SYSTEM
+Super user:                      Yes
+Computer name:                   APPNSE01
+Host Address:                    123.123.123.123		
+Host FQDN:                       APPNSE01.somedomain.com
+Operating system:                Microsoft Windows Server 2008 R2 Server Standard Service Pack 1
+CPU speed:                       2793MHz
+Number of CPUs:                  2
+Total memory:                    6 GB
+Available memory:                4.2 GB
+Total disk space:                39.9 GB
+Available disk space:            11.7 GB
+Disk space used by installation: 2.8 GB
+Disk space used by scans:        1.2 GB
+
+
+Custom Environment Property Override
+
+
+------------------------------ VERSIONS ------------------------------
+
+Console Product ID:             
+Console Version ID:             
+Console VM version:             Java HotSpot(TM) 64-Bit Server VM 24.0-b56 (Windows Server 2012 amd64)
+[INFO] [Thread: Security Console] VERSION INFORMATION
+Installed DB VERSION =
+Console Version:
+Product Version:
+
+
+------------------------------ ENGINE INFO ------------------------------
+
+Local Engine Name:                   Local Scan Engine
+Local Engine Status:                 Active
+Local Engine Version:                
+Local Engine DN:                     CN=NeXpose Scan Engine, O=customer-namey-name
+Local Engine Address (FQDN):         123.123.123.123 (USE-NSC-01.somedomain.com)
+Local Engine Platform:               Windows64
+Local Engine Serial No:              
+Local Engine Product Name:           NeXpose
+Local Engine Last Content Update ID: 
+Local Engine Last Product Update ID: 2143412332 (2013-11-25)
+Local Engine Software Revision:      
+Local Engine Product ID:             
+Local Engine Version ID:             
+Local Engine VM Version:             Java HotSpot(TM) 64-Bit Server VM 24.0-b56 (Windows Server 2012 amd64)
+
+
+------------------------------ ENGINE POOLING ------------------------------
+
+com.rapid7.scan.engine.interleavePool=true
+[Engine ID: 48(pool)] [Engine ID: 68(remote)]
+Scan Engine Pooling is not supported by 
+
+
+------------------------------ DISK & RAM ------------------------------
+
+Available disk space:            
+Disk space used by installation: 
+Disk space used by scans:        
+Disk space used by database:     
+Disk space used by reports:      
+Disk space used by backups:      
+
+Total memory:                    
+Free memory
+Available memory:                
+Operating system:               
+
+
+------------------------------ NEXPOSE VERSION AND UPDATES ------------------------------
+
+Console Version: 
+Local Engine Version:
+current
+Failed to auto-update console.
+Local Engine Last Content Update ID:
+Local Engine Last Product Update ID:
+
+
+2016-03-24T08:47:52 [INFO] Initializing update processor...
+2016-03-24T08:47:53 [INFO] Checking for the existence of an update table in staging directory /opt/rapid7/nexpose/updates/pending/updates/updates.
+2016-03-24T08:47:53 [INFO] Checking for approved updates.
+2016-03-24T08:47:53 [INFO] Processing content update stream.
+2016-03-24T08:47:53 [INFO] Processing product update stream.
+2016-03-24T08:47:53 [INFO] No approved updates found for processing, found 2 pending approval.
+2016-03-24T08:47:53 [INFO] Starting auto-update.
+2016-03-24T08:48:07 [INFO] Checking for new updates.
+2016-03-24T08:48:07 [INFO] Establishing HTTP connection with updates.rapid7.com via proxy updates.rapid7.com:80.
+2016-03-24T08:48:08 [WARN] Failed to auto-update console.
+
+
+------------------------------ UPDATE PROBLEMS ------------------------------
+
+Could not get connection to scan engine.
+The console cannot contact the scan engine. Verify that the scan engine is online.
+No approved updates found for processing, found 2 pending approval.
+
+
+------------------------------ JAVA INFO ------------------------------
+
+JVM name:                        Java HotSpot(TM) 64-Bit Server VM
+JVM vendor:                      Oracle Corporation
+JVM version:                     24.0-b56
+JVM started:                     2013-12-17 16:10 GMT
+
+
+------------------------------ USERS ------------------------------
+
+_NEXPOSE_SYSTEM_USER_
+
+
+------------------------------ SCHEDULES, SCAN CONTROL ------------------------------
+
+ScanRepeater
+Repeater
+Schedule info:  Job ID
+pause trigger
+Received pause scan request.
+Creating pause trigger for scheduled scan at Mon Feb 08 00:00:00 EST 2016.
+Only running scans can be paused.
+
+Failure communicating with NSE
+Failure while communicating with the console
+
+
+------------------------------ UPDATES ------------------------------
+
+Failed to auto-update console.
+Auto-update completed successfully.
+
+Update processing disabled, skipping approved update check.
+Update processing is disabled, skipping pending update check.
+
+###########################################################################################################################
+
+  ######   ######     ###    ##    ##  ###### 
+ ##    ## ##    ##   ## ##   ###   ## ##    ##
+ ##       ##        ##   ##  ####  ## ##      
+  ######  ##       ##     ## ## ## ##  ###### 
+       ## ##       ######### ##  ####       ##
+ ##    ## ##    ## ##     ## ##   ### ##    ##
+  ######   ######  ##     ## ##    ##  ###### 
+
+
+------------------------------ EVENTS at START OF SCAN ------------------------------
+
+Scan for site
+Starting new scheduled scan. 
+Logging initialized. [Name = scanLogger-4463] [Level = INFO, WARN, ERROR] [Timezone = US/Eastern (Eastern Standard Time, GMT-5:00)]
+Scan for site SITENAME started by _NEXPOSE_SYSTEM_USER_.
+Debug logging is not enabled for this scan.
+ACES logging is not enabled.
+Enabling of Windows Services is off
+com.rapid7.scan.engine.interleavePool=true
+Scan ID: 25
+Excluding address range: 
+Exception thrown when starting scan: This site is in use and cannot be locked for this request.
+Scheduled scan request was unsuccessful. 
+
+------------------------------TIME ZONE------------------------------
+
+Timezone (shows you the time offset in the log) 
+
+Logging initialized. [Name = scanLogger-25] [Level = INFO, WARN, ERROR] [Timezone = US/Eastern (Eastern Standard Time, GMT-5:00)]
+
+Time zone names like EST PST etc will show scheduler info and pause triggers
+
+AST 	ATLANTIC STANDARD TIME 	GMT-4:00
+EST 	EASTERN STANDARD TIME 	GMT-5:00
+EDT 	EASTERN DAYLIGHT TIME 	GMT-4:00
+CST 	CENTRAL STANDARD TIME 	GMT-6:00
+CDT 	CENTRAL DAYLIGHT TIME 	GMT-5:00
+0MST 	MOUNTAIN STANDARD TIME 	GMT-7:00
+MDT 	MOUNTAIN DAYLIGHT TIME 	GMT-6:00
+PST 	PACIFIC STANDARD TIME 	GMT-8:00
+PDT 	PACIFIC DAYLIGHT TIME 	GMT-7:00
+AST 	ATLANTIC STANDARD TIME 	GMT-4:00
+EST 	EASTERN STANDARD TIME 	GMT-5:00
+EDT 	EASTERN DAYLIGHT TIME 	GMT-4:00
+CST 	CENTRAL STANDARD TIME 	GMT-6:00
+CDT 	CENTRAL DAYLIGHT TIME 	GMT-5:00
+MST 	MOUNTAIN STANDARD TIME 	GMT-7:00
+MDT 	MOUNTAIN DAYLIGHT TIME 	GMT-6:00
+PST 	PACIFIC STANDARD TIME 	GMT-8:00
+PDT 	PACIFIC DAYLIGHT TIME 	GMT-7:00
+
+##################################################################################################
+
+
+ ########  ##     ## ########  #### ##    ##  ######       ######   ######     ###    ##    ##
+ ##     ## ##     ## ##     ##  ##  ###   ## ##    ##     ##    ## ##    ##   ## ##   ###   ##
+ ##     ## ##     ## ##     ##  ##  ####  ## ##           ##       ##        ##   ##  ####  ##
+ ##     ## ##     ## ########   ##  ## ## ## ##   ####     ######  ##       ##     ## ## ## ##
+ ##     ## ##     ## ##   ##    ##  ##  #### ##    ##           ## ##       ######### ##  ####
+ ##     ## ##     ## ##    ##   ##  ##   ### ##    ##     ##    ## ##    ## ##     ## ##   ###
+ ########   #######  ##     ## #### ##    ##  ######       ######   ######  ##     ## ##    ##
+
+
+Enumerating SSL/TLS protocol versions and cipher suites
+Discovered a TLS endpoint without an underlying protocol fingerprint
+
+
+------------------------------ HOST DISCOVERY ------------------------------
+
+[DEBUG] ICMP host discovery is enabled.
+[DEBUG] TCP host discovery is enabled.
+[DEBUG] UDP host discovery is enabled.
+Found SNMP community name
+
+------------------------------ AUTHENTICATION and CREDENTIALS ------------------------------
+
+Merged Services
+SystemFing
+ServiceFing
+certainty=1
+authenticat
+Administrative cred
+Logging administrative credential status SUPPLIED_FAILED for service CIFS
+Logging administrative credential status for service SSH
+Logging the final administrative credential status
+Logging the final administrative credential status
+SUPPLIED_FAILED
+SUPPLIED_SUCCESS
+NO_CREDS_SUPPLIED
+SUPPLIED_SUCCESS_IS_LOCAL_ADMIN
+SUPPLIED_SUCCESS_IS_ROOT
+for service CIFS SNMP SSH 
+Attempting handshake via 
+Merged cred
+Merged services
+
+Administrative credentials for #### will be used.
+where #### is one of 
+WMI, CIFS, DCE RPC, DCE-RPC over HTTP, UPnP, Shell Backdoor, XWindows, CIFS Name Service, ASF-RMCP, HTTP, HTTPS, FTPS, Microsoft Remote Display Protocol, 
+AFP, NetBus v2, Oracle TNS Listener, SNMP, SubSeven Trojan, UPnP over HTTP, NTP, SNMPv3, Postgres, HP JetDirect Data, VMware Authentication Daemon
+
+
+------------------------------ FINGERPRINTING ------------------------------
+
+com.rapid7.winreg.ValueNotFoundException
+IP Stack Fingerprinting is disabled.
+"advertising" will show what services are being shared remotely. 
+Starting fingerprinting (can identify ports)...
+Service running: FuzzyHTTPFingerprint 
+Promoting SystemFingerprint 
+Demoting SystemFingerprint
+[Thread: Threaded Call Handler (Idle)] 
+[Site: ProTeck External Sec Assessment 10222013] 
+[209.251.78.186] 
+[architecture=null]
+[certainty=0.7]
+[description=
+[deviceClass=General]
+[family=Windows]
+[product=Windows Server 2008]
+[vendor=Microsoft]
+[version=8]]
+[description=Apache 1.3.0]
+[fingerprintName=apache-1.3.0]
+[protocol=HTTP]
+[specificity=0.07142857142857142]
+/tcp] 
+/udp]
+source: FTP
+source: IP stack analysis
+
+(SCAN LOG) Protocol fingerprinting ran for
+(NSC.LOG) Fingerprinting ran for 
+Fingerprinting not successful.
+Fingerprinting thread complete...
+starting node scan
+Attempting handshake
+Fingerprinted
+
+------------------------------ LONG RUNNING FINGERPRINTING ------------------------------
+
+ grep 'Fingerprinting ran for .\? minutes'
+ grep 'Protocol fingerprinting ran for .\? minutes'
+ grep  'Protocol fingerprinting ran for .[1234567890] minutes'  
+
+
+------------------------------ HOST ENUMERATION ------------------------------
+
+installed using
+
+------------------------------ REGISTRY ------------------------------
+
+Could not access registry key
+via the registry
+Determining whether
+moving to next service
+
+------------------------------ SERVICES ------------------------------
+
+[DEBUG] [Thread: 10.47.99.199:161/UDP] [Site: ITC_10.47.99.0] MDNSClient: Discovering services
+[DEBUG] [Thread: 10.47.99.199:161/UDP] [Site: ITC_10.47.99.0] MDNSClient: Discovered 0 service(s)
+
+[DEBUG] TCP service discovery is enabled.
+[DEBUG] UDP service discovery is enabled.
+
+com.rapid7.winreg.ValueNotFoundException
+No services remaining in merged service
+
+------------------------------ VULNERABILITIES ------------------------------
+
+Not vulnerable version
+Confirmed vulnerability
+potential 
+
+
+------------------------------ WEB SPIDERING ------------------------------
+
+Scan was spidering, it hung and showed as 'aborted' after a console restart: "response for payload"
+tokenizer
+Start of SQL injection: 
+Performing spider query param Code injection tests
+Performing spider
+injection tests
+[SPIDER] Not doing spidering: spider is not enabled.
+
+
+##############################################################################################
+
+
+    ###    ##    ##  #######  ##     ##    ###    ##       #### ########  ###### 
+   ## ##   ###   ## ##     ## ###   ###   ## ##   ##        ##  ##       ##    ##
+  ##   ##  ####  ## ##     ## #### ####  ##   ##  ##        ##  ##       ##      
+ ##     ## ## ## ## ##     ## ## ### ## ##     ## ##        ##  ######    ###### 
+ ######### ##  #### ##     ## ##     ## ######### ##        ##  ##             ##
+ ##     ## ##   ### ##     ## ##     ## ##     ## ##        ##  ##       ##    ##
+ ##     ## ##    ##  #######  ##     ## ##     ## ######## #### ########  ###### 
+
+
+------------------------------ ERRORS ------------------------------
+
+
+Find all warnings and exceptions in a log file:
+egrep -a '(\[(WARN|ERROR|FATAL)\]|Exception:)' nsc.log
+
+[ERROR]
+[WARN]
+[INFO]
+current
+caused by
+ClosedByInterruptException
+Exception
+java.lang.IllegalStateException:
+
+LONG RUNNING THREADS (Check NSC.LOG for threads running long:)	running for ?? hours ?? minutes ?? seconds
+LONG DELAYS (like FW/latency):		grep -Ri 'SITENAME.*000ms' ./*/*.log
+
+------------------------------ RAM ISSUES ------------------------------
+
+Attempting to pause scan due to low resources
+Not enough memory to complete scan
+because the scan duration has been met
+paused node rollback
+Warning memory level has been reached, attempting to scale back resource consumption
+OOM-Killer
+
+
+------------------------------ POLICY SCANS ------------------------------
+
+
+[DEBUG] CheckProcessor: Policy default
+[DEBUG] CheckProcessor: Policy rule count: 514
+[DEBUG] CheckProcessor: Policy rule pass count: 343
+[DEBUG] CheckProcessor: Policy rule fail count: 117
+[DEBUG] CheckProcessor: Policy rule error count: 54
+[DEBUG] CheckProcessor: Policy rule unknown count: 0
+[DEBUG] CheckProcessor: Policy rule not applicable count: 0
+[DEBUG] CheckProcessor: Policy rule not checked count: 0
+[DEBUG] CheckProcessor: Policy rule not selected count: 0
+[DEBUG] CheckProcessor: Policy rule informational count: 0
+[DEBUG] CheckProcessor: Policy rule fixed count: 0
+
+
+------------------------------ SCAN INTERFERENCE ------------------------------
+
+Failure during handshake
+Connection reset by peer
+null
+reset
+java.io.IOException: 
+changing timeout
+Request timed out after the configured 60000ms timeout
+
+
+------------------------------ SCAN ENGINE WOES ------------------------------
+[Thread: Scan Engine] The engine does not meet requirements to run OSGi platform.
+
+
+
+##########################################################################################################################
+
+ ######## ##    ## ########      #######  ########     ######   ######     ###    ##    ##
+ ##       ###   ## ##     ##    ##     ## ##          ##    ## ##    ##   ## ##   ###   ##
+ ##       ####  ## ##     ##    ##     ## ##          ##       ##        ##   ##  ####  ##
+ ######   ## ## ## ##     ##    ##     ## ######       ######  ##       ##     ## ## ## ##
+ ##       ##  #### ##     ##    ##     ## ##                ## ##       ######### ##  ####
+ ##       ##   ### ##     ##    ##     ## ##          ##    ## ##    ## ##     ## ##   ###
+ ######## ##    ## ########      #######  ##           ######   ######  ##     ## ##    ##
+
+
+
+Starting scan results import.
+Completed results importing.
+Completed CONTENT_SCAN request for
+Completed PORT_SCAN request for
+Transfer of portscans.zip succeeded.
+Archiving scan log.
+Completed archiving scan log.
+Archiving scan transaction log.
+Completed archiving scan transaction log.
+Starting scan results integration.
+Starting computation of synopsis.
+Starting computation of scan synopsis.
+Completed purging remote scan results.
+Starting asset correlation.
+Completed correlation of assets.
+Applied vulnerability exceptions.
+Updated scan risk scores.
+Updated risk scores for site.
+Updated risk score for group.
+Completed computation of synopsis data.
+Completed full-text indexing of assets.
+Completed scan results integration.
+Failed to integrate asset.
+Unable to obtain sonar API access key.
+
+Generating report.
+
+Scan stopped by USERNAME
+Scan discovered 4831 live devices, 154448 vulnerabilities.
+node(s) completed on this engine.
+starting node scan
+229 node(s) pending, 38 node(s) active, 1087 node(s) completed on this engine.
+7
+##########################################################################################################################
+
+  #######  ######## ##     ## ######## ######## 
+ ##     ##    ##    ##     ## ##       ##     ##
+ ##     ##    ##    ##     ## ##       ##     ##
+ ##     ##    ##    ######### ######   ######## 
+ ##     ##    ##    ##     ## ##       ##   ##  
+ ##     ##    ##    ##     ## ##       ##    ## 
+  #######     ##    ##     ## ######## ##     ##
+
+
+
+
+ls -d */**/reports.log >msp-logs-pathlist
+
+while read filename; do fgrep -Hi 'Problem during artifact generation' $filename; done < msp-logs-pathlist
+
+
+
+Nexpose syslog stuff:
+
+
+
+Find rsyslogd notifications during scan:
+	grep -Ri 'Send resp.*rsyslog'  ~/custdata-local/*
+
+(there may be also other line endings besides rsyslogd)
+. NeXpose can send alerts via SMTP e-mail, SNMP message, or Syslog message. 

@@ -1,0 +1,248 @@
+==================================================================
+Grep strings for log searching: Interesting phrases to search for
+==================================================================
+
+.########..#######.....########...#######.
+....##....##.....##....##.....##.##.....##
+....##....##.....##....##.....##.##.....##
+....##....##.....##....##.....##.##.....##
+....##....##.....##....##.....##.##.....##
+....##....##.....##....##.....##.##.....##
+....##.....#######.....########...#######.
+
+
+
+
+
+-c is Count, it shows only the count of matches.
+-o shows Only the match text and file name / path
+
+grep -Rc 'WORD1.*WORD2' . 
+looks at scan logs and shows the substring delimited by WORD1 and WORD2
+
+
+
+================================================================================================================================================================================
+
+
+.##.....##..######..########......######..########....###....########..########.##.....##.########.
+.###...###.##....##.##.....##....##....##....##......##.##...##.....##....##....##.....##.##.....##
+.####.####.##.......##.....##....##..........##.....##...##..##.....##....##....##.....##.##.....##
+.##.###.##..######..########......######.....##....##.....##.########.....##....##.....##.########.
+.##.....##.......##.##.................##....##....#########.##...##......##....##.....##.##.......
+.##.....##.##....##.##...........##....##....##....##.....##.##....##.....##....##.....##.##.......
+.##.....##..######..##............######.....##....##.....##.##.....##....##.....#######..##.......
+
+
+------------
+CONSOLE INFO 
+------------
+
+
+
+
+Show Ruby version: grep -Er '/Metasploit/apps/pro/vendor/bundle/ruby/'
+Install date: look in /install/ for files like 20160102.log
+
+look in version.yml for build info, pro rev, framework rev, build date
+
+
+---------------------
+VERSION OF METASPLOIT
+---------------------
+
+version.yml
+license.log
+
+
+
+/license.log-2015-02-10 21:38:23 UTC Loaded Product Key:
+./license.log-2015-02-10 21:38:23 UTC Loaded SerialNo: 54da7a4f-6c9d04fe-551aaa64
+./license.log-2015-02-10 21:38:23 UTC Product Version: 4.11.0
+./license.log-2015-02-10 21:38:23 UTC Product Revision: 2015013101
+./license.log-2015-02-10 21:38:23 UTC Footer Revision: 2015013101
+./license.log-2015-02-10 21:38:23 UTC Product Date: 2015-01-31
+./license.log-2015-02-10 21:38:23 UTC Version verified: true
+./license.log-2015-02-10 21:38:23 UTC Product Original Version: 4.11.0
+./license.log-2015-02-10 21:38:23 UTC Install Type: monolithic
+./license.log-2015-02-10 21:38:23 UTC License Status: ERROR - No license file
+./license.log-2015-02-10 21:43:28 UTC Update Stopped
+./license.log-2015-02-10 21:43:28 UTC Update Check: Invalid HTTP response: 403
+./license.log-2015-02-10 21:50:38 UTC Update Stopped
+.
+------------
+DISK & RAM
+------------
+
+
+------------
+VERSION AND UPDATES
+------------
+./license.log-2015-02-10 21:38:23 UTC Loaded Product Key:
+./license.log-2015-02-10 21:38:23 UTC Loaded SerialNo: 54da7a4f-6c9d04fe-551aaa64
+./license.log-2015-02-10 21:38:23 UTC Product Version: 4.11.0
+./license.log-2015-02-10 21:38:23 UTC Product Revision: 2015013101
+./license.log-2015-02-10 21:38:23 UTC Footer Revision: 2015013101
+./license.log-2015-02-10 21:38:23 UTC Product Date: 2015-01-31
+./license.log-2015-02-10 21:38:23 UTC Version verified: true
+./license.log-2015-02-10 21:38:23 UTC Product Original Version: 4.11.0
+./license.log-2015-02-10 21:38:23 UTC Install Type: monolithic
+./license.log-2015-02-10 21:38:23 UTC License Status: ERROR - No license file
+./license.log-2015-02-10 21:43:28 UTC Update Stopped
+./license.log-2015-02-10 21:43:28 UTC Update Check: Invalid HTTP response: 403
+./license.log-2015-02-10 21:50:38 UTC Update Stopped
+./license.log:2015-02-10 21:50:38 UTC Processing offline activation request from path /tmp/activate20150210-6888-qmids6 (/opt/metasploit/apps/pro/updates/offline692606)
+./license.log-2015-02-10 21:50:38 UTC Offline Activation Package: [OUT]
+./license.log-2015-02-10 21:50:38 UTC Offline Activation Package: [OUT] 7-Zip (A) 9.04 beta  Copyright (c) 1999-2009 Igor Pavlov  2009-05-30
+
+
+
+CPU COUNT
+./license.log-2015-02-10 21:50:38 UTC Offline Activation Package: [OUT] p7zip Version 9.04 (locale=C,Utf16=off,HugeFiles=on,2 CPUs)
+./license.log-2015-02-10 21:50:38 UTC Offline Activation Package: [OUT]
+./license.log-2015-02-10 21:50:38 UTC Offline Activation Package: [OUT] Processing archive: /tmp/activate20150210-6888-qmids6
+./license.log-2015-02-10 21:50:38 UTC Offline Activation Package: [OUT]
+./license.log-2015-02-10 21:50:38 UTC Offline Activation Package: [OUT] Extracting  install.pem
+./license.log-2015-02-10 21:50:38 UTC Offline Activation Package: [OUT] Extracting  product.key
+./license.log-2015-02-10 21:50:38 UTC Offline Activation Package: [OUT] Extracting  product.lic
+./license.log-2015-02-10 21:50:38 UTC Offline Activation Package: [OUT] Extracting  product.ser
+./license.log-2015-02-10 21:50:38 UTC Offline Activation Package: [OUT]
+./license.log-2015-02-10 21:50:38 UTC Offline Activation Package: [OUT] Everything is Ok
+./license.log-2015-02-10 21:50:38 UTC Offline Activation Package: [OUT]
+
+Processing offline activation request from path /tmp/activate20150603-1755-29nd13 (/opt/metasploit/apps/pro/updates/offline598480)
+
+Update Install: Extract Output: Extracting
+Update Status: installing
+Update Install: Extract Output: Processing archive:
+
+./install/2015021201-dependencies.log:[*] Postgres update complete
+[e(0)] core: RPC Exception: Errno::ENOMEM Cannot allocate memory
+
+
+./framework.log:/opt/metasploit/apps/pro/engine/lib/pro/background_daemon.rb:126:in `block in check_for_updates'
+
+
+
+
+
+
+
+------------
+JAVA INFO
+------------
+
+
+------------
+USERS
+------------
+
+
+
+=========================================================================================================================================================
+
+
+
+..######..########....###....########..########.....#######..########....##......##..#######..########..##....##
+.##....##....##......##.##...##.....##....##.......##.....##.##..........##..##..##.##.....##.##.....##.##...##.
+.##..........##.....##...##..##.....##....##.......##.....##.##..........##..##..##.##.....##.##.....##.##..##..
+..######.....##....##.....##.########.....##.......##.....##.######......##..##..##.##.....##.########..#####...
+.......##....##....#########.##...##......##.......##.....##.##..........##..##..##.##.....##.##...##...##..##..
+.##....##....##....##.....##.##....##.....##.......##.....##.##..........##..##..##.##.....##.##....##..##...##.
+..######.....##....##.....##.##.....##....##........#######..##...........###..###...#######..##.....##.##....##
+
+--------------
+TIME ZONE
+--------------
+
+UTC
+
+
+------------------------------
+SERVICES
+------------------------------
+
+------------------------------
+AUTHENTICATION and CREDENTIALS
+------------------------------
+
+---------------
+FINGERPRINTING
+---------------
+
+---------------
+ERRORS
+---------------
+Unknown error while while writing to /hpmpa/userfiles/images/printers/
+
+
+
+
+---------------
+RAM ISSUES
+---------------
+
+Problem during artifact generation: Cannot allocate memory - Ran out of memory during Jasper call
+
+/framework.log:could not fork new process for connection: Cannot allocate memory
+
+/reports.log:ERROR: 2015-06-05 13:36:16 -0400: (51) Problem during artifact generation: Cannot allocate memory - Ran out of memory during Jasper call
+
+RPC::ServerException Errno::ENOMEM Cannot allocate memory
+
+---------------
+EXPLOIT phase:
+---------------
+Auxiliary failed: Errno::ENOMEM Cannot allocate memory 
+Exploit failed (windows/http/desktopcentral_statusupdate_upload): RuntimeError The .text section for 'template_x86_windows.exe' is too small. Minimum is 1840 bytes, your .text section is 512 bytes
+
+
+
+==========================================================================================================================================================
+
+.########.##....##.########......#######..########....##......##..#######..########..##....##
+.##.......###...##.##.....##....##.....##.##..........##..##..##.##.....##.##.....##.##...##.
+.##.......####..##.##.....##....##.....##.##..........##..##..##.##.....##.##.....##.##..##..
+.######...##.##.##.##.....##....##.....##.######......##..##..##.##.....##.########..#####...
+.##.......##..####.##.....##....##.....##.##..........##..##..##.##.....##.##...##...##..##..
+.##.......##...###.##.....##....##.....##.##..........##..##..##.##.....##.##....##..##...##.
+.########.##....##.########......#######..##...........###..###...#######..##.....##.##....##
+
+
+
+
+
+
+
+
+
+==========================================================================================================================================================
+
+
+
+
+..#######..########.##.....##.########.########.
+.##.....##....##....##.....##.##.......##.....##
+.##.....##....##....##.....##.##.......##.....##
+.##.....##....##....#########.######...########.
+.##.....##....##....##.....##.##.......##...##..
+.##.....##....##....##.....##.##.......##....##.
+..#######.....##....##.....##.########.##.....##
+
+
+
+FIND ALL reports.log from here:
+THEN search them all for a string and show filepaths and names:
+
+ls -d */**/reports.log >msp-logs-pathlist
+
+while read filename; do fgrep -Hi 'Problem during artifact generation' $filename; done < msp-logs-pathlist
+while read filename; do fgrep -Hi 'Problem during artifact generation' $filename; done < pathlist
+
+
+
+
+
+ERROR: 2015-06-26 00:43:48 -0500: (9) Problem during artifact generation: 
+INFO: 2016-01-05 00:32:23 -0600: (11) Adding Audit report to delayed_job queue
+INFO: 2016-01-05 00:32:25 -0600: (11) Calling Jasper to generate PDF artifact for Audit report

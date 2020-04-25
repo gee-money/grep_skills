@@ -1,0 +1,54 @@
+GREP COOKBOOK
+
+
+HUNTING FOR SEND LOGS 
+
+Base directory is: 
+/run/user/1000/gvfs/smb-share:server=fs2.tor.rapid7.com,share=custdata/incoming/Rapid7/
+
+Simple: 
+Find a string in the Send Logs incoming folder:
+fgrep -R '212038' /run/user/1000/gvfs/smb-share:server=fs2.tor.rapid7.com,share=custdata/incoming/Rapid7/
+
+
+CAT ALL INFO.TXT 
+find '/home/dlozano/custdata-local/00218470/imaginary-scanlog' -name 'info.txt'  | while read f ; do cat $f; grep -ie '218470'; done
+
+
+-------
+
+In progress:
+
+List paths to all files info.txt in the incoming folder:
+
+
+cd /run/user/1000/gvfs/smb-share:server=fs2.tor.rapid7.com,share=custdata/incoming/Rapid7/													# Switch to the incoming Rapid7 shared dir
+find  '/run/user/1000/gvfs/smb-share:server=fs2.tor.rapid7.com,share=custdata/incoming/Rapid7/' -name 'info.txt'    						# List all info.txt with paths
+
+
+
+-------
+Dominos
+
+running straight on the incoming folder:
+find  '/run/user/1000/gvfs/smb-share:server=fs2.tor.rapid7.com,share=custdata/incoming/Rapid7/' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -e "Patch Store Sample" && echo "was found in "$f ; echo "--" ; done
+
+
+
+Target specific days or months? not working yet:
+
+find  '/run/user/1000/gvfs/smb-share:server=fs2.tor.rapid7.com,share=custdata/incoming/Rapid7/' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -e "Patch Store Sample" && echo "was found in "$f ; echo "--" ; done
+
+
+
+
+
+find '~/custdata-local/' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -e "Patch Store Sample" && echo "was found in "$f ; echo "--" ; done
+
+search only in all files nsc.log by using --include: 
+find '/home/dlozano/custdata-local/00212038' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f | fgrep  --include="nsc.log" -i -e "padilla" && echo "was found in "$f ; echo "--" ; done
+
+
+search all info.txt for string:
+
+find '/home/dlozano/custdata-local/00218470/lots-of-sendlogs' -name 'info.txt'  | while read f ; do grep -ie 'CaseNumber' $f; done

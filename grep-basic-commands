@@ -1,0 +1,409 @@
+| grep-basic-commands
+=============================================
+
+TO DO
+=======
+
+CATstream some files based on grep discovery or find or locate or whatever, then grep the stream as a CAT-concatenation
+ CAT $(CAT) type stuff, i have this somewhere i think
+
+
+Section start times and diffs
+Block diagram of scan event timing 
+Per-host scan info and outliers
+
+What is a host-centric view of the scan process like? FLOW IT
+
+
+
+=====================================================
+
+GREP
+
+The structure of the grep command is 
+LOOK -like this, for 'THIS STRING', /in/this/dir/path/
+If you remember that order right off the bat, grep will be easier to learn and use correctly.
+
+
+FGREP
+-----
+If you are searching for fixed strings, use fgrep or grep -f ... it's much faster.
+
+EGREP
+-----
+Extended Regex uses different rules than basic regex.
+- no escaping needed for metacharacters ‘?’, ‘+’, ‘{’, ‘|’, ‘(’, and ‘)’ 
+Regular basic grep uses the backslashed versions ‘\?’, ‘\+’, ‘\{’, ‘\|’, ‘\(’, and ‘\)’. 
+
+
+=====================================================
+
+
+ZGREP
+-----
+Looks in zipped files.
+(NB: -r option is not always supported in zgrep variants, there are other ways to recurse zgrep)
+
+zgrep -irs  your-pattern-goes-here   the-folder-to-search-goes-here/
+
+
+
+Alternative to Zgrep: zcat
+----------------------
+If your system does not have zgrep, you can use the find command to run zcat and grep against each file like so:
+
+find the-folder-to-search-goes-here/ -name '*.gz' \
+ -exec sh -c 'echo "Searching {}" ; zcat "{}" | grep your-pattern-goes-here ' \;
+
+
+Alternative to Zgrep:
+zgrep recursively in all .gz files:
+---------------------------------------
+find -name \*.gz -print0 | xargs -0 zgrep "STRING"
+find -name \*.gz -print0 | xargs -0 zgrep "Using license"
+
+
+You have to escape the first '*' so that the shell does not interpret it.
+"-print0" tells find to print a null character after each file it finds;
+"xargs -0" reads from standard input and runs the command after it for each file;
+"zgrep" works like "grep", but uncompresses the file first.
+
+
+
+=====================================================
+Basic metacharacters:
+------------------------
+. Match any character
+* Repeat previous token 0+ times
++ Repeat previous token 1+ times
+^ Start of line
+$ End of line
+\ Escape a metacharacter
+
+[a-d] match a char from this ASCII char to that one
+[a-d] == [abcd] 
+[AaBbCcDd] match any of these
+
+{,3} match previous token 3 times at most
+{3} match previous token 3 times exactly
+{2,5} match previous token 2 to 5 times
+
+this|that  this regex string or that regex string 
+
+
+=====================================================
+
+
+=====================================================
+
+
+FIND A SUBSTRING in all files in a directory, even if the words are far apart:
+--------------------------------------------------
+In my local logs directories, find a substring which starts and ends with certain words, then sort and show only the uniques:
+
+	grep -Rio 'Advertising.*Service' ~/custdata-local/*/*.log > derp.lag
+	cut -d":" -f2 derp.lag > derp.list
+	sort -u derp.list
+
+OR
+
+	grep -Rio 'Advertising.*Service' ~/custdata-local/*/*.log | cut -d":" -f2 | sort -u
+
+
+Which scans used a specific template?
+	grep -RiH 'Starting scan against .*full-audit-custom-derp' ~/logs/*/* | cut -d":" -f7 | sort -u | cut -d" " -f6
+Just change 'full-audit-custom-derp' to whatever and point it at your logpiles 
+(/*/* is used to search deeper in a folder of folders-of-files)
+(/* will search files in one dir)
+(/*/*.log searches only the .log files)
+
+--------------------
+
+
+
+COMBINING SEARCH STRINGS:
+-------------------------
+# THIS or THAT:
+
+grep "\(THIS\|THAT|)" 
+
+	ll -R | grep  xml | grep -i '\(THIS\|THAT\)'
+	ll -R | grep  xml | grep -Ei '(THIS|THAT)'
+
+#The second one is the same command, but with extended regex (-E) you need no escapes
+
+Gotta escape the special chars for grep, or use -E to use Extended Regexp..
+
+Find word1 then word2, or word2 then word1:
+	grep -E 'word1.*word2|word2.*word1' logs
+..
+egrep -Ri '(console|engine) version'  /home/dlozano/custdata-logs/
+..
+
+Show Count of matches only
+	grep -c 
+
+Show Filenames and matches - Make it easier to locate your matching files
+---------------------------
+	grep -H
+	also: locate {filename}
+	also: find {filename}
+
+Show filenames only 
+-------------------
+Make a list to process matches with another script or command
+grep -l
+grep --files-with-matches
+
+
+Remove lines
+------------
+-v Inverts selection. (Displays all the not-matching lines)
+	grep -v 'I dont wanna see this' > logWithExcludedLines.log. 
+
+Remove DEBUG lines or other unwanted noise from logs this way.
+This method works very well with apache access logs: grep -v 'HTTP/1.1 200' > no200s.log
+
+You can use regex as well: 
+	grep -E (Extended-regex mode)
+	grep -vE 'ASDF|FSDA' > log-without-ASDF-or-FDSA.log
+
+
+This is super useful for sorting out ambiguous stuff like finding only the lines with '- VULNERABLE' in a log full of lines containing '- NOT VULNERABLE' and '- VULNERABLE VERSION' and '-NOT VULNERABLE VERSION':
+
+fgrep  'VULNERABLE' ./scan.0.log  | fgrep -v 'VERSION' | fgrep -v 'NOT'
+
+
+
+
+
+Context Lines
+--------------
+You can show as many context lines as you like, before or after the match. 
+Or you can center the match in the context.  
+
+-A --after-context 
+-B --before-context
+-C --context (centered)
+
+searching for a REGEX and want to have 100 lines of context for each occurrence:
+derp.txt > grep -100 '{regexp}' > {outputfile}
+then load the outputfile into your favourite textfile viewer. 
+
+
+Save output to a different file
+-------------------------------
+	grep 'target' searchfile > savefile
+	...then you can use the saved grep search data in other ways!
+
+SEARCH IN FILENAMES only -- not file content:
+---------------------
+ll -R ./vulns | grep cve-2012-0060
+will check recursively for all matching vulns, checks, and solns
+
+ls -l ./vulns/allchecks | grep cve-2012-0060
+ll ./vulns/allchecks | grep cve-2012-0060
+
+
+RECURSIVELY SEARCH IN FILE CONTENT:
+-----------------------------------
+fgrep -R 'searchterm' .
+
+
+=============================================
+         MORE ADVANCED GREP COMMANDS
+=============================================
+
+Searching in all javascript files (*.js):
+	find . -name '*.js' -exec grep -i 'string to search for' {} \; -print
+This will print the lines in the files where the text appears but does not print the file name.
+----
+
+find . -name '*.js' -exec grep -i 'string to search for' {} \; -print
+This will output the filename and the content of the matched line, e.g.
+	/home/rob/file:text-to-find-here
+
+Optional flags you may want to add to grep:
+    -i - case insensitive search
+    -l - only output the filename where the match was found
+    -h - only output the line which matched (not the filename)
+
+
+
+find / -type f | xargs grep 'text-to-find-here'
+
+This is equivalent to grep 'text-to-find-here' without file name if find does not find anything. This will hang and wait for user input! Add --no-run-if-empty as an option to xargs. – hagello Jan 28 at 5:46
+	
+This combination of find and xargs does not work as intended if file or directory names contain spaces (characters that xargs interprets as separators). Use find … -exec grep … +. If you insist on using find together with xargs, use -print0 and -0. – hagello Jan 28 at 5:50 
+
+----
+
+find . -name "*.txt" | xargs grep -i "text_pattern"
+
+----
+
+
+
+To search for the string and output just that line with the search string:
+
+for i in $(find /path/of/target/directory -type f); do grep -i "the string to look for" "$i"; done
+
+e.g.:
+
+for i in $(find /usr/share/applications -type f); \
+do grep -i "web browser" "$i"; done
+
+
+
+To display filename containing the search string:
+
+for i in $(find /path/of/target/directory -type f); do if grep -i "the string to look for" "$i" > /dev/null; then echo "$i"; fi; done;
+
+e.g.:
+
+for i in $(find /usr/share/applications -type f); \
+do if grep -i "web browser" "$i" > /dev/null; then echo "$i"; \
+fi; done;
+
+
+
+
+
+
+USEFUL OPTIONS:
+===============
+
+color[=WHEN], --colour[=WHEN]   WHEN is used like --=color=never, --color=always, or --color=auto.
+
+ 
+--exclude '*.pdf'
+--exclude-dir=/path/to/exclude/
+--include '*.txt'
+
+-H Display results with-filename
+
+--color  Show results with colored fields
+
+
+
+
+
+
+Search all subdirectories recursively
+-------------------------------------
+$ grep -r "somestring" /home/tom/  # follows sym links only if they are on the command line
+OR
+$ grep -R "somestring" /home/tom/  # follows all sym links
+
+
+Only display filenames
+----------------------
+By default, the grep command prints the matching lines. You can pass -H option to print the filename for each match:
+$ grep -H -r "somestring" /home/tom
+
+
+grep -v 'I dont wanna see this' > logWithExcludedLines.log. 
+You can use regex as well: grep -vE 'asdf|fdsa' > logWithNoASDForFDSA.log
+This method works very well with apache access logs: grep -v 'HTTP/1.1 200' > no200s.log
+
+
+CONTEXT LINES
+-------------
+100 lines of context:
+zcat *.log.gz | grep -100 '{regexp}' > {outputfile}
+
+
+Absolute paths and chained fgreps:
+---------------------------------
+fgrep -RHi -e "ServiceFing" /home/dlozano/Documents/Support/custdata-local | fgrep "1.0" | fgrep -i "SSH"
+
+
+Find a string in a filename:
+----------------------------
+ll -R | grep -i solaris-serial-login-prompts
+
+Tips
+ll: -R is recursive listing 
+grep: -i is case insensitive
+Search by vuln id or CVE-2014-xxxx, as listed in NX reports, vulns, etc.
+
+
+Find several strings from a file:
+---------------------------------
+ll -R | grep -if checkforthesestrings.txt
+
+Tips
+grep: -f is 'use file'
+grep: -i is case insensitive
+Set up your file with exactly one search string per line
+
+Add only the characters you wish to check for. No blank lines at all.
+Don't put a newline in your file or it will return all possible results
+
+
+SEARCH for TERMS in a listfile across a listfile of targets
+------------------------------------------------------------
+(this needs to be fixed, needs an option or a different technique)
+	grep -if 'matchfile' -#### targetlist 
+
+
+-----------------------------------------------------------------------------------------------
+
+List popular or unique loglines, without timestamps
+=========================================
+
+So first I tried some things:
+cat some.log | cut -d"]" -f2 
+cat scan.log   cut -d"]" -f6 | more
+
+This seems cool but didn't present many output lines as-is, it's from stackoverflow 
+sort scan.log | uniq -c | sort -n -r | awk 'NR==1 {prev=$1} $1!=prev {exit} 1' | sed 's/^ *[0-9]\{1,\} //'
+
+
+This is working better:
+	cat 39.48.scan.0.log  | cut -d"]" -f4 > 39.48.scan.0.log.nostamps
+	sort 39.48.scan.0.log.nostamps | uniq -c | sort -n
+
+This is better still:
+	cut -d"]" -f4 39.48.scan.0.log | sort | uniq -c | sort -n
+
+This shows from the cut to the end of the line, more data but more clutter too
+	cut -d"]" -f4- ~/custdata-local/185732/nsclogs/39.48.scan.0.log | sort | uniq -c | sort -n
+
+Most frequent lines first
+cut -d"]" -f4- ~/custdata-local/185732/nsclogs/39.48.scan.0.log | sort | uniq -c | sort -nr 
+
+
+Cuts the list off at the point you specify
+cut -d"]" -f4- ~/custdata-local/185732/nsclogs/39.48.scan.0.log | sort | uniq -c | sort -nr | head -n 40
+
+TO DO:
+Maybe use sed to remove unwanted segments between [squarebrackets]
+
+-----------------------------------------------------------------------------------------------
+
+
+LIST A LOT OF FILES AT ONCE:
+Stream a dir of files to stdout then grep
+ls | xargs cat | grep 'Woobley-Doo'
+
+Unique/popular lines from a dir of files:
+ls | xargs cat | sort | uniq -c | sort -nr | head -n 300
+
+
+Find all warnings and exceptions in a log file:
+egrep -a '(\[(WARN|ERROR|FATAL)\]|Exception:)' nsc.log
+
+
+grep 66.170.83.152 /opt/rapid7/nexpose/nse/conf/consoles.xml
+
+
+WATCH A LOG FOR STRINGS
+ This is used when pairing a shared scan engine, to wait for the customer to hit the engine with a console connection..
+
+tail -f /opt/rapid7/nexpose/nse/logs/nse.log | grep -i --color=always '65.116\|overstock'   
+		# i have a partial IP and a company name here. Grep uses escape char \ with the pipe |
+
+
+
+

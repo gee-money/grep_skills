@@ -1,0 +1,26 @@
+GREP SKILLS CLASS - LAB NOTES
+
+
+# What if we have a big log with lots of unwanted assets and want to clean it up?
+# Here is a method of extracting data for just one asset in this scan log:
+																					#
+cd ./custdata-local/196199															# scan.log is in this folder
+grep -v '10.50.254.25' scan.log > 10.50.254.25.log									# 2215/2564 lines kept
+																					# You can get logs on several assets at once by fgrep 'this| that' type searches
+																					# Or you can make several logs and append them  
+																					# Or you can grep -R to recurse a whole folder or tree of folders
+																					# Eyes on the target asset only.
+																					#
+grep -v 'NOT VULNERABLE' 10.50.254.25.log  > 10.50.254.25.scrub1.log 				# Remove uninteresting lines --100 or so 
+																					# I might do the next step  several times with different search strings,  
+																					# saving more logfiles named *.scrub2.log *.scrub3.log  to preserve my order of removing unwwanted data. 
+																					# So just in case i remove too much by accident, I can back out
+																					#
+fgrep -i  'java' 10.50.254.25.log  >10.50.254.25.java								# Looking to confirm a java misfingerprint
+fgrep -i 'Skipping vuln check' 10.50.254.25.log  >10.50.254.25.skipped-vcks			# Are all our Java checks skipped? 
+fgrep -i  'filtered' 10.50.254.25.log  >10.50.254.25.filtered-ports					# FW? (Yes, 1080 ports are being filtered).
+fgrep -i  'solaris 11' 10.50.254.25.log 											# Get the system fingerprint for case notes
+fgrep -i  'solaris' 10.50.254.25.log > 10.50.254.25.solaris.log 					# get all checks with solaris in their name, plus lots of other stuff
+																					# Many important lines will not refer to the target host IP, so make sure you look at the original file too! 
+--------------------------------------
+

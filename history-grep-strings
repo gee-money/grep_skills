@@ -1,0 +1,2537 @@
+fun-grep-strings
+
+cat ./195811/diagnostic_logs/prosvc.log|grep cert
+cat ./195811/diagnostic_logs/prosvc.log|grep d
+cat ./195811/diagnostic_logs/prosvc.log|grep sec
+cat ./diagnostic_logs/reports.log | grep 64.*bit
+cat ./diagnostic_logs/reports.log | grep bit
+cat /etc | grep rsnapshot
+cat /etc/apt/sources.list | grep stable
+cat /var/log/Xorg.0.log|grep tear
+cat /var/log/Xorg.0.log|grep Tear
+cat /var/log/Xorg.0.log|grep teart
+cat auth.log | fgrep -c denied
+cat auth.log | fgrep denied
+cat auth.log* | fgrep -c denied
+cat auth.log.* | fgrep -c denied
+cat auth.log.* | fgrep -L denied
+cat auth.log.* | fgrep -l denied
+cat auth.log.* | fgrep denied
+cat auth.log.1 | fgrep denied
+cat auth.log.1 | fgrep exceeded
+cat nsc.log | grep 192.
+cat nsc.log | grep 192.168
+egrep -a '(\[(WARN|ERROR|FATAL)\]|Exception:)' '/home/dlozano/custdata-local/188282/logs received 5-9/CJP_20-_20_5BPROD_5D-2016-0507-0600.log/
+egrep -a '(\[(WARN|ERROR|FATAL)\]|Exception:)' '/home/dlozano/custdata-local/188282/logs received 5-9/CJP_20-_20_5BPROD_5D-2016-0509-0600-finished.log/
+egrep -a '(\[(WARN|ERROR|FATAL)\]|Exception:)' nsc.log
+egrep -a '00:50:56:92:11:e8' nsc.log
+egrep -aR '- VULNERABLE VERSION' . 
+egrep -aR '14840269' ./ACES 
+egrep -aR '2017\-01\-09' ./ACES 
+egrep -aR '2017\-01\-09T21:42' ./ACES 
+egrep -aR '2017\-01\-09T21\:42' ./ACES 
+egrep -aR '\- VULNERABLE VERSION' . 
+egrep -aR '\- VULNERABLE VERSION' . > vulnversions
+egrep -aR 'apache-' ./ACES > apache-from-ACES
+egrep -aR 'Beginning SNMP fingerprint' ./nse.log
+egrep -aR 'httpd-cve-' ./ACES > httpd-cve-from-ACES
+egrep -aR 'lilo-linux-single-user-mode' .
+egrep -aR 'lilo-linux-single-user-mode' ./ACES 
+egrep -aR 'openssl-cve-' ./ACES > 
+egrep -aR 'openssl-cve-' ./ACES > openssl-cve-from-ACES
+egrep -aR 'performtests' .
+egrep -aR 'performTests' ./ACES 
+egrep -aR 'performtests-334' .
+egrep -aR 'performtests-334' ..
+egrep -aR 'SNMP' ./nse.log
+egrep -aR 'VULNERABLE VERSION' . 
+egrep -aRc10 -f ./grepfinds .
+egrep -aRC10 -f ./grepfinds .
+egrep -aRC10 -f ./grepfinds . | less
+egrep -aRC10f ./grepfinds .
+egrep -ARf ./grepfinds .
+egrep -aRf ./grepfinds .
+egrep -aRi '00:50:56:92:11:e8' .
+egrep -aRi 'Failure during handshake' .
+egrep -aRi 'Failure during handshake' ./nse.log
+egrep -aRi 'Failure during handshake' ./nse.log | fgrep -v '10.1.12.242' 
+egrep -aRi 'Failure during handshake' ./nse.log | fgrep -v '10.1.12.242\|10.1.12.231' 
+egrep -aRi 'Failure during handshake' ./nse.log | fgrep -v '10.1.12.242|10.1.12.231' 
+egrep -aRi 'Failure during handshake' ./nse.log | grep -v '10.1.12.242\|10.1.12.231' 
+egrep -aRi 'Failure during handshake' ./nse.log | grep -v '10.1.12.242\|10.1.12.231\|10.1.12.232\|10.1.12.211' 
+egrep -aRi 'Failure during handshake' ./nse.log | grep -v '10.1.12.242\|10.1.12.231\|10.1.12.232\|10.1.12.211'  | fgrep -v 'DEBUG'
+egrep -aRi 'Failure during handshake' ./nse.log | grep -v '10.1.12.242\|10.1.12.231\|10.1.12.232\|10.1.12.211'  | fgrep -v 'INFO'
+egrep -aRi 'Failure during handshake' ./nse.log.0
+egrep -aRi 'perform' ./ACES 
+egrep -aRi 'performtests' .
+egrep -aRi 'performTests' ./ACES 
+egrep -aRi 'performtests-334' .
+egrep -caRi 'configured' ./nsc.log
+egrep -caRi 'configured' ./nse.log
+egrep -caRi 'Failure during handshake' ./nse.log
+egrep -caRi 'Failure during handshake' ./nse.log | fgrep -v '(10.1.12.242|10.1.12.231)' 
+egrep -caRi 'Failure during handshake' ./nse.log | fgrep -v '(10.1.12.242|10.1.12.231)' | 
+egrep -caRi 'Failure during handshake' ./nse.log | fgrep -v '10.1.12.242|10.1.12.231' 
+egrep -i '-->' nsc.log
+egrep -R "Host Names" '/home/dlozano/custdata-local/186030/June 3 call/examining'  
+egrep -R "Host Names" '/home/dlozano/custdata-local/186030/June 3 call/examining'  | egrep HostName
+egrep -R "HostName" '/home/dlozano/custdata-local/186030/June 3 call/examining' 
+egrep -R "Name+Name" '/home/dlozano/custdata-local/186030/June 3 call/examining' 
+egrep -R "Name.*Name" '/home/dlozano/custdata-local/186030/June 3 call/examining' 
+egrep -R "Name.Name" '/home/dlozano/custdata-local/186030/June 3 call/examining' 
+egrep -R "Name{Name" '/home/dlozano/custdata-local/186030/June 3 call/examining' 
+egrep -R '[0-9]\{3\}' .
+egrep -R '[0-9]{3}' .
+egrep -R '\[DEBUG\]' .
+egrep -R '\[DEBUG|TRACE\]' .
+egrep -R '\[TRACE\]' .
+egrep -R 'Filtering out unallowed' .
+egrep -R 'Filtering out unallowed' . | cut -d: -f5
+egrep -R 'Filtering out unallowed' . | cut -d: -f6
+egrep -R 'Filtering out unallowed' . | cut -d: -f6 | sort -u
+egrep -R 'Filtering out unallowed' . | cut -d[ -f4
+egrep -R 'Filtering out unallowed' . | cut -d[ -f5
+egrep -R 'Nmap scan of [0-9]{3-4}' .
+egrep -R 'Nmap.*[0-9]\{3\}' .
+egrep -R 'Scan ID: 91613'
+egrep -R 'serial|Serial'.
+egrep -R 'SNMP' ./nse.log
+egrep -R 'Temporary failure in name' .
+egrep -R 'Temporary failure in name' . > dnsfail
+egrep -R 'topping' ~/custdata-local/
+egrep -R 'trace' .
+egrep -R 'Unable to obtain net information' . > dnsfail
+egrep -R 'VULNERABLE VERSION' . 
+egrep -RA10 'Scan executor service monitor started.' .
+egrep -RA10 'Updated risk score for group' .
+egrep -Ra10 'Updated risk score for group' .
+egrep -Ra10 'Updated risk score for group' ./*.log
+egrep -Ra10 'Updated risk score for group' ./nsc.log
+egrep -Ra10 'Updated risk score for group' ./~*.log
+egrep -Ra10 'Updated risk score for group' nsc.log
+egrep -RA100 'Scan executor service monitor started.' .
+egrep -RA20 'Nexpose Scan Engine Version' .
+egrep -RA20 'NXAPPENGV1' .
+egrep -RA20 'Scan executor service monitor started.' .
+egrep -Rf "hosts0601" '/home/dlozano/custdata-local/186030/June 3 call/examining'  
+egrep -Rf "hosts0601" --exclude "hosts0601" '/home/dlozano/custdata-local/186030/June 3 call/examining'  
+egrep -Rf "hosts0601" --exclude "hosts0601" '/home/dlozano/custdata-local/186030/June 3 call/examining/' | grep 2016-06-01 > hostnamesfound0601
+egrep -Rf "hosts0601" --exclude "hosts0601" '/home/dlozano/custdata-local/186030/June 3 call/examining/scan 0601/'
+egrep -Rf "hosts0601" --exclude "hosts0601" '/home/dlozano/custdata-local/186030/June 3 call/examining/scan0601  
+egrep -Rf "hosts0601" --exclude "hosts0601" '/home/dlozano/custdata-local/186030/June 3 call/examining/scan0601'
+egrep -Rf "hosts0601" --exclude "hosts0601" '/home/dlozano/custdata-local/186030/June 3 call/examining/scan0601/'
+egrep -Rf "hosts0601" --exclude "hosts0601" '/home/dlozano/custdata-local/186030/June 3 call/examining/scan\ 0601/'
+egrep -Rf "hosts0601" --ignore "hosts0601" '/home/dlozano/custdata-local/186030/June 3 call/examining'  
+egrep -Rf "hosts0601" --ignore-file "hosts0601" '/home/dlozano/custdata-local/186030/June 3 call/examining'  
+egrep -Rf "hosts0602" --exclude "hosts0602" '/home/dlozano/custdata-local/186030/June 3 call/examining/
+egrep -Rf "hosts0602" --exclude "hosts0602" '/home/dlozano/custdata-local/186030/June 3 call/examining/'
+egrep -Rf "hosts0602" --exclude "hosts0602" '/home/dlozano/custdata-local/186030/June 3 call/examining/' | grep 2016-06-02 > hostnamesfound0602
+egrep -Rf "hosts0602" --exclude "hosts0602" '/home/dlozano/custdata-local/186030/June 3 call/examining/scan 0602/'
+egrep -Rf ./grepfinds .
+egrep -Ri "HostName" '/home/dlozano/custdata-local/186030/June 3 call/examining' 
+egrep -Ri "local)] Engine is online." ~/custdata-local/
+egrep -Ri "name.Name=" '/home/dlozano/custdata-local/186030/June 3 call/examining' 
+egrep -Ri "Name=" '/home/dlozano/custdata-local/186030/June 3 call/examining' 
+egrep -Ri '(console|engine) version'  /home/dlozano/custdata-local/
+egrep -Ri '(console|engine) version'  /home/dlozano/custdata-local/188259
+egrep -Ri 'approx' ~/Support/grepstock/ | less
+egrep -Ri 'Available disk space' .
+egrep -Ri 'backup size' ~/Support/grepstock/ | less
+egrep -Ri 'backup' ~/Support/grepstock/
+egrep -Ri 'backup' ~/Support/grepstock/ | less
+egrep -Ri 'engine ver' .
+egrep -Ri 'estimated size' ~/Support/grepstock/ | less
+egrep -Ri 'Failed to retrieve engine statistics' .
+egrep -Ri 'Failed to retrieve engine statistics' . | cut  -f4,5 |
+egrep -Ri 'Failed to retrieve engine statistics' . | cut -d -f4,5 |
+egrep -Ri 'Failed to retrieve engine statistics' . | cut -d" " -f4,5 |
+egrep -Ri 'Failed to retrieve engine statistics' . | cut -d=   -f4,5 |
+egrep -Ri 'Failed to retrieve engine statistics' . | cut -d=' '   -f4,5 |
+egrep -Ri 'Failed to retrieve engine statistics' . | cut -d[ -f4,5
+egrep -Ri 'Failed to retrieve engine statistics' . | cut -d[ -f4,5 | sort -u
+egrep -Ri 'OOM' .
+egrep -Ri 'resources' .
+egrep -Ri 'space' .
+egrep -Ri 'Stopping' ~/custdata-local/
+egrep -Ria '[0-9]{7}'
+egrep -Ria 'KB[0-9]{7}'
+egrep -Ric '(console|engine) version'  /home/dlozano/custdata-local/186030
+egrep -Ril '(console|engine) version'  /home/dlozano/custdata-local/
+egrep -Ril '(console|engine) version'  /home/dlozano/custdata-local/186030
+egrep 0\{0,00\} derp.file
+egrep 0{0,00} derp.file
+exit;fgrep -r ''
+fgrep  'matches 5 existing assets' nsc.log
+fgrep  'Skipping vuln check' 10.50.254.25.log  >10.50.254.25.skipped-vcks
+fgrep  'VULNERABLE' ./15.2296.scan.0.log  | fgrep -v 'VERSION' | fgrep -v 'NOT'
+fgrep  -Ri 'AUDIT_NONE' ~/custdata-local/
+fgrep  -Ri 'AUDIT_NONE' ~/Support/grepstock/
+fgrep  -Ri 'E' ~/custdata-local/
+fgrep  -Ri 'Windows Audit Policy Subcategory' ~/custdata-local/
+fgrep '10.165.81.203' '/home/dlozano/custdata-local/182172/CLT_20Tier_202_20-_20CHADVA2UTRXS01-20160217-0201.log'  > host203
+fgrep '10.165.81.35' '/home/dlozano/custdata-local/182172/CLT_20Tier_202_20-_20CHADVA2UTRXS01-20160217-0201.log'  > host35
+fgrep '10.66.51.134' ./netstat-results 
+fgrep '165.230' /mnt/custdata/incoming/Rapid7/
+fgrep '165.230' /mnt/custdata/incoming/Rapid7/2016_12_05_154759367/
+fgrep '165.230' fs2.tor.rapid7.com/custdata/incoming/Rapid7/2016_12_05_154759367/
+fgrep '165.230' smb://fs2.tor.rapid7.com/custdata/incoming/Rapid7/2016_12_05_154759367/
+fgrep '2016-11-22T18:44' .
+fgrep '2017-09-15 15:42:48 -0400 Starting delayed_job worker
+fgrep 'consistency' ./logs/nsc.log
+fgrep 'Console Version' nsc.log
+fgrep 'CorrelationAttributes' ./logs/nsc.log
+fgrep 'e' /run/user/1000/gvfs/smb-share:server=fs2.tor.rapid7.com,share=custdata/incoming/Rapid7/2016_11_22_182057556/info.txt
+fgrep 'existing assets' ./nsc.log | fgrep -i -e '-->' nsc.log
+fgrep 'existing assets' ./nsc.log | fgrep -m1 -i -e '-->' nsc.log
+fgrep 'existing assets' ./nsc.log | tee fgrep -m1 -i -e '-->' nsc.log
+fgrep 'ID: 25' ~/custdata-local/181268/Logs-Feb2016/*
+fgrep 'ID: 2\]' ~/custdata-local/181268/Logs-Feb2016/*
+fgrep 'ID: 2]' ~/custdata-local/181268/Logs-Feb2016/*
+fgrep 'ID: 49' ~/custdata-local/181268/Logs-Feb2016/*
+fgrep 'ID: 51' ~/custdata-local/181268/Logs-Feb2016/*
+fgrep 'info' /run/user/1000/gvfs/smb-share:server=fs2.tor.rapid7.com,share=custdata/incoming/Rapid7/2016_11_22_182057556/info.txt
+fgrep 'little' ~/cruft/music 
+fgrep 'Little' ~/cruft/music 
+fgrep 'MAH OOB' ~/custdata-local/181268/Logs-Feb2016/*
+fgrep 'MAH OOB' ~/custdata-local/181268/Logs-Feb2016/* | fgrep 'ID: 49\|ID: 51\|ID: 25'
+fgrep 'MAH OOB' ~/custdata-local/181268/Logs-Feb2016/* | fgrep 'ID: 49\|ID: 51\|ID: 2\]\|ID: 25'
+fgrep 'MAH OOB' ~/custdata-local/181268/Logs-Feb2016/* | fgrep 'ID: 49|ID: 51|ID: 2\]|ID: 25'
+fgrep 'MAH OOB' ~/custdata-local/181268/Logs-Feb2016/* | fgrep 'Scan ID'
+fgrep 'metasploit offline' ~/Support/HOW-DO-I/
+fgrep 'nke-esx-apac-001' ./netstat-results 
+fgrep 'nke-esx-apac-0012' ./netstat-results 
+fgrep 'node(s) completed' .
+fgrep 'Not accepting authentication requests' .
+fgrep 'Out of memory' ./syslog
+fgrep 'pause' ~/custdata-local/181268/Logs-Feb2016/*
+fgrep 'TOR' ~/Support
+fgrep 'vulnerable version' ./Mustang50Fever-Nexpose-Site.xml 
+fgrep 'whitelist' .
+fgrep --B5 -Ria 'scan engine ver' .
+fgrep --help
+fgrep -a1 'matches 1 existing assets' nsc.log > 1way-correlation-tie
+fgrep -A1 'matches 1 existing assets' nsc.log > 1way-correlation-tie
+fgrep -a2 'matches 2 existing assets'
+fgrep -a2 'matches 2 existing assets' nsc.log
+fgrep -a2 'matches 2 existing assets' nsc.log > 2way-correlation-tie
+fgrep -A2 'matches 2 existing assets' nsc.log > 2way-correlation-tie
+fgrep -a3 'matches 3 existing assets' nsc.log > 3way-correlation-tie
+fgrep -A3 'matches 3 existing assets' nsc.log > 3way-correlation-tie
+fgrep -a4 'matches 4 existing assets' nsc.log > 4way-correlation-tie
+fgrep -A4 'matches 4 existing assets' nsc.log > 4way-correlation-tie
+fgrep -a5 'matches 5 existing assets' nsc.log
+fgrep -A5 'matches 5 existing assets' nsc.log
+fgrep -a5 'matches 5 existing assets' nsc.log > 5way-correlation-tie
+fgrep -A5 'matches 5 existing assets' nsc.log > 5way-correlation-tie
+fgrep -A500 'existing assets' ./nsc.log | fgrep -m1 -i -e '-->' nsc.log
+fgrep -a6 'matches 6 existing assets' nsc.log > 6way-correlation-tie
+fgrep -A6 'matches 6 existing assets' nsc.log > 6way-correlation-tie
+fgrep -a7 'matches 7 existing assets' nsc.log > 7way-correlation-tie
+fgrep -a8 'matches 8 existing assets' nsc.log > 8way-correlation-tie
+fgrep -a9 'matches 9 existing assets' nsc.log > 9way-correlation-tie
+fgrep -ai '2017-04-20' ./nse.log.0
+fgrep -aRi 'Beginning SNMP' .
+fgrep -aRi 'Beginnning SNMP' 
+fgrep -aRi 'Beginnning SNMP' .
+fgrep -B1 -Ria 'Cannot find dependency ID' .
+fgrep -B1 -Ria 'Local copy of .* was .* bytes larger than remote copy' .
+fgrep -B1 -Ria 'more updates' .
+fgrep -B1 -Ria 'Scan Engine Updater shutting down' .
+fgrep -B1 -Ria 'scan engine ver' .
+fgrep -B1 -Ria 'scan engine ver' nse.log.0
+fgrep -B1 -Ria 'scan engine ver' nse.log.1
+fgrep -b20i 'AssetDomainDocumentExporter' ./nexport
+fgrep -B5 -Ria 'scan engine ver' .
+fgrep -B5Ria 'scan engine ver' .
+fgrep -bi '2017-04-20' ./nse.log.0
+fgrep -c "(Revoking|Ignoring)" SysFings 
+fgrep -c "Ignoring" SysFings 
+fgrep -c "Revoking" SysFings 
+fgrep -c 'SystemFing.*Cert' '/home/dlozano/custdata-local/158104/158104-Secure_20Workstation_20Image-20160303-1338.log'   
+fgrep -c 'SystemFing.*certainty' '/home/dlozano/custdata-local/158104/158104-Secure_20Workstation_20Image-20160303-1338.log'   
+fgrep -c10 'Login Successful!' ./task_pro.exploit_20.txt 
+fgrep -C10 'Login Successful!' ./task_pro.exploit_20.txt 
+fgrep -C20 -Ri 'A' .
+fgrep -C20 -Ri 'AccelMethod' .
+fgrep -C20 -Ri 'Device' .
+fgrep -C20 -Ri 'intel' ./
+fgrep -C20 -Ri 'section \"Device\"' .
+fgrep -C20 -Ri 'skylake' .
+fgrep -C20 -Ri 'sna' .
+fgrep -C20 -Ri 'uxa' .
+fgrep -C20 -Ri 'uxa' ./
+fgrep -C20 -Ri AccelMethod .
+fgrep -C20Ri AccelMethod .
+fgrep -cR 'ALIVE' *.0.log
+fgrep -cRiA23 'but does not have a vulnerability descriptor file' .
+fgrep -cRiA23 'but does not have a vulnerability descriptor file' . > error
+fgrep -cv "(Revoking|Ignoring)" SysFings 
+fgrep -e '(existing assets|-->)' ./nsc.log 
+fgrep -e '[existing assets|-->]' ./nsc.log 
+fgrep -e '{existing assets|-->}' ./nsc.log 
+fgrep -i  'console  version' 10.50.254.25.log
+fgrep -i  'console version' 10.50.254.25.log
+fgrep -i  'console version' nsc.log
+fgrep -i  'filtered' 10.50.254.25.log  >10.50.254.25.filtered-ports
+fgrep -i  'filtered' 10.50.254.25.log  >10.50.254.25.skipped-vcks
+fgrep -i  'java' 10.50.254.25.log  >10.50.254.25.java
+fgrep -i  'patch' 10.50.254.25.log > 10.50.254.25.patch.log
+fgrep -i  'Product version' 10.50.254.25.log
+fgrep -i  'solaris 11' 10.50.254.25.log 
+fgrep -i  'solaris' 10.50.254.25.log > 10.50.254.25.solaris.log
+fgrep -i  'version' 10.50.254.25.log
+fgrep -i  'version' nsc.log
+fgrep -i "-" nsc.log
+fgrep -i "--" nsc.log
+fgrep -i "-->" nsc.log
+fgrep -i "--\>" nsc.log
+fgrep -i "->" nsc.log
+fgrep -i "-\-" nsc.log
+fgrep -i "-\>" nsc.log
+fgrep -i ">" nsc.log
+fgrep -i "\-\->" nsc.log
+fgrep -i '.64' *.log
+fgrep -i '0799' ./cve-list
+fgrep -i '2017-04-20' ./nse.log.0
+fgrep -i '2017-04-20T23:17:56' ./nse.log.0
+fgrep -i '32' *.log
+fgrep -i '64' *.log
+fgrep -i '64.*bit' *.log
+fgrep -i '64\.\*bit' *.log
+fgrep -i '[Thread: Command Console] User name'
+fgrep -i '[Thread: Command Console] User name' .
+fgrep -i '\-\-\>' nsc.log
+fgrep -i '\.32' *.log
+fgrep -i '\.64' *.log
+fgrep -i 'arch' *.log
+fgrep -i 'AssetDomainDocumentExporter' ./nexport
+fgrep -i 'c:/metasploit'
+fgrep -i 'c:\.metasploit'
+fgrep -i 'c:\\\metasploit'
+fgrep -i 'c:\metasploit'
+fgrep -i 'domain' ./nexport
+fgrep -i 'error' ./nexport
+fgrep -i 'failed to export' ./nexport
+fgrep -i 'Linux32' *.log
+fgrep -i 'metasploit'
+fgrep -i 'openssl' ./Mustang50Fever-Nexpose-Site.xml 
+fgrep -i 'openssl' ./Mustang50Fever-Nexpose-Site.xml | cut -d"\"" -f1
+fgrep -i 'openssl' ./Mustang50Fever-Nexpose-Site.xml | cut -d"\"" -f2
+fgrep -i 'openssl' ./Mustang50Fever-Nexpose-Site.xml | cut -d"\"" -f2 
+fgrep -i 'openssl-cve' ./Mustang50Fever-Nexpose-Site.xml 
+fgrep -i 'openssl-cve' ./Mustang50Fever-Nexpose-Site.xml | cut -d"\"" -f2
+fgrep -i 'openssl-cve' ./Mustang50Fever-Nexpose-Site.xml | cut -d"\"" -f2 > ./openssl-cve-list
+fgrep -i 'vulnerable version' ./Mustang50Fever-Nexpose-Site.xml 
+fgrep -i 'vulnerable-version' ./Mustang50Fever-Nexpose-Site.xml 
+fgrep -i 'vulnerable-version' ./Mustang50Fever-Nexpose-Site.xml | cut -d"\"" -f2
+fgrep -i 'vulnerable-version' ./Mustang50Fever-Nexpose-Site.xml | cut -d"\"" -f2 >cve-list
+fgrep -i -e '-->' nsc.log
+fgrep -i /opt/metasploit
+fgrep -i c:\metasploit
+fgrep -i CN
+fgrep -ia '2017-04-20' ./nse.log.0
+fgrep -ia '2017-04-20T23' ./nse.log.0
+fgrep -ia '2017-04-20T23:17' ./nse.log.0
+fgrep -ia '2017-04-20T23:17:56' ./nse.log.0
+fgrep -iA2 'connection refused' > ../../logerrors
+fgrep -if 'openssl-cve-list' ./correlation.xml
+fgrep -lLRB8 --after-context=15 'ERROR' prod-console-collector.log  > crypto_error_prod-console-collector_log
+fgrep -LRB8 --after-context=15 'ERROR' prod-console-collector.log  > crypto_error_prod-console-collector_log
+fgrep -lRB8 --after-context=15 'ERROR' prod-console-collector.log  > crypto_error_prod-console-collector_log
+fgrep -nRB8 --after-context=15 'ERROR' prod-console-collector.log  > crypto_error_prod-console-collector_log
+fgrep -nRB8 --after-context=25 'ERROR' prod-console-collector.log  > crypto_error_prod-console-collector_log
+fgrep -R  '253' .
+fgrep -R  '253' . > 253
+fgrep -R  '253' . | fgrep -v "Excluding" 
+fgrep -R  'CorrelationAttributes' ~/custdata-local/ > correlat
+fgrep -R  'ID 253' . | fgrep -v "Excluding" 
+fgrep -R  'ID: 253' . | fgrep -v "Excluding" 
+fgrep -R  'ID: 89' . | fgrep -v "Excluding" 
+fgrep -R  'Logger-253' . | fgrep -v "Excluding" 
+fgrep -R  'Scan ID: 89' . | fgrep -v "Excluding" 
+fgrep -R  -f './cve-list' ./correlation.xml 
+fgrep -R  -f './cve-list' ./Mustang50Fever-Nexpose-Site.xml 
+fgrep -R "\par" custdata-local
+fgrep -R "connection" .
+fgrep -R "Could not get connection" .
+fgrep -R "Could not retrieve" 
+fgrep -R "DNS name" .
+fgrep -R "e" 
+fgrep -R "module .*par" custdata-local
+fgrep -R "module .*parpar" custdata-local
+fgrep -R "module ACCTSCAN\par" custdata-local
+fgrep -R "Name\{Name" '/home/dlozano/custdata-local/186030/June 3 call/examining' 
+fgrep -R "Name\{Name=" '/home/dlozano/custdata-local/186030/June 3 call/examining' 
+fgrep -R "Name{Name" '/home/dlozano/custdata-local/186030/June 3 call/examining' 
+fgrep -R "Name{Name=" '/home/dlozano/custdata-local/186030/June 3 call/examining' 
+fgrep -R "new_module_run" .
+fgrep -R "par" custdata-local
+fgrep -R "POLICY" . 
+fgrep -R "run" .
+fgrep -R "tasks_controller.rb" .
+fgrep -R "The licensed options are" . > licensed-options
+fgrep -R '
+fgrep -R ' with scan template' .
+fgrep -R '(Scan ID: 91921|Scan ID: 91613|Scan ID: 90950)'
+fgrep -R '(Scan ID: 91921|Scan ID: 91613|Scan ID: 90950)' .
+fgrep -R ', 2009' .
+fgrep -R '172.20.85.122' ./196425/new/nse.05291229-05291743.log 
+fgrep -R '2009' .
+fgrep -R '2016-08-25' ~/custdata-local/
+fgrep -R '2016-08-25' ~/custdata-local/ | fgrep -i 'console version'
+fgrep -R '2016-08-25' ~/custdata-local/ | fgrep -i 'product version'
+fgrep -R '2016-08-25' ~/custdata-local/ | fgrep version
+fgrep -R '212038' /run/user/1000/gvfs/smb-share:server=fs2.tor.rapid7.com,share=custdata/incoming/Rapid7/2016_11_04_200900355/
+fgrep -R '212038' /run/user/1000/gvfs/smb-share:server=fs2.tor.rapid7.com,share=custdata/incoming/Rapid7/2016_11_04_20090355/
+fgrep -R '24\|46'
+fgrep -R '24\|46' .
+fgrep -R '24|46'
+fgrep -R '24|46' .
+fgrep -r '47bc8558-69d8-4bab-9c9c-10d4c4faa4c7 ' .
+fgrep -r '47bc8558-69d8-4bab-9c9c-10d4c4faa4c7' .
+fgrep -R '4|6' .
+fgrep -r '90' ./*.log 
+fgrep -R '90950' .
+fgrep -R '90f1baa6-78c9-43d4-bef3-3e87b600bba7'  *.log
+fgrep -r '90f1baa6-78c9-43d4-bef3-3e87b600bba7' .
+fgrep -r '90f1baa6-78c9-43d4-bef3-3e87b600bba7' ./*.log 
+fgrep -R '91613'
+fgrep -R '91921'
+fgrep -R '91921|91613'
+fgrep -R ';2~
+fgrep -R '[Nn]map [Ss]can of 1024' .
+fgrep -R '[Nn]map.*[Ss]can' .
+fgrep -R '[Nn]map.*[Ss]can' nsc*
+fgrep -R '[Nn]map.*[Ss]can' nsc.*
+fgrep -R '[Thread: Command Console] User name' .
+fgrep -R '] User name' .
+fgrep -R 'ALIVE (reason=reset' . > alive-resets
+fgrep -R 'ALIVE' *.0.log
+fgrep -R 'answer' /home/dlozano/custdata-local/.
+fgrep -R 'Caused by: org.postgresql.util.PSQLException: ERROR: out of memory
+fgrep -R 'chedule' /home/dlozano/custdata-local/.
+fgrep -R 'chedule' /home/dlozano/custdata-local/. | fgrep -i 'CDT'
+fgrep -R 'cheduled' /home/dlozano/custdata-local/.
+fgrep -R 'cheduler' /home/dlozano/custdata-local/.
+fgrep -R 'CN='
+fgrep -r 'collector' .
+fgrep -R 'come from consoles' ~/
+fgrep -R 'consistency' ./nsc.log 
+fgrep -R 'Console Version' ~/custdata-local/181268
+fgrep -r 'Current DB_VERSION'  ~/custdata-local/ |fgrep '2016-02-'
+fgrep -R 'diagnostic_' .
+fgrep -R 'domain validat' .
+fgrep -R 'DV cert' .
+fgrep -R 'e' /run/user/1000/gvfs/smb-share:server=fs2.tor.rapid7.com,share=custdata/incoming/Rapid7/2016_11_04_200900355/
+fgrep -R 'endpoint collector'  *.log
+fgrep -r 'Error exporting data to data warehouse' .
+fgrep -R 'ERROR' *.log
+fgrep -R 'Every' . 
+fgrep -R 'exceeded' .
+fgrep -R 'Exporting to' ~/custdata-local/
+fgrep -R 'exporting to' ~/custdata-local/
+fgrep -R 'FID - Workstations started' .
+fgrep -R 'FID - Workstations started' nsc.log
+fgrep -R 'FID - Workstations started' nsc.log.0 >> FIDstart
+fgrep -R 'FID - Workstations started' nsc.log.1 >> FIDstart
+fgrep -R 'FID - Workstations started' nsc.log.2 >> FIDstart
+fgrep -R 'FID - Workstations started' nsc.log.3 >> FIDstart
+fgrep -R 'file search' ~/custdata-local/
+fgrep -R 'file search' ~/Support/Manuals/
+fgrep -R 'FILTERED' .
+fgrep -R 'FILTERED' . > derpfilteredports.txt
+fgrep -R 'Fingerprinting ssytem based on'  /home/dlozano/custdata-local/
+fgrep -R 'Fingerprinting system based on'  /home/dlozano/custdata-local/
+fgrep -R 'Fingerprinting system based on'  /home/dlozano/custdata-local/ 
+fgrep -R 'Fingerprinting system based on'  /home/dlozano/custdata-local/ | cut -f 5
+fgrep -R 'Fingerprinting system based on'  /home/dlozano/custdata-local/ | cut -f4
+fgrep -R 'Fingerprinting system based on'  /home/dlozano/custdata-local/ | cut -f5
+fgrep -R 'Fingerprinting system based on'  /home/dlozano/custdata-local/ | cut -f5 -d]
+fgrep -R 'Fingerprinting system based on'  /home/dlozano/custdata-local/ | cut -f5 -d] | uniq
+fgrep -R 'from engines' ~/
+fgrep -R 'Host type' .
+fgrep -R 'Host type' . 
+fgrep -R 'Host type' . | cut -d' ' -f4
+fgrep -R 'Host type' . | cut -d' ' -f45678
+fgrep -R 'Host type' . | cut -d':' -f 10
+fgrep -R 'Host type' . | cut -d':' -f 11
+fgrep -R 'Host type' . | cut -d':' -f 12
+fgrep -R 'Host type' . | cut -d':' -f2
+fgrep -R 'Host type' . | cut -d':' -f3
+fgrep -R 'Host type' . | cut -d':' -f45
+fgrep -R 'Host type' . | cut -d':' -f67
+fgrep -R 'Host type' . | cut -d']' -f45678
+fgrep -R 'Host type' . | cut -d']' -f5
+fgrep -R 'hostname'
+fgrep -R 'ileshare' ~/custdata-local/
+fgrep -R 'LoginRequest' .
+fgrep -R 'MSSP' ~
+fgrep -R 'MSSP' ~/Support/
+fgrep -R 'NeXpose' . 
+fgrep -R 'NeXpose' . | fgrep -i 'tor.rapid7.com'
+fgrep -R 'nexpose-cd2fc8ff-81f9-44e4-97d1-446a01fda155-1467391916162'  *.log
+fgrep -R 'NeXposeSetup-Linux64.bin' . 
+fgrep -R 'Nmap scan of ' .
+fgrep -R 'Nmap scan of [0-9]{3-4}' .
+fgrep -R 'No response or remote closed connection within 500ms after 3 attempt(s).' /home/dlozano/custdata-local/.
+fgrep -R 'node(s) completed' .
+fgrep -R 'Not accepting authentication requests' .
+fgrep -R 'O='
+fgrep -R 'on'  /home/dlozano/custdata-local/
+fgrep -R 'Out of memory' .
+fgrep -R 'pause' . >pause
+fgrep -R 'pause' . >pauses
+fgrep -R 'PSQLException: Connection refused' >logs20160817-refused
+fgrep -R 'Rapid7' ./custdata-local/
+fgrep -R 'Received pause scan request' . >pauses
+fgrep -R 'reset' . > resets
+fgrep -R 'respon' /home/dlozano/custdata-local/.
+fgrep -R 'resumed'
+fgrep -R 'resumed' *.log
+fgrep -R 'resumed' ./*.log
+fgrep -R 'Scan configs for silo' ~/custdata-local/00196784/2016_06_24_194949196/new-logs/logs/
+fgrep -R 'Scan ID: 91613'
+fgrep -R 'Scan ID: 91921'
+fgrep -R 'Scan ID: 91921|Scan ID: 91613|Scan ID: 90950' .
+fgrep -R 'Scan ID: 92446'
+fgrep -R 'Scan ID: 92446' .
+fgrep -R 'Scan ID:'
+fgrep -R 'Scan ID\: 92446' .
+fgrep -R 'Scan ID\:'
+fgrep -R 'Scan paused by system because the scan duration has been met' . >paused
+fgrep -R 'scan sched' . 
+fgrep -R 'scan schedule' . 
+fgrep -R 'scanLogger-90950' .
+fgrep -R 'send resp'  ~/custdata-local/*
+fgrep -R 'Send resp'  ~/custdata-local/*
+fgrep -R 'service status' ./nsc.log 
+fgrep -R 'service status' ./nsc.log | fgrep 'consistency'
+fgrep -R 'ServiceFing' ./custdata-local/ | grep -i 'NeXpose'
+fgrep -R 'ServiceFing' ./custdata-local/ | grep -i 'Rapid7'
+fgrep -R 'site schedule' . 
+fgrep -R 'SMTP relay'
+fgrep -R 'SMTP server'
+fgrep -R 'SMTP'
+fgrep -R 'Software installed' ./nsc.log
+fgrep -r 'Starting new scheduled scan' . | tee > ../sched-fgrep
+fgrep -R 'template' .
+fgrep -R 'timeout' /home/dlozano/custdata-local/.
+fgrep -R 'TOR' ~/Support
+fgrep -R 'TOR/' ~/
+fgrep -R 'TOR/' ~/Support
+fgrep -R 'TOR\' ~/Support
+fgrep -R 'ver engines' .
+fgrep -R 'ver engines' nsc.log
+fgrep -R 'WHERE ((  da.dev_id IN ( WITH localized_resource_ids AS (   SELECT resou' .
+fgrep -R 'whois' ~/custdata-local/ 
+fgrep -R 'with template' .
+fgrep -R --after-context=20  'Schedule Type' ./181268/oldlogs/nsc.log
+fgrep -R --after-context=200  'Schedule Type' ./181268/oldlogs/nsc.log
+fgrep -R --context=10  'ScanRepeater'
+fgrep -R -f ../195518-ghost-assets .
+fgrep -R -f ./195518-ghost-assets .
+fgrep -R 2014-0117 .
+fgrep -R 2016-08-31 >logs20160817
+fgrep -R 92446 .
+fgrep -R CN
+fgrep -R Nexpose
+fgrep -R nmap .
+fgrep -R O=
+fgrep -R ON
+fgrep -R OWASP
+fgrep -R rsync ~
+fgrep -R rsync ~/Support/
+fgrep -R syslog ~/custdata-local/*
+fgrep -R SystemFing .
+fgrep -R SystemFing . | fgrep -v [Ignoring\|Promoting\|Demoting]
+fgrep -R SystemFing . | fgrep -v [Ignoring|Promoting|Demoting]
+fgrep -R SystemFing . | fgrep -v Ignoring|Promoting|Demoting
+fgrep -R SystemFing . | grep -iv '(Ignoring\|Promoting\|Demoting\|Asserting\|Revoking)'
+fgrep -R SystemFing . | grep -iv '(Ignoring\|Promoting\|Demoting\|Asserting\|Revoking)' ../SysFings 
+fgrep -R SystemFing . | grep -iv '(Ignoring\|Promoting\|Demoting\|Asserting\|Revoking)' > ../SysFings
+fgrep -R SystemFing . | grep -iv '(Ignoring\|Promoting\|Demoting\|Asserting\|Revoking)' > ../SysFings 
+fgrep -R SystemFing . | grep -iv '(Ignoring\|Promoting\|Demoting\|Asserting\|Revoking)' > SysFings
+fgrep -R SystemFing . | grep -v '(Ignoring|Promoting|Demoting|Asserting)'
+fgrep -R SystemFing . | grep -v 'Ignoring|Promoting|Demoting'
+fgrep -R SystemFing . | grep -v (Ignoring|Promoting|Demoting)
+fgrep -R SystemFing . | grep -v [Ignoring\|Promoting\|Demoting]
+fgrep -R SystemFing . | grep -v [Ignoring|Promoting|Demoting]
+fgrep -R SystemFing . | grep -v {Ignoring|Promoting|Demoting}
+fgrep -Ra '2014-0117' .
+fgrep -Ra 'apache-httpd-cve-2014-0117' .
+fgrep -Ra 'DEBUG' .
+fgrep -ra 'Starting new scheduled scan' . | tee > ../sched-fgrep
+fgrep -RA 2014-0117 .
+fgrep -Ra 2014-0117 .
+fgrep -Ra Nexpose
+fgrep -Ra OWASP
+fgrep -Ra owasp .
+fgrep -Ra OWASP .
+fgrep -Ra10  'Error exporting data to data warehouse' ~/custdata-local/203347/
+fgrep -Ra10  'Error exporting data to data warehouse' ~/custdata-local/203347/ | fgrep -a10 '2016-08-12'
+fgrep -RA10 'ndhs' nsc.log
+fgrep -RA10 'ndhs90279' . > ./ndhs90279
+fgrep -RA10 'ndhs90279' nsc.log
+fgrep -RA10 'ver engines' nsc.log
+fgrep -RA20 'ver engines' nsc.log
+fgrep -RA200 'ver engines' nsc.log
+fgrep -RA250 'ver engines' nsc.log
+fgrep -RA300 'ver engines' nsc.log
+fgrep -RA400 'ver engines' nsc.log
+fgrep -RA419 'ver engines' nsc.log
+fgrep -RA419 'ver engines' nsc.log| fgrep 'Not responding'
+fgrep -RA419 'ver engines' nsc.log| fgrep -B1 'Not responding'
+fgrep -RA419 'ver engines' nsc.log| fgrep B1 'Not responding'
+fgrep -RA420 'ver engines' nsc.log
+fgrep -RA425 'ver engines' nsc.log
+fgrep -RA430 'ver engines' nsc.log
+fgrep -RA444 'ver engines' nsc.log
+fgrep -RA450 'ver engines' nsc.log
+fgrep -rA5 '] ServiceFing' .
+fgrep -rA5 '] SystemFing' .
+fgrep -rA5 'certainty=1' . >fings
+fgrep -rA5 'Error exporting data to data warehouse' .
+fgrep -RA600 'ver engines' nsc.log
+fgrep -Rac '2014-0117' .
+fgrep -Rac 'apache-httpd-cve-2014-0117' .
+fgrep -Rac 2014-0117 .
+fgrep -RaC10 2014-0117 .
+fgrep -Rai  '0[6789]' .
+fgrep -Rai  '0[6789]|10' .
+fgrep -Rai "warehousing" .
+fgrep -Rai '2016-06-27' .
+fgrep -Rai '2016-06-27' . |fgrep '0[6789]|10' 
+fgrep -Rai '2016-06-27' . |grep '0[6789]|10' 
+fgrep -Rai '2016-06-27' |fgrep '0[6789]|10' 
+fgrep -Rai '2016-06-27T0[6789]|10' > ./0704day 
+fgrep -Rai '2016-07-04T11:2' > ./0704day
+fgrep -Rai 'netstat' . > netstat-results
+fgrep -Rai schannel .
+fgrep -Rai schannel . > fgrep-schannel
+fgrep -Rb5a1 'PSQLException: Connection refused' >logs20160817-refused
+fgrep -RB8 --after-context=15 'ERROR' prod-console-collector.log  > crypto_error_prod-console-collector_log
+fgrep -RB8 --after-lines=15 'ERROR' prod-console-collector.log  > crypto_error_prod-console-collector_log
+fgrep -RB8A15 'ERROR' prod-console-collector.log  > crypto_error_prod-console-collector_log
+fgrep -RB8a15 'ERROR' prod-console-collector.log  > crypto_error_prod-console-collector_log
+fgrep -RC 'Host type' . 
+fgrep -Rc 'Host type' . 
+fgrep -RC10 'Called name not present' .
+fgrep -RC2 'FATAL' . >> pgerror
+fgrep -RC2 'session time: 0:0' . >> shawtys
+fgrep -RC20 'authenticated-fp-thread' ~/custdata-local/
+fgrep -RC20 'Error occurred during the file search' ~/custdata-local/00193098/
+fgrep -RC20 'scan configs for silo' ~/custdata-local/00196784/2016_06_24_194949196/new-logs/logs/
+fgrep -RC20 'Scan configs for silo' ~/custdata-local/00196784/2016_06_24_194949196/new-logs/logs/
+fgrep -RC3 'PSQLException: Connection refused' >logs20160817-refused
+fgrep -RC5 'incomplete' ~/custdata-local/
+fgrep -Ri 
+fgrep -Ri  "*Windowscodecs.dll" .
+fgrep -Ri  "6.1" .
+fgrep -Ri  "6.1.7601" .
+fgrep -Ri  "6.1.7601.18741" .
+fgrep -Ri  "codecs" .
+fgrep -Ri  "dec" .
+fgrep -Ri  "decs" .
+fgrep -Ri  "version.*Windowscodecs.dll" .
+fgrep -Ri  "Windowscodec" .
+fgrep -Ri  "Windowscodecs" .
+fgrep -Ri  "windowscodecs" .
+fgrep -Ri  "Windowscodecs.dll" .
+fgrep -Ri  'alias' ~/custdata-local/ 
+fgrep -Ri  'asset corr' .
+fgrep -Ri  'canonicalize' .
+fgrep -Ri  'correlat' ~/custdata-local/ > correlat
+fgrep -Ri  'correlat' ~/custdata-local/*.log
+fgrep -Ri  'diagnostic_logs' .
+fgrep -Ri  'MisfireHandler'
+fgrep -Ri  'most recently used' ./*
+fgrep -Ri  'most recently' ./*
+fgrep -Ri  'MS15-016' .
+fgrep -Ri  'MS15-024' .
+fgrep -Ri  'MS15-029' .
+fgrep -Ri  'product version' .
+fgrep -Ri  'recently' ./*
+fgrep -Ri  'reporting data model' ~/Support/grepstock/
+fgrep -Ri  'support package' .
+fgrep -Ri  'valu ' .
+fgrep -Ri  'valu' .
+fgrep -Ri "#sjc" . | less
+fgrep -Ri "66.192.47.2(31\|24\|36\|37)" .
+fgrep -Ri "66.192.47.2(31|24|36|37)"
+fgrep -Ri "66.192.47.2(31|24|36|37)" .
+fgrep -Ri "66.192.47.2\(31\|24\|36\|37\)" .
+fgrep -Ri "anonymous bind" .
+fgrep -Ri "app/controllers/tasks_controller.rb:789:in `new_module_run" .
+fgrep -Ri "app/controllers/tasks_controller.rb:789:in" .
+fgrep -Ri "Asset Group Synops" .
+fgrep -Ri "bailiwicked" .
+fgrep -Ri "blackout" . | less
+fgrep -Ri "Console version" .
+fgrep -Ri "could not retrieve" .
+fgrep -Ri "diosk space monitor" nsc.log
+fgrep -Ri "disk space monitor" 
+fgrep -Ri "disk space" 
+fgrep -Ri "Engine is online" .
+fgrep -Ri "Engine is online" ~/custdata-local/
+fgrep -Ri "exceeded scan duration" .
+fgrep -Ri "exceeded the scan duration" .
+fgrep -Ri "exceeded" *.log
+fgrep -Ri "exceeded" .
+fgrep -Ri "GMT" . | less
+fgrep -Ri "hexdump" .
+fgrep -Ri "hexdump" /
+fgrep -Ri "local)] Engine is online." ~/custdata-local/
+fgrep -Ri "local.*Engine is online" ~/custdata-local/
+fgrep -Ri "oom-killer" .
+fgrep -Ri "policy" .
+fgrep -Ri "policy" . | fgrep -i edit
+fgrep -Ri "policy-editor" .
+fgrep -Ri "Product Ver" .
+fgrep -Ri "Product version"
+fgrep -Ri "Product version" .
+fgrep -Ri "running for" .
+fgrep -Ri "Scan discovered" .
+fgrep -Ri "silo id" .
+fgrep -Ri "silo id" . | fgrep -iv default
+fgrep -Ri "silo id" . | fgrep -iv default  
+fgrep -Ri "silo id" . | fgrep -iv default  > derp.silo
+fgrep -Ri "silo id" . | fgrep -iv default  |
+fgrep -Ri "silo id" . | fgrep -iv default  | fgrep -i 'silo id'
+fgrep -Ri "silo id" . | fgrep -iv default | fgrep -i 'silo id'
+fgrep -Ri "silo id" . | fgrep -iv default|none | fgrep -i 'silo id'
+fgrep -Ri "silo" .
+fgrep -Ri "tasks_controller.rb" .
+fgrep -Ri "this is critically low" .
+fgrep -Ri "this is low" .
+fgrep -Ri "user.timezone" . 
+fgrep -Ri "user.timezone" . | less
+fgrep -Ri '
+fgrep -Ri ' node(s) pending' ~/custdata-local/186799/
+fgrep -Ri '' .
+fgrep -Ri '' /run/user/1000/gvfs/smb-share:server=fs2.tor.rapid7.com,share=custdata/incoming/Rapid7/
+fgrep -Ri '(product|console|engine) version'  /home/dlozano/custdata-local/188259/rapid7-correlation-test-20160425-1450/19.25.scan.0.log
+fgrep -Ri '(WARN|ERROR|FATAL)' ./*.log
+fgrep -Ri ', O=' .
+fgrep -Ri '. node(s) pending' ~/custdata-local/186030/
+fgrep -Ri './Testing_20-_20Full_20Connect_20Discovery_20Scan-20160520-0000.log/31.128.scan.0.log:2016-05-20T07:00:19 [INFO] [Thread: Scan 128:nmap:stdin] [
+fgrep -Ri '.0:' .
+fgrep -Ri '.0]' .
+fgrep -Ri '.255' ./*.log
+fgrep -Ri '.255:' .
+fgrep -Ri '.255]' .
+fgrep -Ri '00004109611090400100000000F01FEC' .
+fgrep -Ri '00:50:56:b1:60:bd' ./*.log
+fgrep -Ri '1' .
+fgrep -Ri '10.0.255.173' ./*.log
+fgrep -Ri '10.180.2.46' .
+fgrep -Ri '10.2.0.82' .
+fgrep -Ri '10.2.0.82' ./nsc.log*
+fgrep -Ri '10.38.29.105' .
+fgrep -Ri '10.66.' . 
+fgrep -Ri '10.66.51.134' . 
+fgrep -Ri '10.77.60.84' .
+fgrep -Ri '10.9.52.64' ./* | fgrep 'Windows 1'
+fgrep -Ri '10.9.52.64' ./* | fgrep nmap
+fgrep -Ri '128.147.23' . | fgrep -i 'EXPN'
+fgrep -Ri '128.147.23' . | fgrep -i 'smtp-general'
+fgrep -Ri '128.147.23' . | fgrep -i 'smtp-general-EXPN'
+fgrep -Ri '128.147.23.40' . | fgrep -i 'EXPN'
+fgrep -Ri '13.121.84.51'
+fgrep -Ri '135/tcp' .
+fgrep -Ri '14.0.4763.100' .
+fgrep -Ri '14.0.4763.100' . > ./found-access-version-number
+fgrep -Ri '149.158.22.45' .
+fgrep -Ri '160;' .
+fgrep -Ri '169032248465326565999246237715672715035' . 
+fgrep -Ri '172.17.2.76' .
+fgrep -Ri '172.17.2.76' . | fgrep 'sha1.fingerprint'
+fgrep -Ri '172.26.33.241' ./task_pro.exploit_19.txt 
+fgrep -Ri '172.27.3.129' .
+fgrep -Ri '172.28.0.62' .
+fgrep -Ri '192.16.2.11' .
+fgrep -Ri '2015' .
+fgrep -Ri '2015......T' .
+fgrep -Ri '2016' .
+fgrep -Ri '2016-06-27T08' .
+fgrep -Ri '2016-07-04'
+fgrep -Ri '2016-07-04' > ./0704day
+fgrep -Ri '2016-07-04T11:2' > ./0704day
+fgrep -Ri '2016-11-22T18:4' ./nsc.log > nsc-dookie
+fgrep -Ri '2016-11-22T18:44' .
+fgrep -Ri '2016-11-22T18:44' ./nsc.log
+fgrep -Ri '2016-11-22T18:44' ./nsc.log > nsc-dookie
+fgrep -Ri '2016-12' .
+fgrep -Ri '2016-12-13 07:' .
+fgrep -Ri '2016-12-13 07:2' .
+fgrep -Ri '2016-12-13 07:20' .
+fgrep -Ri '2016-12-13 7' .
+fgrep -Ri '2016-12-13 7:' .
+fgrep -Ri '2016-12-13 7:2' .
+fgrep -Ri '2016-12-13 7:20' .
+fgrep -Ri '2016-12-13' .
+fgrep -Ri '2016......T' .
+fgrep -Ri '2016.....T' .
+fgrep -Ri '2016.{4,6}T' .
+fgrep -Ri '2016??????T' .
+fgrep -Ri '2017-09-'
+fgrep -Ri '2017-09-'ls
+fgrep -Ri '2017.04.05-13:' > ./133
+fgrep -Ri '2017.04.05-13:3' > ./133x
+fgrep -Ri '2017.04.05-13:35'
+fgrep -Ri '2017.04.05-13:35' > ./1335
+fgrep -Ri '212038' /run/user/1000/gvfs/smb-share:server=fs2.tor.rapid7.com,share=custdata/incoming/Rapid7/
+fgrep -Ri '2cff5340042729b249d4944b574c80aa' . 
+fgrep -Ri '30000' ./*.log
+fgrep -Ri '4d76f22e66e8178f878ff8f53ec29427b3a126b2' . 
+fgrep -Ri '5000' ./*.log
+fgrep -ri '52:17.680072' . > reports2
+fgrep -Ri '60000' ./*.log
+fgrep -Ri '6323fbf9ce716633f429b177ce36757fbcf18563' .
+fgrep -Ri '6C2C431F3B0396143A528584B2C46ECF' .
+fgrep -Ri '8086:3c01' . | less
+fgrep -Ri '8182' . > ../findings-nike
+fgrep -Ri '965B8E538081E57F83FA21E1825F02FC0FA7A7C5' .
+fgrep -Ri '9E67A07C' .
+fgrep -Ri '9E67A07C-66A1-44D6-8470' .
+fgrep -Ri '9E67A07C-66A1-44D6-8470-95E869A96BB5' .
+fgrep -Ri '[12345] node(s) pending' ~/custdata-local/186030/
+fgrep -Ri '[product|console|engine] version'  /home/dlozano/custdata-local/188259/rapid7-correlation-test-20160425-1450/19.25.scan.0.log
+fgrep -Ri '[WARN] Encountered an internal server error.'
+fgrep -Ri '[WARN] Encountered an internal server error.' .
+fgrep -Ri '[WARN] Encountered an internal server error.' .cd ..
+fgrep -Ri '\. node(s) pending' ~/custdata-local/186030/
+fgrep -Ri 'Access database' .
+fgrep -Ri 'accordingly' .
+fgrep -Ri 'ace' .
+fgrep -Ri 'ace:thread-activity' .
+fgrep -Ri 'ace\:thread-activity' .
+fgrep -Ri 'ACES' "~/Support/Canned\ responses/"
+fgrep -Ri 'ACES' '~/Support/Canned\ responses/'
+fgrep -Ri 'ACES' '~/Support/Canned\ responses/'`
+fgrep -Ri 'ACES' ~/Support/Canned\ responses/
+fgrep -Ri 'acpi' . | less
+fgrep -ri 'ad_hoc_506374707331563' .
+fgrep -ri 'ad_hoc_508176691696908' .
+fgrep -Ri 'add checks' ~/Support/
+fgrep -Ri 'alerts come from' /home/dlozano/Support/HOW-DO-I/
+fgrep -Ri 'alive' .
+fgrep -Ri 'alive' ./186030/June\ 3\ call/scan\ 0601/ > alives
+fgrep -Ri 'api' .
+fgrep -Ri 'api/' .
+fgrep -Ri 'api/' . | fgrep 'auth'
+fgrep -Ri 'api/' . | fgrep 'login'
+fgrep -Ri 'api/' . | fgrep -i 'login'
+fgrep -Ri 'app/controllers/tasks_controller.rb:789:in `new_module_run' .
+fgrep -Ri 'appliance' .
+fgrep -Ri 'Appliance_imaging' .
+fgrep -Ri 'attack' .
+fgrep -Ri 'Available disk space'  . 
+fgrep -Ri 'backup' ./nsc.log
+fgrep -Ri 'bare metal' .
+fgrep -ri 'BAU' .
+fgrep -Ri 'benchmark' .
+fgrep -Ri 'Benchmark-1450117515252__1450117515252' .
+fgrep -Ri 'Big-IP' .
+fgrep -Ri 'Big5' .
+fgrep -Ri 'BigIP' .
+fgrep -Ri 'blackout' . | less
+fgrep -Ri 'break-in' .
+fgrep -Ri 'breakin' .
+fgrep -Ri 'c:/metasploit'
+fgrep -Ri 'c:\metasploit'
+fgrep -Ri 'ciphers' ~/custdata-local/
+fgrep -Ri 'Cisco' .
+fgrep -Ri 'Cisco.*printer' .
+fgrep -Ri 'clickjack' .
+fgrep -Ri 'Client' /run/user/1000/gvfs/smb-share:server=fs2.tor.rapid7.com,share=custdata/incoming/Rapid7/
+fgrep -Ri 'clock' . | less
+fgrep -Ri 'CN=" .
+fgrep -Ri 'CN=' .
+fgrep -Ri 'collector' .
+fgrep -Ri 'collector' . | fgrep -i 'error'
+fgrep -Ri 'come from consoles' ~/
+fgrep -Ri 'complain' . | less
+fgrep -Ri 'comr' .
+fgrep -Ri 'conflicrt' . | less
+fgrep -Ri 'conflict' . | less
+fgrep -Ri 'connection to the cloud' .
+fgrep -Ri 'consistency check' ~/Support/Manuals-R7/
+fgrep -Ri 'consistency' ./logs/
+fgrep -Ri 'consistency' ~/custdata-local/*/nsc.log
+fgrep -Ri 'Console DN' .
+fgrep -Ri 'Console ID' .
+fgrep -Ri 'console ser' ~/custdata-local/
+fgrep -Ri 'console ver' .
+fgrep -Ri 'console ver' ~/custdata-local/
+fgrep -Ri 'console ver' ~/custdata-local/186030/
+fgrep -Ri 'Console Version' .
+fgrep -Ri 'console' .
+fgrep -Ri 'ConsoleID' .
+fgrep -Ri 'CPU Speed' .
+fgrep -Ri 'CPU' .
+fgrep -Ri 'cpu' . | less
+fgrep -Ri 'crash' . | less
+fgrep -Ri 'credential' .
+fgrep -Ri 'credential' . > credsmuch
+fgrep -Ri 'critical' .
+fgrep -Ri 'crypto' .
+fgrep -Ri 'crypto' prod-console-collector.log 
+fgrep -Ri 'crypto' prod-console-collector.log > crypto_error_prod-console-collector_log
+fgrep -Ri 'Customenvironment.properties' .
+fgrep -Ri 'CVE-2013-0169' . 
+fgrep -Ri 'cve-2016-2116' .
+fgrep -Ri 'dashboard' *.log
+fgrep -Ri 'database consistency' ~/Support/Manuals-R7/
+fgrep -Ri 'database' ~/Support/Manuals-R7/
+fgrep -Ri 'daytime' .
+fgrep -Ri 'db version'  . 
+fgrep -Ri 'dead' .
+fgrep -Ri 'debug' .
+fgrep -Ri 'def-1089' .
+fgrep -Ri 'Default-release' /etc/apt/apt.conf.d/
+fgrep -Ri 'default-release' /etc/apt/apt.conf.d/ 
+fgrep -Ri 'default.release' /etc/apt/apt.conf.d/ 
+fgrep -Ri 'defaultrelease' /etc/apt/apt.conf.d/ 
+fgrep -Ri 'denied' .
+fgrep -Ri 'DHCP' .
+fgrep -Ri 'diagnostic' .
+fgrep -Ri 'diagnostic' . | fgrep 'metasploit
+fgrep -Ri 'diagnostic' . | fgrep 'metasploit'
+fgrep -Ri 'diagnostic' . | fgrep 'task'
+fgrep -Ri 'diagnostic_' .
+fgrep -Ri 'diagnostic_log' .
+fgrep -Ri 'diagnostic_logs' .
+fgrep -Ri 'disk space' .
+fgrep -Ri 'domain object' .
+fgrep -Ri 'domain validat' .
+fgrep -Ri 'domain.*cert' .
+fgrep -Ri 'domain.*cert5' .
+fgrep -Ri 'Domino' /run/user/1000/gvfs/smb-share:server=fs2.tor.rapid7.com,share=custdata/incoming/Rapid7/
+fgrep -Ri 'dominos' .
+fgrep -Ri 'Dominos' /run/user/1000/gvfs/smb-share:server=fs2.tor.rapid7.com,share=custdata/incoming/Rapid7/
+fgrep -Ri 'e' /run/user/1000/gvfs/smb-share:server=fs2.tor.rapid7.com,share=custdata/incoming/Rapid7/
+fgrep -Ri 'e33977d9b93a0985a27e7656421ce555a0f532f0' .
+fgrep -Ri 'Enable' .
+fgrep -Ri 'Enable' ../../..
+fgrep -Ri 'Encountered an internal server error.'
+fgrep -Ri 'Engine ID' .
+fgrep -Ri 'Engine Id: 30' .
+fgrep -Ri 'engine version)'  /home/dlozano/custdata-local/188259
+fgrep -Ri 'err' .
+fgrep -Ri 'error' *.log
+fgrep -Ri 'error' .
+fgrep -Ri 'ERROR: cache lookup failed'  . 
+fgrep -Ri 'error: column'  . 
+fgrep -Ri 'exceeded' .
+fgrep -Ri 'exception' .
+fgrep -Ri 'exception' . > less
+fgrep -Ri 'exception' . | glogg
+fgrep -Ri 'exception' . | less
+fgrep -Ri 'EXPN' .
+fgrep -Ri 'export' .
+fgrep -Ri 'export' . > ./nexport
+fgrep -Ri 'export' . | fgrep -i 'fail'
+fgrep -Ri 'Exposure Analytics' .
+fgrep -Ri 'exposure' *.log
+fgrep -Ri 'exposure.anal' *.log
+fgrep -Ri 'exposure?anal' *.log
+fgrep -Ri 'f5' .
+fgrep -Ri 'fail' .
+fgrep -Ri 'failed to export' .
+fgrep -Ri 'Failed' .
+fgrep -Ri 'fatal' .
+fgrep -Ri 'fileshare' ~/custdata-local/
+fgrep -Ri 'filtered' .
+fgrep -Ri 'Filtered' .
+fgrep -Ri 'free disk space' .
+fgrep -Ri 'Gdiplus' .
+fgrep -Ri 'gray' .
+fgrep -Ri 'grey' .
+fgrep -Ri 'greyl' .
+fgrep -Ri 'GT2-DMS1CST' .
+fgrep -Ri 'have missing synopsis' . > snopses
+fgrep -Ri 'host discovery is disabled' ~/custdata-local/
+fgrep -Ri 'host discovery' ~/Support/
+fgrep -Ri 'host' .
+fgrep -Ri 'hostname' .
+fgrep -Ri 'ids' .
+fgrep -Ri 'installed' ./nsc.log
+fgrep -Ri 'invalid user' .
+fgrep -Ri 'IP' /run/user/1000/gvfs/smb-share:server=fs2.tor.rapid7.com,share=custdata/incoming/Rapid7/
+fgrep -Ri 'ips' .
+fgrep -Ri 'jack'
+fgrep -Ri 'JVM uptime' . | less
+fgrep -Ri 'KB3029944' .
+fgrep -Ri 'KB3035132|3035126' .
+fgrep -Ri 'Lew' .
+fgrep -Ri 'listening' .
+fgrep -Ri 'LoginRequest' .
+fgrep -Ri 'Lost connection to the cloud' .
+fgrep -Ri 'luigi'
+fgrep -Ri 'maintaining' ~/Support/Manuals-R7/
+fgrep -Ri 'maintenance mode'
+fgrep -Ri 'maintenance mode' | less
+fgrep -Ri 'maintenance mode'cd ..
+fgrep -Ri 'memory resources are low' .
+fgrep -Ri 'Meterpreter session ' .
+fgrep -Ri 'Meterpreter session 3' .
+fgrep -Ri 'meterpreter' .
+fgrep -Ri 'Meterpreter' .
+fgrep -Ri 'MEX-L-CG6153FV6' .
+fgrep -Ri 'mpssvc' .
+fgrep -Ri 'ms16-148'
+fgrep -Ri 'mssp' .
+fgrep -Ri 'ndmp-backup-exec-static-password' . > ndmp-backup-exec-static-password-grepresults
+fgrep -Ri 'netstat' . 
+fgrep -Ri 'netstat' . > netstat-results
+fgrep -Ri 'nex'
+fgrep -Ri 'nexpose' > nexpose
+fgrep -Ri 'nexpose-export' .
+fgrep -Ri 'nexpose-export' . > ./nexport
+fgrep -Ri 'nexposeappliance' .
+fgrep -Ri 'nexposeappliance' ../..
+fgrep -Ri 'nexposeappliance' ../../
+fgrep -Ri 'nexposeappliance' ./203545/
+fgrep -Ri 'nexposesetup' .
+fgrep -Ri 'nexposesetup' ~/Support/Canned\ responses/
+fgrep -Ri 'nke-esx-apac-0012' . 
+fgrep -Ri 'nke-esx-apac-0012.nike.com' . 
+fgrep -Ri 'nke-esx-apac-0012.nike.com\|10.66.51.134' . 
+fgrep -Ri 'nke-esx-apac-0012.nike.com|10.66.51.134' . 
+fgrep -Ri 'nke-esx-apac-0012.nike.com|10.66.51.134' . > ../findings-nike
+fgrep -Ri 'nmap ping scan' .
+fgrep -Ri 'nmap' .
+fgrep -Ri 'nmap.*scaN' .
+fgrep -Ri 'nmap.*started' .
+fgrep -Ri 'no fing' .
+fgrep -Ri 'no fing' .cd ..
+fgrep -Ri 'no hostname' .
+fgrep -Ri 'no name' .
+fgrep -Ri 'no vuln' .
+fgrep -Ri 'node(s) pending' ~/custdata-local/
+fgrep -Ri 'node(s) pending' ~/custdata-local/186030/
+fgrep -Ri 'node(s) pending' ~/custdata-local/186799/
+fgrep -Ri 'O=' .
+fgrep -Ri 'old installer' ~/Support/grepstock/
+fgrep -Ri 'old metasploit' ./Support/
+fgrep -Ri 'oom' *.log
+fgrep -Ri 'oracle-obsolete-version' ./*.xml
+fgrep -Ri 'oracle-vulnerable-version' *.xml
+fgrep -Ri 'oracle-vulnerable-version' .
+fgrep -Ri 'oracle-vulnerable-version' ./*.xml
+fgrep -Ri 'out of memory for query result'
+fgrep -Ri 'Out of memory' .
+fgrep -Ri 'out of'
+fgrep -Ri 'oval-org.cisecurity.benchmarks.o_microsoft-def-1202' .
+fgrep -Ri 'oval-org.cisecurity.benchmarks.o_microsoft-def-1202' . | fgrep 22664
+fgrep -Ri 'Palo' .
+fgrep -Ri 'patch tuesday' .
+fgrep -Ri 'pause' . | less
+fgrep -Ri 'PDCCHDDMC01' .
+fgrep -Ri 'po.*cy' ~/custdata-local/
+fgrep -Ri 'pointerexc' .
+fgrep -Ri 'Policy rule error count' .
+fgrep -Ri 'Policy rule error' .
+fgrep -Ri 'Policy rule' .
+fgrep -Ri 'policy' ~/custdata-local/
+fgrep -Ri 'policy' ~/custdata-local/ | fgrep -i 'po.*cy'
+fgrep -Ri 'policy' ~/custdata-local/ | fgrep -i 'software.*restriction'
+fgrep -Ri 'policy' ~/custdata-local/ | fgrep -Ri 'software.*restriction'
+fgrep -Ri 'postgres status' ~/custdata-local/*.log
+fgrep -Ri 'postgres status' ~/custdata-local/*/*.log
+fgrep -Ri 'postgres' ~/custdata-local/*/*.log
+fgrep -Ri 'postgres' ~/custdata-local/*/nsc.log
+fgrep -Ri 'Postgres' ~/Support/HOW-DO-I/
+fgrep -Ri 'postgres*0' ~/custdata-local/*/*.log
+fgrep -Ri 'postgres*=0' ~/custdata-local/*/*.log
+fgrep -Ri 'PostgreSQL service status' ~/custdata-local/*/nsc.log
+fgrep -Ri 'PostgreSQL service status*consistency' ~/custdata-local/*/nsc.log
+fgrep -Ri 'PostgreSQL service status: 0.' ~/custdata-local/*/nsc.log
+fgrep -Ri 'PostgreSQL service status|consistency' ~/custdata-local/*/nsc.log
+fgrep -Ri 'precious'  ~/Support/grepstock
+fgrep -Ri 'principal' .
+fgrep -Ri 'principal' . | fgrep -i 'msp'
+fgrep -Ri 'principal' . | fgrep -i 'msp' | less
+fgrep -Ri 'product version' ~/custdata-local/181268
+fgrep -Ri 'prosvc.log' .
+fgrep -Ri 're' ~/custdata-local/*/*.log
+fgrep -Ri 'reason' .
+fgrep -Ri 'reconnect' .
+fgrep -Ri 'Red Hat' .
+fgrep -Ri 'Regained connection to the cloud' . > ../connection-regained
+fgrep -Ri 'Regained connection to the cloud' . > ..\connection-regained
+fgrep -Ri 'Regex for questionable logins'
+fgrep -Ri 'repair installer' .
+fgrep -ri 'Report Config ID: 146' .
+fgrep -ri 'Report Config ID: 1462' .
+fgrep -ri 'report' . > reports
+fgrep -Ri 'reset' .
+fgrep -Ri 'reset' . | fgrep -v 'runand'
+fgrep -Ri 'reset' . | fgrep -v 'runAnd'
+fgrep -Ri 'resolve' ~/custdata-local/188259/2016_04_25_211552088/logs
+fgrep -Ri 'resolve-additional-dns' ~/custdata-local/
+fgrep -Ri 'resolve-additional-dns' ~/custdata-local/188259/
+fgrep -Ri 'resolve-additional-dns' ~/custdata-local/188259/2016_04_25_211552088/logs
+fgrep -Ri 'resolve-additional-dns' ~/custdata-local/188259/logs/*
+fgrep -Ri 'resolve-additional-dns' ~/custdata-local/188259/logs/*.log
+fgrep -Ri 'resolving-additional-dns' ~/custdata-local/
+fgrep -Ri 'resolving-additional-dns' ~/custdata-local/*/*.log
+fgrep -Ri 'resource' . | less
+fgrep -Ri 'resources' *.log
+fgrep -Ri 'resources' .
+fgrep -Ri 'response timeout' .
+fgrep -Ri 'response' .
+fgrep -Ri 'restrict' ~/Support/grepstock/
+fgrep -Ri 'restrictions' ~/custdata-local/
+fgrep -Ri 'restrictions' ~/Support/grepstock/
+fgrep -Ri 'resume trigger' .
+fgrep -Ri 'retry' . 
+fgrep -Ri 'rotation'
+fgrep -Ri 'rotation' .
+fgrep -Ri 'running for ' ./*.log
+fgrep -Ri 'running for ?? hours ?? minutes ?? seconds' ./*.log
+fgrep -Ri 's' .
+fgrep -Ri 's.*e' .
+fgrep -Ri 'sc.*me' .
+fgrep -Ri 'scale' . > grep-scale
+fgrep -Ri 'scale' . | less
+fgrep -Ri 'scan by' .
+fgrep -Ri 'scan by.*hostname' .
+fgrep -Ri 'scan id' .
+fgrep -Ri 'scan id: 228' .
+fgrep -Ri 'scan id: 228789' .
+fgrep -Ri 'scan id:' .
+fgrep -Ri 'scan' .
+fgrep -Ri 'scan.*hostname' .
+fgrep -Ri 'scan.*me' .
+fgrep -Ri 'scanid' .
+fgrep -Ri 'scanid: 228789' .
+fgrep -Ri 'scanid: 789' .
+fgrep -Ri 'scap! ' ../../..
+fgrep -Ri 'scap' .
+fgrep -Ri 'SCAP' . > less
+fgrep -Ri 'SCAP' . > more
+fgrep -Ri 'scap' ../../..
+fgrep -Ri 'sched' . 
+fgrep -Ri 'sched' ~/
+fgrep -Ri 'schedule type' . 
+fgrep -Ri 'schedule' . > schederp
+fgrep -Ri 'schedule' . | less
+fgrep -Ri 'schedule' | less
+fgrep -Ri 'scheduled' . 
+fgrep -Ri 'scheduler' | less
+fgrep -Ri 'schema with OID' .
+fgrep -Ri 'service status'|'consistency checks' ~/custdata-local/*/nsc.log
+fgrep -Ri 'service' .
+fgrep -Ri 'service' ./custdata-local/ | fgrep -i 'discover'
+fgrep -Ri 'service' ./custdata-local/ | fgrep -i 'nexpose' 
+fgrep -Ri 'Service.*Cisco' .
+fgrep -Ri 'servicepack-office-2010-sp2-kb2687455' .
+fgrep -Ri 'session' .
+fgrep -Ri 'session' . | fgrep '2017-09-'
+fgrep -Ri 'session' . | fgrep '2017-09-1'
+fgrep -Ri 'session' . | fgrep '2017-09-2' 
+fgrep -Ri 'session' . | fgrep '2017-09-2' .
+fgrep -Ri 'show'
+fgrep -Ri 'showthreads -A10'
+fgrep -Ri 'shutting' *.log
+fgrep -Ri 'Shutting' . 
+fgrep -Ri 'Shutting' . | less
+fgrep -Ri 'silo' .
+fgrep -Ri 'silo' . > siloes
+fgrep -Ri 'smtp-general' .
+fgrep -Ri 'smtp-general' . | fgrep "- VULNERABLE VERSION"
+fgrep -Ri 'smtp-general' . | fgrep ' - VULNERABLE VERSION'
+fgrep -Ri 'smtp-general' . | fgrep '- VULNERABLE VERSION'
+fgrep -Ri 'smtp-general' . | fgrep 'VULNERABLE VERSION'
+fgrep -Ri 'Software installed' ./nsc.log
+fgrep -Ri 'software rest' ~/grepstock
+fgrep -Ri 'software rest' ~/Support/grepstock/
+fgrep -Ri 'Software' ./nsc.log
+fgrep -Ri 'software' ~/Support/grepstock/
+fgrep -Ri 'SoftwareFing'  ~/custdata-local/
+fgrep -Ri 'SoftwareFing' ./custdata-local/ 
+fgrep -Ri 'SoftwareFing' ./custdata-local/ | fgrep -i 'nexpose' 
+fgrep -Ri 'SoftwareFing' | fgrep -i 'nexpose' ./custdata-local/
+fgrep -Ri 'Speed' .
+fgrep -Ri 'sploit' ,
+fgrep -Ri 'sploit' .
+fgrep -Ri 'status.*error' .
+fgrep -Ri 'sun.nio.ch.EPollSelectorImpl' .
+fgrep -Ri 'sw' .
+fgrep -Ri 'syman' .
+fgrep -Ri 'SystemFingerprint' .
+fgrep -Ri 'task-exec' .
+fgrep -Ri 'task-exec' . | fgrep -i 'fail'
+fgrep -Ri 'timeout' ./*.log
+fgrep -Ri 'TOR.dlozano' ~/Support/
+fgrep -Ri 'TOR.user' ~/Support/
+fgrep -Ri 'TOR.username' ~/Support/
+fgrep -Ri 'trigger' .
+fgrep -Ri 'ttlsv1' .
+fgrep -Ri 'ttlsv1_1' .
+fgrep -Ri 'Unable to send: out of memory for query result: SELECT'
+fgrep -Ri 'uptime' . 
+fgrep -Ri 'uptime' . | less
+fgrep -Ri 'vcenter' .
+fgrep -Ri 'vconnection' .
+fgrep -Ri 'veeam' .
+fgrep -Ri 'veeam' ./nsc.log
+fgrep -Ri 'ver engines' .
+fgrep -Ri 'ver' .
+fgrep -Ri 'version' ./nsc.log*
+fgrep -Ri 'VMS administrator may correct' .
+fgrep -Ri 'VMS administrator may correct' ./nsc.log
+fgrep -Ri 'VMS administrator may correct' nsc.log
+fgrep -Ri 'VulnerabilityCheckContext.performTests-166@10.4.192.51:23' .
+fgrep -Ri 'Vulnerable software installed' .
+fgrep -Ri 'Vulnerable software installed' . > ./vulnerable-software-findings
+fgrep -Ri 'vulnerable' .
+fgrep -Ri 'warn' . | less
+fgrep -Ri 'warranty' .
+fgrep -Ri 'whitelist' .
+fgrep -Ri 'whois' ~/custdata-local/ 
+fgrep -Ri 'whois-lookup' ~/custdata-local/
+fgrep -Ri 'whois-lookup' ~/custdata-local/*/nse.log 
+fgrep -Ri 'windows' .
+fgrep -Ri 'wireshark' ~
+fgrep -Ri 'wireshark' ~/Support/
+fgrep -Ri 'wireshark' ~/Support/ > derpshark.txt
+fgrep -Ri 'with template'
+fgrep -Ri 'WMI' .
+fgrep -Ri 'Wmphoto' .
+fgrep -Ri 'Wmphoto.dll' .
+fgrep -Ri '{172.28.0.62|WCSRVAPP14}' .
+fgrep -Ri --binary-files=text 'consistency check' ~/Support/Manuals-R7/
+fgrep -Ri --binary-files=text 'database' ~/Support/Manuals-R7/
+fgrep -Ri --exclude="ScheduledThread' --exclude='ScheduledFut' 'schedule' .
+fgrep -Ri -C10  '-bit' .
+fgrep -Ri -C10  '32-bit' .
+fgrep -Ri -C10  '32\-bit' .
+fgrep -Ri -C10  '64-bit' .
+fgrep -Ri -C10  '64\-bit' .
+fgrep -Ri -C10  '\-bit' .
+fgrep -Ri -m1 ', O=' .
+fgrep -Ri -m1 'O=' .
+fgrep -Ri 66.192.47.224 > findings-224
+fgrep -Ri 66.192.47.231
+fgrep -Ri 66.192.47.231 > findings-231
+fgrep -Ri 66.192.47.236 > findings-236
+fgrep -Ri 66.192.47.237 > findings-237
+fgrep -Ri apt /etc/apt/apt.conf.d/ 
+fgrep -Ri bafs ~/Support/
+fgrep -Ri C15 'crypto' prod-console-collector.log  > crypto_error_prod-console-collector_log
+fgrep -Ri CN
+fgrep -Ri correl* ./*.log
+fgrep -Ri default /etc/apt 
+fgrep -Ri default-release /etc/apt/apt.conf.d/ 
+fgrep -Ri defaultRelease /etc/apt 
+fgrep -Ri dhcp . >dhcp.txt
+fgrep -Ri diagnostic_logs ~/custdata-local/
+fgrep -Ri diagnostics ~/custdata-local/
+fgrep -Ri discovery-connection-pool-thread . > discopoolthread.txt
+fgrep -Ri exceptions .
+fgrep -Ri free .
+fgrep -Ri hos .
+fgrep -Ri hostname .
+fgrep -Ri ms16-148
+fgrep -Ri nse.extranet.rapid7.com ~/Support/grepstock/
+fgrep -Ri oracle-vulnerable-version *.xml
+fgrep -Ri prosvc .
+fgrep -Ri prosvc.log .
+fgrep -Ri RAM .
+fgrep -Ri reset .
+fgrep -Ri schannel .
+fgrep -Ri stable /etc/apt/apt.conf.d/ 
+fgrep -Ria '2017-04-20' .
+fgrep -Ria '2017-04-20T23:17:56' .
+fgrep -Ria '2017-04-20T23:17:56' .cd engine logs
+fgrep -Ria 'Agent ID' .
+fgrep -Ria 'Agent' .
+fgrep -Ria 'AgentID' .
+fgrep -Ria 'cbc-ciphers' ./grep-nke-esx-apac-0012
+fgrep -Ria 'check' ~/Support/Manuals-R7/
+fgrep -Ria 'checkin' ~/Support/Manuals-R7/
+fgrep -Ria 'ciphers' ./grep-nke-esx-apac-0012
+fgrep -Ria 'consi' ~/Support/Manuals-R7/
+fgrep -Ria 'consisten' ~/Support/Manuals-R7/
+fgrep -Ria 'consistency check' ~/Support/Manuals-R7/
+fgrep -Ria 'consistency' ~/Support/Manuals-R7/
+fgrep -Ria 'Content updates were not applied successfully' .
+fgrep -Ria 'cve-2013-0169' ./grep-nke-esx-apac-0012
+fgrep -Ria 'cve-2013-0169' ./grep-nke-esx-apac-0012 > grep-cve-2013-0169
+fgrep -Ria 'cve-2013-0169' ./grep-nke-esx-apac-0012 | less
+fgrep -Ria 'database consistency' ~/Support/Manuals-R7/
+fgrep -Ria 'database' ~/Support/Manuals-R7/
+fgrep -Ria 'daytime' .
+fgrep -Ria 'def-1089' .
+fgrep -Ria 'grey' .
+fgrep -Ria 'http://updates.metasploit.com/packages/46f83395793940a0a8bde63cdf418783aa0339e4.bin' ~/
+fgrep -Ria 'ID' .
+fgrep -Ria 'maintaining' ~/Support/Manuals-R7/
+fgrep -Ria 'metasploit offline' ~/Support/HOW-DO-I/
+fgrep -Ria 'ms16-148'
+fgrep -Ria 'ms16-148' | egrep 'KB[0-9]{7}'
+fgrep -Ria 'ms16-148' | egrep -o 'KB[0-9]{7}'
+fgrep -Ria 'ms16-148' | egrep -o 'KB[0-9]{7}' | sort --uniq
+fgrep -Ria 'ms16-148' | egrep -o 'KB[0-9]{7}' | uniq
+fgrep -Ria 'ms16-148' | fgrep KB[0-9]
+fgrep -Ria 'ms16-148' | fgrep KB[0-9]{7}
+fgrep -Ria 'ms16-148' | grep 'KB[0-9]{7}'
+fgrep -Ria 'ms16-148' | grep KB[0-9]
+fgrep -Ria 'ms16-148' | grep KB[0-9](2)
+fgrep -Ria 'ms16-148' | grep KB[0-9]{2}
+fgrep -Ria 'ms16-148' | grep KB[0-9]{7}
+fgrep -Ria 'n' ./netstat-results 
+fgrep -Ria 'ndmp-backup-exec-static-password' . > ndmp-backup-exec-static-password-grepresults
+fgrep -Ria 'netstat' . 
+fgrep -Ria 'netstat' . | fgrep 8182
+fgrep -Ria 'nke-esx' ./netstat-results 
+fgrep -Ria 'nke-esx-apac-' ./netstat-results 
+fgrep -Ria 'nke-esx-apac-00' ./netstat-results 
+fgrep -Ria 'nke-esx-apac-0012' . 
+fgrep -Ria 'nke-esx-apac-0012' . > grep-nke-esx-apac-0012
+fgrep -Ria 'org' .
+fgrep -Ria 'scan engine ver' .
+fgrep -ria 'schedule' . | tee > ../sched-fgrep
+fgrep -ria 'schedule' . | tee > sched-fgrep
+fgrep -Ria 'ssl' ./grep-nke-esx-apac-0012
+fgrep -Ria 'ssl-' ./grep-nke-esx-apac-0012
+fgrep -Ria 'ssl-cbc' ./grep-nke-esx-apac-0012
+fgrep -Ria 'ssl-cbc-ciphers' .
+fgrep -Ria 'ssl-cbc-ciphers' . | fgrep 8182
+fgrep -Ria 'ssl-cbc-ciphers' ./grep-nke-esx-apac-0012
+fgrep -Ria 'ssl-cbc-ciphers' ./netstat-results 
+fgrep -ria 'starting scheduled scan' .
+fgrep -RiA 10  'showthreads'
+fgrep -RiA10  '6.1.' . 
+fgrep -Ria10  'asset corr' .
+fgrep -RiA10  'asset corr' .
+fgrep -RiA10  'Console Version' . 
+fgrep -RiA10  'Console Version' .. 
+fgrep -RiA10  'Console' . 
+fgrep -RiA10  'd1f113c094b7' . > ms15-029
+fgrep -RiA10  'MS15-029' .
+fgrep -RiA10  'Product Version' . 
+fgrep -RiA10  'Product Version' . > 
+fgrep -RiA10  'Product' . 
+fgrep -RiA10  'Version:' . 
+fgrep -RiA10 '500' .
+fgrep -RiA10 'collector' . | fgrep -iA10 'error'
+fgrep -Ria10 'connection refused' > ../../logerrors
+fgrep -RiA10 'consistency' ./logs/
+fgrep -RiA10 'console' .
+fgrep -RiA10 'existing assets' ./logs/nsc.log
+fgrep -RiA10 'host discovery' ~/Support/
+fgrep -RiA10 'matches 488 existing assets' ./logs/nsc.log
+fgrep -RiA10 'proxy' . 
+fgrep -RiA10 'resolved ' ~/custdata-local/188259/2016_04_25_211552088/logs
+fgrep -RiA10 'resolved' ~/custdata-local/188259/2016_04_25_211552088/logs
+fgrep -Ria10 'schedule type' . 
+fgrep -RiA100 'existing assets' | fgrep '-->'
+fgrep -RiA100 'existing assets' | fgrep '\-\-\>'
+fgrep -RiA1000 '488 existing assets' ./logs/nsc.log|fgrep 'Version Time='
+fgrep -RiA1200 '488 existing assets' ./logs/nsc.log|fgrep 'Version Time='
+fgrep -RiA1500 '488 existing assets' ./logs/nsc.log|fgrep 'Version Time='
+fgrep -Ria2 'connection received' . > pgerror
+fgrep -Ria2 'connection refused' . > pgerror
+fgrep -RiA2 'connection refused' > ../../logerrors
+fgrep -Ria2 'connection refused' > ../../logerrors
+fgrep -Ria2 'database is ready' . >> pgerror
+fgrep -Ria2 'database system is' . >> pgerror
+fgrep -Ria2 'fatal' . >> pgerror
+fgrep -Ria2 'received fast shutdown request' . >> pgerror
+fgrep -Ria2 'refused' . > pgerror
+fgrep -RiA20  'MS14-029' .
+fgrep -RiA20  'MS14-059' .
+fgrep -RiA20 'Initializing console...' .
+fgrep -Ria20 'schedule type' . 
+fgrep -RiA200 'Initializing console...' .
+fgrep -RiA23 'but does not have a vulnerability descriptor file' .
+fgrep -RiA23 'but does not have a vulnerability descriptor file' . > error
+fgrep -RiA23 'cve-2016-2116' .
+fgrep -RiA3 'precious'  ~/Support/grepstock
+fgrep -RiA3 'what is it with me today'  ~/Support/grepstock
+fgrep -RiA3 208.118.237 ~/Support/grepstock/
+fgrep -RiA3 208.118.237 ~/Support/grepstock/exit
+fgrep -RiA3 nse.extranet.rapid7.com ~/Support/grepstock/
+fgrep -RiA3 skype ~/Support/grepstock
+fgrep -RiA5 'add checks' ~/Support/
+fgrep -RiA5 'add vuln.* checks' ~/Support/
+fgrep -riA5 'Certainty=1' . >fings
+fgrep -RiA5 'clickjack' .
+fgrep -Ria5 'old installer' ~/Support/grepstock/
+fgrep -RiA5 'resolve' ~/custdata-local/188259/2016_04_25_211552088/logs
+fgrep -RiA5 'vuln.* checks' ~/Support/
+fgrep -RiA5 'vuln.*checks' ~/Support/
+fgrep -RiA500 '488 existing assets' ./logs/nsc.log
+fgrep -RiA500 '488 existing assets' ./logs/nsc.log|fgrep  -a500 'Version Time='
+fgrep -RiA500 '488 existing assets' ./logs/nsc.log|fgrep 'Version Time='
+fgrep -RiA500 'existing assets' ./logs/nsc.log
+fgrep -RiA500 'matches 488 existing assets' ./logs/nsc.log
+fgrep -RiA6 'java/NginxScanner loaded' .
+fgrep -Ria6 'java/NginxScanner loaded' .
+fgrep -RiA700 'matches 488 existing assets' ./logs/nsc.log
+fgrep -RiA9 'resolve-additional-dns' ~/custdata-local/188259/
+fgrep -Rib "Product version" .
+fgrep -Rib 'database' ~/Support/Manuals-R7/
+fgrep -Rib 'def-1089' .
+fgrep -Rib 'ndmp-backup-exec-static-password' . > ndmp-backup-exec-static-password-grepresults
+fgrep -RiB 'ndmp-backup-exec-static-password' . > ndmp-backup-exec-static-password-grepresults
+fgrep -RiB30 skype ~/Support/grepstock
+fgrep -Ric 'error' .
+fgrep -Ric 'exceeded' .
+fgrep -Ric 'reason' .
+fgrep -Ric 'unreach' .
+fgrep -RiC 10  'site is in use'
+fgrep -RiC 100  'showthreads'
+fgrep -RiC 100  'site is in use'
+fgrep -RiC10  'benchmark' . | fgrep '[DEBUG]'
+fgrep -RiC10  'benchmark' . | fgrep debug
+fgrep -RiC10  'MS14-029' .
+fgrep -RiC10  'MS15-029' . >
+fgrep -RiC10  'MS15-029' . > ms15-029
+fgrep -RiC10 "database field" ~/custdata-local/
+fgrep -RiC10 "database field" ~/Support/Canned\ responses/
+fgrep -RiC10 "database field" ~/Support/HOW-DO-I/
+fgrep -RiC10 '10.0.255.173' ./*.log
+fgrep -Ric10 '500' .
+fgrep -RiC10 'CMD: authentication' . > pgerror
+fgrep -RiC10 'Console Last Content Update ID' .
+fgrep -RiC10 'console version' .
+fgrep -RiC10 'Error exporting data to data warehouse' . > pgerror
+fgrep -RiC10 'firewall' .
+fgrep -RiC100 '10.0.255.173' ./*.log
+fgrep -RiC12 '1392435' . 
+fgrep -RiC12 'snmp.uptime' . 
+fgrep -RiC14  'support package' .
+fgrep -RiC15 ' locked' ~/custdata-local/
+fgrep -RiC15 'crypto' prod-console-collector.log  > crypto_error_prod-console-collector_log
+fgrep -RiC15 'https://bafs.tor.rapid7.com/x/re/products/NeXpose-v4/releases/' ~/Support/grepstock/
+fgrep -RiC15 'locked' ~/custdata-local/
+fgrep -RiC15 'luigi'
+fgrep -RiC15 'luigi' .
+fgrep -RiC19 'Console Version' nsc.log.0
+fgrep -RiC20 'logging.xml' ~/Support/grepstock/chatlogs/skype-serious  
+fgrep -RiC20 'rotate' ~/Support/grepstock/chatlogs/skype-serious  
+fgrep -RiC20 'rotation' ~/Support/grepstock/chatlogs/skype-serious  
+fgrep -RiC3 'connection received' . > pgerror
+fgrep -RiC30  "anonymous bind" .
+fgrep -RiC30 'Handling 3 trigger(s) that missed their scheduled fire-time' .
+fgrep -RiC33 'Console Last Content Update ID' .
+fgrep -RiC33 'Console Version' nsc.log.0
+fgrep -RiC5 ' . node(s) pending' ~/custdata-local/
+fgrep -RiC5 ' [1234567890] node(s) pending' ~/custdata-local/
+fgrep -RiC5 ' node(s) pending' ~/custdata-local/
+fgrep -RiC5 ' node(s) pending' ~/custdata-local/186799/
+fgrep -RiC5 '\] . node(s) pending' ~/custdata-local/
+fgrep -RiC5 '] . node(s) pending' ~/custdata-local/
+fgrep -RiC5 '] \. node(s) pending' ~/custdata-local/
+fgrep -RiC5 'https://bafs.tor.rapid7.com/x/re/products/NeXpose-v4/releases/' ~/Support/grepstock/
+fgrep -RiC5 'incomplete' ~/custdata-local/
+fgrep -RiC5 'lock' ~/custdata-local/
+fgrep -RiC5 'locked' ~/custdata-local/
+fgrep -RiC5 'node(s) pending' ~/custdata-local/
+fgrep -RiC5 'old installer' ~/Support/grepstock/
+fgrep -RiC5 'pending' ~/custdata-local/
+fgrep -RiC9 'Console Version' nsc.log.0
+fgrep -RicA10  'MS14-029' .
+fgrep -Ril '10.2.0.82' .
+fgrep -RiL '126.100' .
+fgrep -Ril '126.100' .
+fgrep -Ril '149.158.22.45' .
+fgrep -Ril '172.26.33.241' .
+fgrep -Ril '172.26.33.241' ./task_pro.exploit_19.txt 
+fgrep -RiL '172.26.33.241' ./task_pro.exploit_19.txt 
+fgrep -Ril '172.27.3.129' .
+fgrep -Ril '192.16.2.11' .
+fgrep -RiL '\opt\metasploit'
+fgrep -RiL 'c:/metasploit'
+fgrep -Ril 'PDCCHDDMC01' .
+fgrep -Ril hexdump ~/Support/ 
+fgrep -Rin "Product version" .
+fgrep -Riv 'def-1089' .
+fgrep -Riv 'Lew' .
+fgrep -Riv 'runand' 'reset' .
+fgrep -Riva 'grey' .
+fgrep -Riva 'Lew' .
+fgrep -Rl 'c:/metasploit'
+fgrep -RL 'c:/metasploit'
+fgrep -Ro  derp.file_GOLD_MASTER
+fgrep -Ro 'Fingerprinting ssytem based on'  /home/dlozano/custdata-local/
+fgrep -Rqai schannel .
+fgrep -Rui 'crypto' .
+fgrep -v "differs by" < coalfire-nsc-2016-0606-strip3.log > coalfire-nsc-2016-0606-strip4.log
+fgrep -v "NSE version =" < coalfire-nsc-2016-0606-strip2.log > coalfire-nsc-2016-0606-strip3.log
+fgrep -v 'Connection reset by peer' < resets2 > resets
+fgrep -v 'Failure during handshake: Connection reset by peer' < resets > resets2
+fgrep -vc "Ignoring" SysFings 
+fgrep 2016-08-31 >logs20160817
+fgrep diagnostic_logs
+fgrep diagnostic_logs ~/custdata-local/
+fgrep hexdump ~/Support/ 
+fgrep Moon  ~/cruft/music
+fgrep nse.extranet.rapid7.com ~/Support/grepstock/
+fgrep smb://fs2.tor.rapid7.com/custdata/incoming/Rapid7/2016_12_05_154759367/support_to_unzip.zip
+find  '.' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -c3  -e "Product Key" && echo "was found in "$f ; echo "--" 
+find  '.' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -C3  -e "Product Key" && echo "was found in "$f ; echo "--" 
+find  '.' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -C3 -e "AutoUpdate" && echo "was found in "$f ; echo "--" ; 
+find  '.' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -C3 -e "License" && echo "was found in "$f ; echo "--" ; 
+find  '.' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -e "Console Serial No" && echo "was found in "$f ; echo "--" 
+find  '.' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -e "domino's" && echo "was found in "$f ; echo "--" ; done 
+find  '.' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -e "Key" && echo "was found in "$f ; echo "--" ; done >> 
+find  '.' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -e "Key:" && echo "was found in "$f ; echo "--" ; done >> 
+find  '.' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -e "NXL" && echo "was found in "$f ; echo "--" ; done 
+find  '.' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -e "Product Key" && echo "was found in "$f ; echo "--" ; 
+find  '.' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -e "Serial No" && echo "was found in "$f ; echo "--" ; done 
+find  '.' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -e "Serial No:" && echo "was found in "$f ; echo "--" ; done 
+find  '.' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -e -C3 "Product Key" && echo "was found in "$f ; echo "--" ; 
+find  '.' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -e -c3 "Product Key" && echo "was found in "$f ; echo "--" ; 
+find  '/home/dlozano/custdata-local/00212038/attachments1/' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -e 
+find  '/home/dlozano/custdata-local/00212038/attachments1/' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -hi -e "omino" 
+find  '/home/dlozano/custdata-local/00212038/attachments1/' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -hi -e "patch 
+find  '/home/dlozano/custdata-local/00212038/attachments1/' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -hi -e "Patch 
+find  '/home/dlozano/custdata-local/00212038/attachments1/' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -hi -e "patch" 
+find  '/mnt/custdata/incoming/Rapid7' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -e "Serial No:" && echo "was 
+find  -name 'support_to_unzip.zip' '/mnt/custdata/incoming/Rapid7' | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -e "Serial No:" && echo "was 
+find '/home/dlozano/custdata-local/' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f 'logs/nsc.log' | fgrep -h -i -e "Patch Store Sample" && echo 
+find '/home/dlozano/custdata-local/' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -e "Patch Store Sample" && echo 
+find '/home/dlozano/custdata-local/' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f | fgrep  "e" && echo "was found in "$f ; echo "--" ; done
+find '/home/dlozano/custdata-local/' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f | fgrep  "Patch Store Sample" && echo "was found in "$f ; 
+find '/home/dlozano/custdata-local/00212038' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f | fgrep  "Patch Store Sample" && echo "was found in 
+find '/home/dlozano/custdata-local/00212038' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f | fgrep  --include="nsc.log" "the" && echo "was 
+find '/home/dlozano/custdata-local/00212038' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f | fgrep  --include="nsc.log" -i -e "padilla" && echo 
+find '/home/dlozano/custdata-local/00212038' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f | fgrep  --include="nsc.log" -i -e "scan" && echo 
+find '/home/dlozano/custdata-local/00212038' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f | fgrep  -e "PULSE" && echo "was found in "$f ; echo 
+find '/home/dlozano/custdata-local/00212038' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f | fgrep  -i -e "PULSE" && echo "was found in "$f ; 
+find '/home/dlozano/custdata-local/00218470/' -name '*.log'  | while read f ; do grep -ie '00275KC4'; done
+find '/home/dlozano/custdata-local/00218470/' -name '*.scan.0.log'  | while read f ; do grep -ie '00275KC4'; done
+find '/home/dlozano/custdata-local/00218470/imaginary-scanlog' -name 'info.txt'  | while read f ; do cat $(cat $f); grep -ie '218470'; done
+find '/home/dlozano/custdata-local/00218470/imaginary-scanlog' -name 'info.txt'  | while read f ; do cat $f | fgrep -h -i -e "218470" && echo "was found in "$f 
+find '/home/dlozano/custdata-local/00218470/imaginary-scanlog' -name 'info.txt'  | while read f ; do cat $f; grep -ie '218470'; done
+find '/home/dlozano/custdata-local/00218470/imaginary-scanlog' -name 'info.txt'  | while read f ; do grep -ie '' $f; done
+find '/home/dlozano/custdata-local/00218470/imaginary-scanlog' -name 'info.txt'  | while read f ; do grep -ie '2184' $f; done
+find '/home/dlozano/custdata-local/00218470/imaginary-scanlog' -name 'info.txt'  | while read f ; do grep -ie '218470' $f; done
+find '/home/dlozano/custdata-local/00218470/imaginary-scanlog' -name 'info.txt'  | while read f ; do grep -ie 'case' $f; done
+find '/home/dlozano/custdata-local/00218470/imaginary-scanlog' -name 'info.txt'  | while read f ; do grep -ie 'CaseNumber' $f; done
+find '/home/dlozano/custdata-local/00218470/imaginary-scanlog' -name 'info.txt'  | while read f ; do grep -ie 'w' $f; done
+find '/home/dlozano/custdata-local/00218470/imaginary-scanlog' -name 'info.txt'  | while read f ; grep -ie '218470' $f; done
+find '/home/dlozano/custdata-local/00218470/scan-gigantic-2016_11_22_154853379/' -name '*.log'  | while read f ; do grep -ie '00275KC4' $f; done
+find '/home/dlozano/custdata-local/00218470/scan-gigantic-2016_11_22_154853379/' -name '*.log'  | while read f ; do grep -ie '00438pos6' $f; done
+find '/home/dlozano/custdata-local/00218470/scan-gigantic-2016_11_22_154853379/' -name '*.scan.0.log'  | while read f ; do grep -ie '00275KC4' $f; done
+find '/home/dlozano/custdata-local/00218470/scan-gigantic-2016_11_22_154853379/' -name '*.scan.0.log'  | while read f ; do grep -ie '00275KC4'; done
+find '/~/custdata-local/' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -e "Patch Store Sample" && echo "was found 
+find 'home/dlozano/custdata-local/00218470/imaginary-scanlog' -name 'info.txt'  | while read f ; do cat $f | fgrep -h -i -e "218470" && echo "was found in "$f 
+find '~/custdata-local/' -name 'support_to_unzip.zip'  | while read f ; do unzip -p $f logs/nsc.log | fgrep -h -i -e "Patch Store Sample" && echo "was found in 
+find '~/custdata-local/00218470/imaginary-scanlog' -name 'info.txt'  | while read f ; do cat $f | fgrep -h -i -e "218470" && echo "was found in "$f ; echo "--" 
+find -name \*.[1234567890]\.gz -print0 | xargs -0 zgrep "ingerprinting ran for .[1234567890] minutes"
+find -name \*.[1234567890]\.log -print0 | xargs -0 grep "ingerprinting ran for .[1234567890] minutes"
+find -name \*.gz -print0 | xargs -0 zgrep "com.rapid7.scan.engine.interleavePool"
+find -name \*.gz -print0 | xargs -0 zgrep "Denied"
+find -name \*.gz -print0 | xargs -0 zgrep "denied"
+find -name \*.gz -print0 | xargs -0 zgrep "ingerprinting ran for .[1234567890] minutes"
+find -name \*.gz -print0 | xargs -0 zgrep "ingerprinting ran for .\[1234567890] minutes"
+find -name \*.gz -print0 | xargs -0 zgrep "Using license"
+find -name \*.log -print0 | xargs -0 fgrep -Ri 'SCAP'
+find -name \*.log -print0 | xargs -0 fgrep -Ri 'SCAP' | fgrep 'SCAP'
+find -name \*.log -print0 | xargs -0 fgrep -Ri 'SCAP' | fgrep -Ri 'abled'
+find -name \*.log -print0 | xargs -0 grep "Fingerprinting ran for *[1234567890] minutes"
+find -name \*.log -print0 | xargs -0 grep "Fingerprinting ran for *[1234567890] minutes"|fgrep "10.83.138.3:"
+find -name \*.log -print0 | xargs -0 grep "Fingerprinting ran for *[1234567890] minutes"|fgrep "10.83.138.3\:"
+find -name \*.log -print0 | xargs -0 grep "fingerprinting ran for"
+find -name \*.log -print0 | xargs -0 grep "fingerprinting ran for" | fgrep "10.83.137"
+find -name \*.log -print0 | xargs -0 grep "fingerprinting ran for" | fgrep "10.83.137.1:"
+find -name \*.log -print0 | xargs -0 grep "fingerprinting ran for" | fgrep "10.83.137.1]"
+find -name \*.log -print0 | xargs -0 grep "fingerprinting ran for" | fgrep "10.83.137.2]"
+find -name \*.log -print0 | xargs -0 grep "fingerprinting ran for" | fgrep "10.83.137.3]"
+find -name \*.log -print0 | xargs -0 grep "fingerprinting ran for" | fgrep "10.83.137.4]"
+find -name \*.log -print0 | xargs -0 grep "fingerprinting ran for"|fgrep "10.83.137.1:"
+find -name \*.log -print0 | xargs -0 grep "ingerprinting ran for *[1234567890] minutes"
+find -name \*.log -print0 | xargs -0 grep "ingerprinting ran for .[1234567890] minutes"
+find -name \*.log -print0 | xargs -0 grep "Protocol fingerprinting ran for *[1234567890] minutes"
+find -name \*.log -print0 | xargs -0 grep "Protocol fingerprinting ran for *[1234567890] minutes"|fgrep "10.83.137.1"
+find -name \*.log -print0 | xargs -0 grep "Protocol fingerprinting ran for *[1234567890] minutes"|fgrep "10.83.137.1]"
+find -name \*.log -print0 | xargs -0 grep "Protocol fingerprinting ran for *[1234567890] minutes"|fgrep "10.83.138.3:"
+find -name nsc.log -print0 | xargs -0 fgrep "Host discovery is"
+find ... -print0 | grep -FzZ ‘2016_12*/*/support_to_unzip.zip’
+find ./ -name "*.gz" -exec sh -c echo "Searching {}" ; zcat "{}" | grep "Starting scan against"
+find ./ -name "*.gz" \ -exec sh -c echo "Searching {}" ; zcat "{}" | grep "Starting scan against"
+find ./ -name "*.gz" grep -RiH 'Starting scan against' ./* | cut -d":" -f7 | sort -u | cut -d" " -f6
+find ./ -name "*.zip" -exec sh -c echo "Searching {}" ; zcat "{}" | grep "Starting scan against"
+find diagnostic_logs | xargs fgrep -i '64.bit'
+gedit grep-cve-2013-0169 
+ggrep -Ri 'po.*cy' ~/custdata-local/
+glogg grep-cve-2013-0169 
+glogg grep_export 
+grep  'fingerprinting ran for .[1234567890] m'  '/home/dlozano/custdata-local/185732/TheICE - Prot fing' 
+grep  'fingerprinting ran for .[1234567890] minutes'  '/home/dlozano/custdata-local/185732/TheICE - Prot fing' 
+grep  'fingerprinting ran for .[1234567890]'  '/home/dlozano/custdata-local/185732/TheICE - Prot fing' 
+grep  'Protocol fingerprinting ran for .[1234567890] minutes' 
+grep  'Protocol fingerprinting ran for .[1234567890] minutes'  '/home/dlozano/custdata-local/185732/TheICE - Prot fing' 
+grep  'Scheduled scan request was unsuccessful' '/home/dlozano/custdata-local/185732/nscscan.log' 
+grep  'SystemFing' '/home/dlozano/custdata-local/158104/158104-cifs-fails'   
+grep  'SystemFing' '/home/dlozano/custdata-local/158104/158104-Secure_20Workstation_20Image-20160303-1338.log'   
+grep  'VULNERABLE' ./15.2296.scan.0.log  | grep -v 'VERSION' | grep -v 'NOT'
+grep  'VULNERABLE' /home/dlozano/custdata-local/194103/15.2296.scan.0.log  | grep -v 'VERSION' | grep -v 'NOT'
+grep  -cRia 'java.net.SocketTimeoutException' .
+grep  -cRia 'larger than remote copy' .
+grep  -cRia 'larger than remote copy' nse.log.0
+grep  -cRia 'truncated' .
+grep  -Ri 'AUDIT_NONE' ~/
+grep "/opt/metasploit/apps/pro/engine/lib/pro/background_daemon.rb:88:in `check_for_updates'" '/home/dlozano/custdata-local/186450/diagnostic_logs/
+grep "/opt/metasploit/apps/pro/engine/lib/pro/background_daemon.rb:88:in" '/home/dlozano/custdata-local/186450/diagnostic_logs/framework.log' 
+grep '/opt/metasploit/apps/pro/engine/lib/pro/background_daemon.rb:88:in `check_for_updates'
+grep '0(123)' derp.file
+grep '4.11' /home/dlozano/custdata-local/186450/diagnostic_logs/framework.log
+grep 'different port' scan.0.log
+grep 'Fingerprinting ran for .\? minutes'  '/home/dlozano/custdata-local/185732/TheICE - Prot fing' 
+grep 'Fingerprinting ran for .\? minutes'  '/home/dlozano/custdata-local/185732/TheICE - Prot fing' | 
+grep 'Fingerprinting ran for .\? minutes'  '/home/dlozano/custdata-local/185732/TheICE - Prot fing' | sort -r | cut -d'@' -f2 | sort -n
+grep 'Fingerprinting ran for ?? minutes'  '/home/dlozano/custdata-local/185732/TheICE - Prot fing' 
+grep 'Fingerprinting ran for'  '/home/dlozano/custdata-local/185732/TheICE - Prot fing' 
+grep 'full-audit-without-web-spider-_-8_22_2014' ~/custdata-local/159296/*
+grep 'Ignoring json-1.8.2 because its extensions are not built' .
+grep 'model name' /proc/cpuinfo | wc -l
+grep 'node(s) completed'  '/home/dlozano/custdata-local/185732/nsclogs/MAHOOB03_20_28OOB_2003_29-20160305-2102.log
+grep 'node(s) completed'  '/home/dlozano/custdata-local/185732/nsclogs/MAHOOB03_20_28OOB_2003_29-20160305-2102.log'
+grep 'node(s) completed' '/home/dlozano/custdata-local/185732/March8-NewScan/109.6.scan.0.log' 
+grep 'node(s) completed' '/home/dlozano/custdata-local/185732/nsclogs/104.6.scan.0.log' 
+grep 'node(s) completed' '/home/dlozano/custdata-local/185732/nsclogs/39.48.scan.0.log' [B
+grep 'openssl.*vulnerable-v' 10_165_81_203_xml_report.xml 
+grep 'openssl.*vulnerable-version' 10_165_81_203_xml_report.xml 
+grep 'postgres' ~/Support/
+grep 'Protocol fingerprinting ran for .\? minutes'  '/home/dlozano/custdata-local/185732/TheICE - Prot fing' 
+grep 'Protocol fingerprinting ran for .\? minutes'  '/home/dlozano/custdata-local/185732/TheICE - Prot fing' | cut -d'@' -F2
+grep 'Protocol fingerprinting ran for .\? minutes'  '/home/dlozano/custdata-local/185732/TheICE - Prot fing' | cut -d'@' -f2
+grep 'Protocol fingerprinting ran for .\? minutes'  '/home/dlozano/custdata-local/185732/TheICE - Prot fing' | sort -r | cut -d'@' -f2 | sort -n
+grep 'Protocol fingerprinting ran for .\? minutes'  '/home/dlozano/custdata-local/185732/TheICE - Prot fing' | sort -r | cut -d'@' -f2 | sort -nu
+grep 'Protocol fingerprinting ran for .\? minutes'  '/home/dlozano/custdata-local/185732/TheICE - Prot fing' | sort -r | cut -d'@' -f2 | sort -u
+grep 'Protocol fingerprinting ran for .\?minutes '  '/home/dlozano/custdata-local/185732/TheICE - Prot fing' 
+grep 'Protocol fingerprinting ran for 1\?'  '/home/dlozano/custdata-local/185732/TheICE - Prot fing' 
+grep 'Protocol fingerprinting ran for ??'  '/home/dlozano/custdata-local/185732/TheICE - Prot fing' 
+grep 'Protocol fingerprinting ran for \?\?'  '/home/dlozano/custdata-local/185732/TheICE - Prot fing' 
+grep 'Protocol fingerprinting ran for \[123456789]?'  '/home/dlozano/custdata-local/185732/TheICE - Prot fing' 
+grep 'RCPT TO' ./00278326-msp-phish-tasklog.txt > ./00278326-list
+grep 'RCPT TO' ./00278326-msp-phish-tasklog.txt > ./00278326/list
+grep 'running for' '/home/dlozano/custdata-local/185732/March8-NewScan/109.6.scan.0.log' 
+grep 'SNMP' ~/Support/Manuals/
+grep 'SNMP' ~/Support/Manuals/*
+grep 'ver' /home/dlozano/custdata-local/186450/diagnostic_logs/framework.log
+grep 'vers' /home/dlozano/custdata-local/186450/diagnostic_logs/framework.log
+grep 'versi' /home/dlozano/custdata-local/186450/diagnostic_logs/framework.log
+grep 'version' /home/dlozano/custdata-local/186450/diagnostic_logs/framework.log
+grep 'wmic' ~/Support/HOW-DO-I/
+grep - 'Scheduled scan request was unsuccessful' '/home/dlozano/custdata-local/185732/nscscan.log' 
+grep - 'VULNERABLE' /home/dlozano/custdata-local/194103/15.2296.scan.0.log  | grep -v 'VERSION' | grep -v 'NOT'
+grep -'Protocol fingerprinting ran for ??'  '/home/dlozano/custdata-local/185732/TheICE - Prot fing' 
+grep --help
+grep -a '10.51.66.134' scan.0.log
+grep -a '10.66.51.134' scan.0.log
+grep -a '10.66.51.134' scan.0.log | grep 'different port'
+grep -a '10.66.51.134' scan.0.log | grep 'redirect' | less
+grep -a '10.66.51.134' scan.0.log | grep -i 'vmware' | less
+grep -a 'different port' scan.0.log
+grep -a 'different port' scan.0.log | grep 8182
+grep -a5 'e' ~/Documents/figlet_banner_fonts_GOLD_MASTER 
+grep -a5 'e' ~/Documents/Skype\ status 
+grep -a8 'e' ~/Documents/figlet_banner_fonts_GOLD_MASTER 
+grep -aRi '3389' .
+grep -aRi 'tlsv1_1' .
+grep -ARi 'tlsv1_1-enabled' .
+grep -aRi 'tlsv1_1-enabled' .
+grep -aRie DHCP ~/Support/
+grep -B1 -Ria 'java.net.SocketTimeoutException' .
+grep -B1 -Ria 'Local copy of .* had .* more updates' .
+grep -B1 -Ria 'Local copy of .* was .* bytes larger than remote copy' .
+grep -B1 -Ria 'Local copy of .* was .* bytes larger than remote copy' ./update.log
+grep -B1 -Ria 'Unable to initialize updater' .
+grep -B1 -Ria 'update server timed out' .
+grep -b5 'e' ~/Documents/figlet_banner_fonts_GOLD_MASTER 
+grep -bi 'truncated' nse.log.0
+grep -BRi ' scap' ../../..
+grep -BRi 'scap' ../../..
+grep -bRi 'scap' ../../..
+grep -BRi 'tlsv1_1-enabled' .
+grep -c "(Revoking\|Ignoring)" SysFings 
+grep -c "(Revoking|Ignoring)" SysFings 
+grep -c '(Revoking\|Ignoring)' SysFings 
+grep -c '2016-03-06.*Scheduled scan request was unsuccessful' '/home/dlozano/custdata-local/185732/nscscan.log' 
+grep -c '2016-03-06.*started by' '/home/dlozano/custdata-local/185732/nscscan.log' 
+grep -c '2016-03-07.*started by' '/home/dlozano/custdata-local/185732/nscscan.log' 
+grep -c '\(Revoking\|Ignoring\)' SysFings 
+grep -c 'roboto' '/home/dlozano/custdata-local/*/*.log'
+grep -c 'Scheduled scan request was unsuccessful' '/home/dlozano/custdata-local/185732/nscscan.log' 
+grep -c 'SystemFing' '/home/dlozano/custdata-local/158104/158104-Secure_20Workstation_20Image-20160303-1338.log'   
+grep -c 'SystemFing.*Cert' '/home/dlozano/custdata-local/158104/158104-Secure_20Workstation_20Image-20160303-1338.log'   
+grep -c 'SystemFing.*certainty' '/home/dlozano/custdata-local/158104/158104-Secure_20Workstation_20Image-20160303-1338.log'   
+grep -C 20  "/opt/metasploit/apps/pro/engine/lib/pro/background_daemon.rb:88:in" '/home/dlozano/custdata-local/186450/diagnostic_logs/framework.log' 
+grep -C16 -Ria 'truncated' nse.log.0
+grep -C6 -Ria 'truncated' nse.log.0
+grep -C6Ria 'truncated' nse.log.0
+grep -ci 'promoting SystemFing.*certainty=' '/home/dlozano/custdata-local/158104/158104-Secure_20Workstation_20Image-20160303-1338.log'   
+grep -ci 'promoting SystemFing.*certainty=0' '/home/dlozano/custdata-local/158104/158104-Secure_20Workstation_20Image-20160303-1338.log'   
+grep -ci 'promoting SystemFing.*certainty=1' '/home/dlozano/custdata-local/158104/158104-Secure_20Workstation_20Image-20160303-1338.log'   
+grep -ci 'SystemFing.*certainty' '/home/dlozano/custdata-local/158104/158104-Secure_20Workstation_20Image-20160303-1338.log'   
+grep -ci 'SystemFing.*certainty=0' '/home/dlozano/custdata-local/158104/158104-Secure_20Workstation_20Image-20160303-1338.log'   
+grep -ci error  *
+grep -ci smtp  *
+grep -cRi "10\." 
+grep -Er '/Metasploit/apps/pro/vendor/bundle/ruby/'
+grep -Er 'bundle/ruby'
+grep -Er 'ruby'
+grep -Er build
+grep -Er gems
+grep -Er ruby'
+grep -Fi "-->" nsc.log
+grep -h 'different port' scan.0.log
+grep -H 'different port' scan.0.log
+grep -HR log_parsing_goals
+grep -HR log_parsing_goals .
+grep -i "" /home/dlozano/custdata-local/182172/10_165_81_*
+grep -i "->" nsc.log
+grep -i "-\>" nsc.log
+grep -i "OpenSSL" /home/dlozano/custdata-local/182172/10_165_81_*
+grep -i '2016-02-08T02' '/home/dlozano/custdata-local/181268/nsc.log.1.log' 
+grep -i '255' ./*.log
+grep -i '255' ./nsc*.log
+grep -i '255' ./nsc.log
+grep -i 'Engine ID\: 68' '/home/dlozano/custdata-local/181268/nsc.log.1.log' 
+grep -i 'Engine ID\: [39|68]' '/home/dlozano/custdata-local/181268/nsc.log.1.log' 
+grep -i 'Fingerprinting ran for'  '/home/dlozano/custdata-local/185732/TheICE - Prot fing' 
+grep -i 'Linux32' *.log
+grep -i 'Linux64' *.log
+grep -i 'login' 
+grep -i 'login' .
+grep -i 'login' . > ./login
+grep -i 'login' . > login
+grep -i 'login' CISCO\ ASA\ ALERT\ MESSAGES 
+grep -i 'login\|logged\|logout' CISCO\ ASA\ ALERT\ MESSAGES 
+grep -i 'login|logged|logout' CISCO\ ASA\ ALERT\ MESSAGES 
+grep -i 'MAH (OOB 07).*000ms' ./*/*.log
+grep -i 'Problem during artifact generat
+grep -i 'Problem during artifact generation' < cat$(cat msp-report-logs)
+grep -i 'Problem during artifact generation' <cat $(cat files.txt)
+grep -i 'Problem during artifact generation' <cat $(cat msp-report-logs)
+grep -i 'Product version'
+grep -i 'Product version' .
+grep -i 'promoting SystemFing.*certainty=' '/home/dlozano/custdata-local/158104/158104-Secure_20Workstation_20Image-20160316-1149.log' 
+grep -i 'promoting SystemFing.*certainty=0' '/home/dlozano/custdata-local/158104/158104-Secure_20Workstation_20Image-20160303-1338.log'   
+grep -i 'promoting SystemFing.*certainty=0.85' '/home/dlozano/custdata-local/158104/158104-Secure_20Workstation_20Image-20160316-1149.log' 
+grep -i 'promoting SystemFing.*certainty=1' '/home/dlozano/custdata-local/158104/158104-Secure_20Workstation_20Image-20160316-1149.log' 
+grep -i 'romoting SystemFing.*certainty=0' '/home/dlozano/custdata-local/158104/158104-Secure_20Workstation_20Image-20160303-1338.log'   
+grep -i 'running for' '/home/dlozano/custdata-local/185732/March8-NewScan/109.6.scan.0.log' 
+grep -i 'running' '/home/dlozano/custdata-local/**/nsc.log' 
+grep -i 'running' '/home/dlozano/custdata-local/*/*.log' 
+grep -i 'running' '/home/dlozano/custdata-local/*/*/nsc.log' 
+grep -i 'running' '/home/dlozano/custdata-local/*/nsc.log' 
+grep -i 'running' '/home/dlozano/custdata-local/185732/March8-NewScan/109.6.scan.0.log' 
+grep -i 'SystemFing' '/home/dlozano/custdata-local/158104/158104-cifs-fails'   
+grep -i 'SystemFing.*certainty' '/home/dlozano/custdata-local/158104/158104-Secure_20Workstation_20Image-20160303-1338.log'   
+grep -i 'systemfing.*certainty=0' '/home/dlozano/custdata-local/158104/158104-cifs-fails'   
+grep -i 'SystemFing.*certainty=0' '/home/dlozano/custdata-local/158104/158104-Secure_20Workstation_20Image-20160303-1338.log'   
+grep -i 'SystemFing.*Certainty=1' '/home/dlozano/custdata-local/158104/158104-cifs-fails'   
+grep -i 'truncated' nse.log.0
+grep -i 'vulnerable version' /home/dlozano/custdata-local/194103/15.2296.scan.0.log  | grep -I 'version' 
+grep -i 'vulnerable version' /home/dlozano/custdata-local/194103/15.2296.scan.0.log  | grep -i 'version' 
+grep -i 'vulnerable version' /home/dlozano/custdata-local/194103/15.2296.scan.0.log  | grep -iv 'version' 
+grep -i 'vulnerable version' /home/dlozano/custdata-local/194103/15.2296.scan.0.log  | grep -v 'version' 
+grep -i 'vulnerable' /home/dlozano/custdata-local/194103/15.2296.scan.0.log  | grep -i 'version' 
+grep -i 'vulnerable' /home/dlozano/custdata-local/194103/15.2296.scan.0.log  | grep -iv 'version' 
+grep -i -100 Certainty .
+grep -i -c 100 Certainty .
+grep -i login . > login
+grep -i Ruby 
+grep -ic 'promoting SystemFing.*certainty=' '/home/dlozano/custdata-local/158104/158104-Secure_20Workstation_20Image-20160316-1149.log' 
+grep -ic 'promoting SystemFing.*certainty=0.85' '/home/dlozano/custdata-local/158104/158104-Secure_20Workstation_20Image-20160316-1149.log' 
+grep -ic 'promoting SystemFing.*certainty=1' '/home/dlozano/custdata-local/158104/158104-Secure_20Workstation_20Image-20160316-1149.log' 
+grep -in '2016-02-08T02' '/home/dlozano/custdata-local/181268/nsc.log.1.log'				# -n print line number with output lines
+grep -lr log_parsing_goals .
+grep -lr parsing
+grep -Pzo "(?s)^existing$.*-->"  ./nsc.log 
+grep -Pzo "(?s)^existing$.*?^-->$"  ./nsc.log 
+grep -Pzo "(?s)^existing$.*^-->"  ./nsc.log 
+grep -Pzo "^existing assets\$(.|\n)*^-->"  ./nsc.log 
+grep -Pzo "^existing\$(.|\n)*^-->"  ./nsc.log 
+grep -Pzo "existing[\s\S]*?-->"  ./nsc.log 
+grep -Pzo "existing[\s\S]*?-->$"  ./nsc.log 
+grep -Pzo -e '^(existing assets\$(.|\n)*^-->"  ./nsc.log 
+grep -Pzoe "^(existing assets\$(.|\n)*^-->"  ./nsc.log 
+grep -Pzoe "^existing assets\$(.|\n)*^-->"  ./nsc.log 
+grep -R  5722 .
+grep -R  5989 .
+grep -R  8182 .
+grep -R  \:5989 .
+grep -R  Certainty --include "*.log".
+grep -R "2016-08-16*18:17:37" .
+grep -R "2016-08-16T18:17:37" .
+grep -R "\\par"
+grep -R "\\par" custdata-local
+grep -R "\par" custdata-local
+grep -R "a" .
+grep -R "ALIVE" '/home/dlozano/custdata-local/186030/June 3 call/examining' 
+grep -R "Name\{Name=" '/home/dlozano/custdata-local/186030/June 3 call/examining' 
+grep -R "Name\{Name\=" '/home/dlozano/custdata-local/186030/June 3 call/examining' 
+grep -R "Name{Name=" '/home/dlozano/custdata-local/186030/June 3 call/examining' 
+grep -R "Name{Name\=" '/home/dlozano/custdata-local/186030/June 3 call/examining' 
+grep -R ' RAM' .
+grep -R ' ram' .
+grep -R '2015-..-..T' .
+grep -R '2015-01-31T' .
+grep -R '2015-03-31T' .
+grep -R '2016-..-..T' .
+grep -R '2016-.{1,8}T' .
+grep -R '2016-06-10T13' . 
+grep -R '2016-06-10T13' ./logs/nsc.log
+grep -R '2016-06-10T13' logs\\nsc.log
+grep -R '2016-06-10T13' logs\\nsc.log > ./relevant-nsc.log
+grep -R '2016-06-10T13' logs\nsc.log
+grep -R '2016.*T' .
+grep -R '2016......T' .
+grep -R '2016.{1,8}T' .
+grep -R '2016.{4,6}T' .
+grep -R '2016.{6}T' .
+grep -R '2016.{7}T' .
+grep -R '[0-9]' .
+grep -R '[0-9]{3}' .
+grep -R '[0-9]{3}}' .
+grep -R 'A*e' ~/custdata-local/*/*.log
+grep -R 'a*e' ~/custdata-local/*/*.log
+grep -R 'Advertising' ~/custdata-local/*/*.log
+grep -R 'advertising*Service' ~/custdata-local/
+grep -R 'Advertising*Service' ~/custdata-local/
+grep -R 'Advertising*Service' ~/custdata-local/*.log
+grep -R 'Advertising*Service' ~/custdata-local/*/*.log
+grep -R 'e*a' ~/custdata-local/*/*.log
+grep -R 'error' .
+grep -R 'exceeded scan duration' /home/dlozano/custdata-local/
+grep -R 'exceeded' /home/dlozano/custdata-local/
+grep -R 'exceeded.*duration' /home/dlozano/custdata-local/
+grep -R 'Executing SQL' .
+grep -R 'Fingerprint' /home/dlozano/custdata-local
+grep -R 'for service' .
+grep -R 'full-audit-without-web-spider-_-8_22_2014' ~/custdata-local/00159296/*
+grep -R 'GB' .
+grep -R 'MAH OOB' ~/custdata-local/*/*.log
+grep -R 'memory' .
+grep -R 'memory' . | grep Jasper
+grep -R 'Merged Services'
+grep -R 'Merged Services' .
+grep -R 'Nmap scan of [0-9]{3-4}' .
+grep -R 'Nmap scan of [0-9]{3}' .
+grep -R 'Nmap.*[0-9]\{3\}' .
+grep -R 'NMAP: IP' . > ~/nmap-findings
+grep -R 'overstock' ~/Support/HOW-DO-I/*
+grep -R 'ram' .
+grep -R 'running for'
+grep -R 'SAXParser'
+grep -R 'SAXParser' .
+grep -R 'Send resp.*rsyslog'  ~/custdata-local/*
+grep -R 'STRINGS' ~/Support/HOW-DO-I/*
+grep -R 'update' .
+grep -R 'WATCH A LOG FOR STRINGS' ~/Support/HOW-DO-I/*
+grep -r 'wmic' ~/Support/HOW-DO-I/
+grep -R -c 100 Certainty .
+grep -R -c100 Certainty .
+grep -R -C100 Certainty .
+grep -R i Certainty --include "*.log".
+grep -r Ruby 
+grep -r ruby 
+grep -R SUPPLIED .
+grep -Rai '06\|10' 
+grep -Rai '06|10' 
+grep -Rai '0[6789]' 
+grep -Rai '0[6789]\|10' 
+grep -Rai '0[6789]|10' 
+grep -Rai '2016-06-27T0[6789]\|2016-06-27T10' > slice-0627T06-10
+grep -Rai 'T0[6789]\|T10' 
+grep -Rai 'T0[6789]\|T10' > slice-0627T06-10
+grep -Rc 'Advertising' ../../../*
+grep -Rc 'Advertising' /../../../181268/MAH_20_28OOB_29-20160206-2100.log
+grep -Rc 'Advertising' /../../../185732/MAH_20_28OOB_29-20160206-2100.log
+grep -Rc 'Advertising' /../../181268/MAH_20_28OOB_29-20160206-2100.log
+grep -Rc 'Advertising' /../../185732/MAH_20_28OOB_29-20160206-2100.log
+grep -Rc 'Mercury.*NMAP: IP' . > logs
+grep -Rc 'Mercury[0-9a-zA-Z]*NMAP: IP' . 
+grep -RC 13 'update' .
+grep -Rc smtp *
+grep -RC20 'SAXParser' .
+grep -Re 'DHCP' ~/Support/
+grep -Ri 
+grep -Ri  'Site ID\: 88' .  | grep -i 'scanid'
+grep -Ri  'Site ID\: 88' nsc.log 
+grep -Ri  'Site ID\: 88' nsc.log  | fgrep -i 'scanid'
+grep -Ri  'Site ID\: 88' nsc.log  | grep -i 'scanid'
+grep -Ri "66\.192\.47"
+grep -Ri "66\.192\.47\.(231|224)"
+grep -Ri "66\.192\.47\.(231|224|236|237)"
+grep -Ri "66\.192\.47\.2(31|24|36|37)" .
+grep -Ri "66\.192\.47\.231"
+grep -Ri "66\.192\.47\.231"|"z"
+grep -Ri "66\.192\.47\.["231"|"224"|"236"|"237"]"
+grep -Ri "66\.192\.47\.[231|224]"
+grep -Ri "66\.192\.47\.[231|224|236|237]"
+grep -Ri "\(console\|engine\)" .
+grep -Ri "activity" /home/dlozano/Support/Manuals/
+grep -Ri "ALIVE" '/home/dlozano/custdata-local/186030/June 3 call/examining' 
+grep -Ri "console ver" .
+grep -Ri "db_act" /home/dlozano/Support/Manuals/
+grep -Ri "enabled=" /home/dlozano/Support/
+grep -Ri "enabled=" /home/dlozano/Support/Manuals/
+grep -Ri "hostname" '/home/dlozano/custdata-local/186030/June 3 call/examining' 
+grep -Ri "https://.*metaspl"  ~/Support/
+grep -Ri "Missing .*resource" ~/custdata*
+grep -Ri "Missing" ~/custdata*
+grep -Ri "Name=" '/home/dlozano/custdata-local/186030/June 3 call/examining' 
+grep -Ri "old installer"  ~/Support/
+grep -Ri "old installer"  ~/Support/Canned\ responses/
+grep -Ri "old installer"  ~/Support/HOW-DO-I/
+grep -Ri "platform" .
+grep -Ri "scan" ~/custdata*
+grep -Ri "show datab" /home/dlozano/Support/
+grep -Ri "show datab" /home/dlozano/Support/Manuals/
+grep -Ri "show db" /home/dlozano/Support/
+grep -Ri "show db" /home/dlozano/Support/Manuals/
+grep -Ri "silo id: [0123456789]"
+grep -Ri "undocumented" /home/dlozano/Support/HOW-DO-I/
+grep -Ri "undocumented" /home/dlozano/Support/Manuals/
+grep -Ri '
+grep -Ri ' [1234567890] node(s) active' ~/custdata-local/186030/
+grep -Ri ' [1234567890] node(s) pending' ~/custdata-local/186030/
+grep -Ri ' scap' ../../..
+grep -Ri '(product|console) version'  /home/dlozano/custdata-local/188259/rapid7-correlation-test-20160425-1450/19.25.scan.0.log
+grep -Ri '(product|console|engine) version'  /home/dlozano/custdata-local/188259
+grep -Ri '(product|console|engine) version'  /home/dlozano/custdata-local/188259/rapid7-correlation-test-20160425-1450/19.25.scan.0.log
+grep -Ri '1.0' ../*
+grep -Ri '1097' .
+grep -Ri '11\:2' . > FADED
+grep -Ri '13584' .
+grep -Ri '1516' .
+grep -Ri '172.28.0.[6|7]' .
+grep -Ri '172.28.0.[6|7]2' .
+grep -Ri '172.28.0.[6|7]2' . > hosts-14-and-108.nsc
+grep -Ri '172.28.0.\[6\|7\]' .
+grep -Ri '172.28.0.\[6\|7\]2' .
+grep -Ri '2016.{4,6}T' .
+grep -Ri '2016\.{4,6}T' .
+grep -Ri '2017-04-13' *.log | more
+grep -Ri '20379' .
+grep -Ri '2107' ~/custdata-local/186030
+grep -Ri '255' ./*.log
+grep -Ri '32 bit' .
+grep -Ri '32-bit' .
+grep -Ri '32.*bit' .
+grep -Ri '32bit' .
+grep -Ri '4\.11' '/home/dlozano/custdata-local/00180095/metasploit' 
+grep -Ri '62570' .
+grep -Ri '64 bit' .
+grep -Ri '64-bit' .
+grep -Ri ';2~
+grep -Ri '[12345] node(s) pending' ~/custdata-local/186030/
+grep -Ri '[172.28.0.62\|WCSRVAPP14]' .
+grep -Ri '[product|console|engine] version'  /home/dlozano/custdata-local/188259
+grep -Ri '[product|console|engine] version'  /home/dlozano/custdata-local/188259/rapid7-correlation-test-20160425-1450/19.25.scan.0.log
+grep -Ri '[WCSRVAPP108\|WCSRVAPP14]' .
+grep -Ri '\(console|engine\) version'  /home/dlozano/custdata-local/188259
+grep -Ri '\(product|console|engine\) version'  /home/dlozano/custdata-local/188259
+grep -Ri '\[172.28.0.62\|WCSRVAPP14\]' .
+grep -Ri '\[172.28.0.\[6\|7\]2' .
+grep -Ri '\[WCSRVAPP108\|WCSRVAPP14\]' .
+grep -Ri '\{172.28.0.62\|WCSRVAPP14\}' .
+grep -Ri 'Accounts_Recievable' .
+grep -Ri 'ACES' '~/Support/Canned\ responses/'`
+grep -Ri 'ACES' ~/Support/Canned\ responses/`
+grep -Ri 'Advertising*Service' ~/custdata-local/*/*.log
+grep -Ri 'Advertising.*Service' ~/custdata-local/*/*.log
+grep -Ri 'asset linking' ~/Support/
+grep -Ri 'asset linking' ~/Support/HOW-DO-I/
+grep -Ri 'asset linking' ~/Support/HOW-DO-I/nexpose/
+grep -Ri 'because its extensions' .
+grep -Ri 'changing timeout' ./*/*.log
+grep -Ri 'changing' ./*/*.log
+grep -Ri 'Cisco.*printer' .
+grep -Ri 'console ser' ~/custdata-local/
+grep -Ri 'console start' *.log | more
+grep -Ri 'console ver' .
+grep -Ri 'console ver' > verfile
+grep -Ri 'Console Version' '/home/dlozano/custdata-local/00207528/2016_08_31_192506499/logs' 
+grep -Ri 'console' 
+grep -Ri 'DEBUG' *.log
+grep -Ri 'DEBUG' *.log | more
+grep -Ri 'DHCP.*faded' .
+grep -Ri 'DHCP.*faded' . > FADED
+grep -Ri 'enable windows services' .
+grep -Ri 'enable' .
+grep -Ri 'enabled' .
+grep -Ri 'Engine ID:' ~/custdata-local/*/*.log
+grep -Ri 'Engine ID:.*(local)' ~/custdata-local/*/*.log
+grep -Ri 'exposure.anal' *.log
+grep -Ri 'exposure.anal' *.log | more
+grep -Ri 'Fing.*cisco' .
+grep -Ri 'Fing.*Palo' .
+grep -Ri 'harden' .
+grep -Ri 'hardened' .
+grep -Ri 'Ignoring json-1\.8\.2 because its extensions are not built' .
+grep -Ri 'installers'  ~/Support/ | grep -i  metasploit
+grep -Ri 'installers'  ~/Support/ | grep -i  old
+grep -Ri 'java'  . 
+grep -Ri 'KB3035132\|3035126' .
+grep -Ri 'KB3035132|3035126' .
+grep -Ri 'local engine' ../
+grep -Ri 'local scan engine' .
+grep -Ri 'local scan engine' ../
+grep -Ri 'LSAAnonymousNameLookup' .
+grep -Ri 'Mac OS X' ../
+grep -Ri 'Mac OSX' ../
+grep -Ri 'Mac' ../
+grep -Ri 'mac.*OS.*X' ../*
+grep -Ri 'MAH (OOB 07).*000ms' ./*/*.log
+grep -Ri 'MAH (OOB 07).*Request timed out' ./*/*.log
+grep -Ri 'max' .
+grep -Ri 'max_host' .
+grep -Ri 'memory' .
+grep -Ri 'memory\|RAM' .
+grep -Ri 'memory|RAM' .
+grep -Ri 'metasploit' .
+grep -Ri 'MEX-L-CG6153FV6\|GT2-DMS1CST\|10\.77\.60\.84\|10\.180\.2\.46' .
+grep -Ri 'MEX-L-CG6153FV6\|s' .
+grep -Ri 'office' .
+grep -Ri 'OS.*X' ../*
+grep -Ri 'overstock' ~/Support/HOW-DO-I/*
+grep -Ri 'pending' ~/custdata-local/186030/testing-incompletes/scan/
+grep -Ri 'platform restrictions' ~/custdata-local/ 
+grep -Ri 'platform restrictions' ~/custdata-local/*/*.log
+grep -Ri 'platform restrictions' ~/custdata-local/*/*/*.log
+grep -Ri 'po.*cy' ~/custdata-local/
+grep -Ri 'policy' ~/custdata-local/ | grep -i 'platform'
+grep -Ri 'policy' ~/custdata-local/ | grep -i 'po.*cy'
+grep -Ri 'postgres' ~/Support/
+grep -Ri 'Product Version' .
+grep -Ri 'Product version' .
+grep -Ri 'Product version' . | sort
+grep -Ri 'Product version' . | sort -g
+grep -Ri 'registering console uuid' .
+grep -Ri 'reporting data model' /home/dlozano/Support/
+grep -Ri 'reporting data model' /home/dlozano/Support/ 
+grep -Ri 'reporting data model' /home/dlozano/Support//HOW-DO-I/
+grep -Ri 'reporting data model/home/dlozano/Support/ 
+grep -Ri 'Request timed out' ./*/*.log
+grep -Ri 'restart postgres' ~/Support/
+grep -Ri 'restart postgres' ~/Support/HOW-DO-I/
+grep -Ri 'rhel'  . 
+grep -Ri 'rhel'  .  > ./rhel
+grep -Ri 'roboto' '/home/dlozano/custdata-local/*/
+grep -Ri 'roboto' '/home/dlozano/custdata-local/*/'
+grep -Ri 'roboto' '/home/dlozano/custdata-local/*/*'
+grep -Ri 'roboto' '/home/dlozano/custdata-local/*/*.log'
+grep -Ri 'running' '/home/dlozano/custdata-local/*/*.log' 
+grep -Ri 'running' '~/custdata-local/*/*.log' 
+grep -Ri 'scan by.*hostname' .
+grep -Ri 'Scan engine hostname' ~/custdata-local/
+grep -Ri 'scan engine pooling' ~/custdata-local/
+grep -Ri 'scan-id:2107' ~/custdata-local/186030
+grep -Ri 'scanid.*789' .
+grep -Ri 'scanid: 228' .
+grep -Ri 'scanid: 2287' .
+grep -Ri 'scanid:2107' ~/custdata-local/186030
+grep -Ri 'scap! ' ../../..
+grep -Ri 'scap' ../../..
+grep -Ri 'scap\! ' ../../..
+grep -Ri 'Send resp.*icmp'  ~/custdata-local/*
+grep -Ri 'Send resp.*icmp_pkt'  ~/custdata-local/*
+grep -Ri 'serialno' '/home/dlozano/custdata-local/00180095/metasploit' 
+grep -Ri 'serv.*symantec' .
+grep -Ri 'Service.*Cisco' .
+grep -Ri 'ServiceFing.*' .
+grep -Ri 'ServiceFing.*Cisco' .
+grep -Ri 'ServiceFing.*F5' .
+grep -Ri 'ServiceFing.*Palo' .
+grep -Ri 'show '
+grep -Ri 'show threads'
+grep -Ri 'show'
+grep -Ri 'silverlight' .
+grep -Ri 'Site ID\: 88' nsc.log 
+grep -Ri 'Site ID\:' . 
+grep -Ri 'Site ID\:' nsc.log 
+grep -Ri 'Site.ID\:' . 
+grep -Ri 'SiteID\: ' . 
+grep -Ri 'SiteID\: 88' . 
+grep -Ri 'SiteID\:' . 
+grep -Ri 'SNMP authentication' .
+grep -Ri 'start.*maintenance mode'
+grep -Ri 'status' | grep skype
+grep -Ri 'status.*error' .
+grep -Ri 'Stop' ~/custdata-local/186030/testing-incompletes/scan/
+grep -Ri 'supplied_failed'  ~/custdata-local/
+grep -Ri 'SUPPLIED_success_i' .
+grep -Ri 'System' 
+grep -Ri 'System' --include "*.log".
+grep -Ri 'System' --include '*.log*'
+grep -Ri 'System' --include '*.log.0'
+grep -Ri 'SystemFing' /home/dlozano/custdata-local/ | grep 'architecture'
+grep -Ri 'SystemFing' /home/dlozano/custdata-local/ | grep 64
+grep -Ri 'systemfing*1.0' ../
+grep -Ri 'systemfing*1.0' ../*
+grep -Ri 'systemfing*Mac' ../
+grep -Ri 'T11\:2' . > time112x
+grep -Ri 'Thread-1516' .
+grep -Ri 'Thread-20379' .
+grep -Ri 'timeout' ./*/*.log
+grep -Ri 'tlsv1_1' .
+grep -Ri 'tlsv1_1-enabled' .
+grep -Ri 'ttlsv1_1' .
+grep -Ri 'ttlsv1_1-enabled' .
+grep -Ri 'update' .
+grep -Ri 'uuid' .
+grep -Ri 'vconnection' .
+grep -Ri 'version'  /home/dlozano/custdata-local/188259/rapid7-correlation-test-20160425-1450/19.25.scan.0.log
+grep -Ri 'Version' '/home/dlozano/custdata-local/00180095/metasploit' 
+grep -Ri 'Version' '/home/dlozano/custdata-local/00180095/metasploit' | grep 'console version'
+grep -Ri 'Version' '/home/dlozano/custdata-local/00180095/metasploit' | grep 'product version'
+grep -Ri 'Version' '/home/dlozano/custdata-local/00180095/metasploit' | grep 'serialno'
+grep -Ri 'Version' '/home/dlozano/custdata-local/00180095/metasploit' | grep console
+grep -Ri 'WCSRVAPP108\|WCSRVAPP14' .
+grep -Ri 'WCSRVAPP108\|WCSRVAPP14' . > host-14-and-108
+grep -Ri 'windows services' .
+grep -Ri 'x64' .
+grep -Ri 'x86' .
+grep -Ri 'x86' engine-production.log 
+grep -Ri 'x86' framework.log 
+grep -Ri '{product|console|engine} version'  /home/dlozano/custdata-local/188259
+grep -Ri ("66\.192\.47\.231"|"z")
+grep -Ri (66\.192\.47\.231|z)
+grep -Ri *.clp /
+grep -Ri *.clp ~
+grep -ri --binary-files=text QNX ~/Support/HOW-DO-I/										# -r recurse  -i insensitive-case
+grep -Ri -100 'System' --include '*.log*'
+grep -Ri /home/dlozano/Support/https://.*metaspl
+grep -ri 6-23 .
+grep -ri 6/2{3|4] .
+grep -ri 6/2{3|4} .
+grep -Ri Certainty --include "*.log".
+grep -Ri debian
+grep -Ri enh .
+grep -Ri enhanced .
+grep -Ri filtered .
+grep -Ri hostname .
+grep -Ri kali
+grep -Ri kali.
+grep -Ri metasploit
+grep -Ri msp
+grep -Ri platform .
+grep -Ri postgres ~/Support/
+grep -Ri reset .
+grep -Ri Ruby 
+grep -Ri ubuntu
+grep -Ri version . > derp.file
+grep -Ria '[0-9]'{7}
+grep -Ria '[0-9]{7}'
+grep -Ria 'KB[0-9]'
+grep -Ria 'KB[0-9]'{7}
+grep -Ria 'KB[0-9]{7}'
+grep -Ria 'truncated' nse.log.0
+grep -RiA10  'Site ID\: 88' nsc.log 
+grep -RiA10  'Site ID\: 88' nsc.log  | fgrep -i 'scanid'
+grep -RiA10 "old installer"  ~/Support/
+grep -RiA10 ' [1234567890] node(s) pending' ~/custdata-local/186030/ > ~/incomplete-assets-search
+grep -RiA10 ' [123456789] node(s) pending, 0 node(s) active' ~/custdata-local/ 
+grep -RiA10 ' [123456789] node(s) pending, 0 node(s) active' ~/custdata-local/186030/ > ~/incomplete-assets-search
+grep -RiA10 'installers'  ~/Support/ | grep -iA10  old 
+grep -RiA10 'No response or remote closed connection within 3000ms after 3 attempt' ~/custdata-local/ 
+grep -RiA10 'No response or remote closed connection within 3000ms after 3 attempt(s).' ~/custdata-local/186030/ > ~/incomplete-assets-search
+grep -RiA10 'No response or remote closed connection' ~/custdata-local/ 
+grep -RiA10 'remote closed connection' ~/custdata-local/ 
+grep -RiA10 'status.*error' .
+grep -RiA100 'Stopping scan of host' ~/custdata-local/ 
+grep -RiA15 'c\,C\]lose' .
+grep -RiA15 'c\,C\]lose.*comma' .
+grep -RiA2 '1097' .
+grep -RiA2 'Unable to parse the policy description and name for MAC-3_Classified' .
+grep -RiA2 'Unable to parse the policy description and name' .
+grep -RiA3 'DB Ver' ./*/*/*.log
+grep -RiA3 'office' .
+grep -RiA5  '322776' nsc.log 
+grep -RiA5  'Site ID\: 88' nsc.log 
+grep -RiA5  'Site ID\: 88.' nsc.log 
+grep -RiA5  'Site ID\: 88.*Scan' nsc.log 
+grep -RiA5 'vuln.*checks' ~/Support/
+grep -RiA9 'office' .
+grep -RiA9 'office' . > ./office-in-aces
+grep -RiB100 'Initializing console' *.log | mor
+grep -RiB100 'Initializing console' *.log | more
+grep -RiB130 'Initializing console' *.log | more
+grep -RiB134 'Initializing console' *.log | more
+grep -RiB138 'Initializing console' *.log | more
+grep -RiB5 'c\,C' .
+grep -RiB5 'comma' .
+grep -RiB5 'commas' .
+grep -RiB50 'shutting' *.log | more
+grep -RiC10  'Site ID\: 88' nsc.log 
+grep -RiC10 'status.*error' .
+grep -riC100 6-1 .
+grep -riC100 6-2 .
+grep -riC100 6-2 . | grep -C50 'Stopping worker'
+grep -riC100o 6-1 .
+grep -RiC15 'c\,C\]lose' .
+grep -Ric20 "metasploit installer"  ~/Support/
+grep -RiC20 "metasploit installer"  ~/Support/
+grep -RiC20 'NginxScanner loaded.
+grep -RiC20 'NginxScanner loaded.' .
+grep -riC20 6-23 .
+grep -riC20 6-23 . | grep 'Ignoring json-1.8.2 because its extensions are not built'
+grep -riC20 6-23 . | grep -C20 'Ignoring json-1.8.2 because its extensions are not built'
+grep -RiC35 'c\,C\]lose' .
+grep -riC50 6-2 . | grep -C50 'Stopping worker'
+grep -riC50 6-23 . | grep -C50 'Stopping worker'
+grep -riC50 6-23 . | grep -C50~ 'Stopping worker'
+grep -RiC6  'MEX-L-CG6153FV6\|GT2-DMS1CST\|10\.77\.60\.84\|10\.180\.2\.46' . > ./failed-to-link
+grep -Rie DHCP ~/Support/
+grep -RiH 'ServiceNow' .
+grep -RiH 'Starting scan against .*full-audit-without-web-spider' ~/custdata-local/00159296/* 
+grep -RiH 'Starting scan against .*full-audit-without-web-spider' ~/custdata-local/00159296/* | cut -d":" -f7 | cut -d" " -f6 | sort 
+grep -RiH 'Starting scan against .*full-audit-without-web-spider' ~/custdata-local/00159296/* | cut -d":" -f7 | cut -d" " -f6 | sort -u
+grep -RiH 'Starting scan against .*full-audit-without-web-spider-_-8_22_2014' ~/custdata-local/00159296/* | cut -d":" -f6 | sort -u
+grep -RiH 'Starting scan against .*full-audit-without-web-spider-_-8_22_2014' ~/custdata-local/00159296/* | cut -d":" -f7 | cut -d" " -f6 | sort 
+grep -RiH 'Starting scan against .*full-audit-without-web-spider-_-8_22_2014' ~/custdata-local/00159296/* | cut -d":" -f7 | cut -d" " -f6 | sort -u
+grep -RiH 'Starting scan against .*full-audit-without-web-spider-_-8_22_2014' ~/custdata-local/00159296/* | cut -d":" -f7 | sort -u
+grep -RiH 'Starting scan against .*full-audit-without-web-spider-_-8_22_2014' ~/custdata-local/00159296/* | cut -d":" -f7 | sort -u | cut -d" " -f5
+grep -RiH 'Starting scan against .*full-audit-without-web-spider-_-8_22_2014' ~/custdata-local/00159296/* | cut -d":" -f7 | sort -u | cut -d" " -f6
+grep -RiH 'Starting scan against .*full-audit-without-web-spider-_-8_22_2014' ~/custdata-local/00159296/* | cut -d"ID:" -f2 | sort -u
+grep -RiH 'Starting scan against' ./* | cut -d":" -f7 | sort -u | cut -d" " -f6
+grep -RiHc30 'Starting scan against .*full-audit-without-web-spider' ~/custdata-local/00159296/scan.0.ITC__10_2E47_2E10.0-20160309-0100.log 
+grep -RiHC30 'Starting scan against .*full-audit-without-web-spider' ~/custdata-local/00159296/scan.0.ITC__10_2E47_2E10.0-20160309-0100.log 
+grep -Rio  derp.file_GOLD
+grep -Rio '32.*bit' .
+grep -Rio '32.*bit' . | grep -iv 'arbit'
+grep -Rio '64-Bit' . 
+grep -Rio '64-Bit' . | grep -iv 'arbit
+grep -Rio '64.*bit' . | grep -iv 'arbit'
+grep -Rio 'Advertising.*Service' ./*.log | cut -d":" -f2 | sort -u
+grep -Rio 'Advertising.*Service' ~/custdata-local/*/*.log
+grep -Rio 'Advertising.*Service' ~/custdata-local/*/*.log > derp.file
+grep -Rio 'Advertising.*Service' ~/custdata-local/*/*.log derp.file
+grep -Rio 'Advertising.*Service' ~/custdata-local/*/*.log | cut -d":" -f2 | sort -u
+grep -Rio 'bpdu' ~/custdata-local/*/*.log | cut -d":" -f2 | sort -u
+grep -Rio 'Connection discovered'  */*.log
+grep -Rio 'Connection discovered'  ./*/*.log
+grep -Rio 'DB Ver' ./*/*/*.log
+grep -Rio 'diagnostics' ~/custdata-local/*/* | cut -d":" -f2 | sort -u
+grep -Rio 'Engine ID:' ~/custdata-local/*/*.log
+grep -Rio 'mac OS X' ../*
+grep -Rio 'mac OS X' ../../../*
+grep -Rio 'running' '~/custdata-local/*/*.log' 
+grep -Rio 'spanning tree' ~/custdata-local/*/*.log 
+grep -Rio -C 10  '64-Bit' . 
+grep -Rio -C10  '64-Bit' . 
+grep -Rio -C10  'arch' . 
+grep -Rio -C10  'architecture' . 
+grep -RioC 10  '64-Bit' . 
+grep -rioC100 6-1 .
+grep -v "Status: Complete" ~/derp.log
+grep -v "Status: Complete" ~/derp.log | cut -d"]" -f4- | sort | uniq -c | sort -nr | head -n 40
+grep -v "Status: Complete" ~/derp.log | cut -d"]" -f4- ~/derp.log | sort | uniq -c | sort -nr | head -n 40
+grep -v '\(Revoking\|Ignoring\)' SysFings > cleansysfings 
+grep -v 'NOT VULNERABLE' 10.50.254.25.log  > 10.50.254.25.scrub1.log
+grep -v 'Skipping vuln check' 10.50.254.25.log  
+grep -vc '\(Revoking\|Ignoring\)' SysFings 
+grep -zo "(?s)^existing$(.|\n)*-->"  ./nsc.log 
+grep -zo "(?s)^existing$.*-->"  ./nsc.log 
+grep 0(123) derp.file
+grep 0.[123] derp.file
+grep 0[.123] derp.file
+grep 0[123] derp.file
+grep 0\(123\) derp.file
+grep 0\{0,00\} derp.file
+grep 0{0,00} derp.file
+grep 0{1,2} derp.file
+grep 0{2,2} derp.file
+grep 0{2,3} derp.file
+grep 0{2} derp.file
+grep 1{0,23} derp.file
+grep 1{0} derp.file
+grep 1{2} derp.file
+grep 8182 .
+grep alerts ~/Support/Manuals/
+grep error framework.log
+grep error report
+grep gems
+grep report framework.log
+grep rsync~
+hd ./grep-cve-2013-0169 
+hexdump  -C '/home/dlozano/custdata-local/00281645/new nsc_xml for nike' |grep '01'
+hexdump  -C '/home/dlozano/custdata-local/00281645/new nsc_xml for nike' |grep 01
+history  | fgrep shuf
+history | fgrep '10.2.76.69'
+history | fgrep 'rpd'
+history | fgrep etc
+history | fgrep fstab
+history | fgrep info
+history | fgrep known
+history | fgrep music
+history | fgrep nano
+history | fgrep nmap
+history | fgrep password
+history | fgrep passwords
+history | fgrep rpd
+history | fgrep ssh
+history | fgrep uname
+
+
+ifconfig -a | grep 'eth0'
+ifconfig -a | grep 'eth0''
+ifconfig -a | grep 'etho'
+ifconfig -a | grep -a9 eth0
+ifconfig -a | grep -b9 eth0
+
+less grep-cve-2013-0169 
+less grep-scale
+ll  /var/lib/dpkg/info/ | grep runit
+ll -d -R | fgrep -a1 'reports.log' 
+ll -dR | fgrep -a1 'reports.log' 
+ll -R . | grep -i 'SNMP' 
+ll -R . | grep -i SNMP 
+ll -R . | grep SNMP 
+ll -R ../.. | grep wmic
+ll -R reports.log | fgrep -R 'Problem during artifact generation'
+ll -R | fgrep 'quick ref'
+ll -R | fgrep 'reports.log' 
+ll -R | fgrep 'reports.log' | fgrep -R 'Problem during artifact generation'
+ll -R | fgrep *.log > somelogs.derp
+ll -R | fgrep -a1 'reports.log' 
+ll -R | fgrep -R 'Problem during artifact generation'
+ll -R | fgrep log > somelogs.derp
+ll -R | fgrep quick
+ll -R | grep auth
+ll -R | grep GOLD
+ll -R | grep log_parsing_goals
+ll -R | grep quick
+ll -R | grep report
+ll -R | grep root
+ll -R | grep Ruby 
+ll -R | grep Ruby -c3
+ll -R | grep Ruby -C3
+ll -R | grep wmic
+ll -R ~/custdata-local/ | grep -a 10 access
+ll -R ~/custdata-local/ | grep -A 10 access
+ll -R ~/custdata-local/ | grep -b 10 access
+ll -R ~/custdata-local/ | grep -B 10 access
+ll -R ~/custdata-local/ | grep -c 10 access
+ll -R ~/custdata-local/ | grep -C 10 access
+ll -R ~/custdata-local/ | grep -c10 access
+ll -R ~/custdata-local/ | grep access
+ll -R ~/custdata-local/ | grep framework
+ll -Rhl | grep GOLD
+ll -Rl | grep GOLD
+ll -Ro | grep -c 30 log_parsing
+ll -Ro | grep -c30 log_parsing
+ll -Ro | grep -C30 log_parsing
+ll -Ro | grep -H log_parsing_goals
+ll -Ro | grep -l log_parsing_goals
+ll -Ro | grep log_parsing_goals
+ll /etc | grep rsnapshot
+ll /mnt/custdata/incoming/ | grep -i azote
+ll /mnt/custdata/incoming/ | grep -i photo
+ll /mnt/custdata/incoming/B* | grep -i azote
+ll /mnt/custdata/incoming/B* | grep -i Photo
+ll /usr/bin | grep log*
+ll Scripts/ | grep e
+ll Scripts/ | grep excl
+ll Scripts/ | grep vul
+ll | grep -i vmw
+ll | grep derp.log
+ll | grep vmw
+ll | grep WINDOWS-HOTFIX-MS15-080-4323a2b0-2c03-49ed-982e-7a591ae729b9
+ll | grep wmic
+ll ~ | fgrep 'quick'
+ll| grep sig
+ll|grep brad
+ll|grep gnome
+locate 'status' | grep skype
+locate audit | grep xml
+locate firefox | grep plugins
+locate grep commands
+locate grepstock
+locate guide | grep -i nexpose
+locate guide | Grep nexpose
+locate packages | grep -i subl
+locate packages | grep -i sublime
+locate smtp | grep telnet
+locate user  | grep -i guide
+locate user  | grep -i manual
+locate user  | grep -i nexpose
+ls  | xargs cat | fgrep info.txt
+ls  | xargs cat | grep 'bit' 
+ls -al  /dev | grep sdb
+ls -al /home/dlozano/Support/ | grep RDM
+ls -al | fgrep quick
+ls -al | xargs cat | fgrep info.txt
+ls -al | xargs cat | grep 'bit' 
+ls -al ~/Support/ |fgrep -i install
+ls -alr  | fgrep 'quick'
+ls -alR  | grep -i ace
+ls -alR  | grep -i aces
+ls -alR  | grep -i enh
+ls -alR  | grep enh
+ls -alR *.mp3 | grep c4c
+ls -alR / | grep check4change
+ls -alR /home/dlozano/Support/ | grep RDM
+ls -alR /home/dlozano/Support/ | grep Reporting
+ls -alR | grep -C10 framework.log
+ls -alR | grep -C10 prosvc.log
+ls -alR | grep -Ri 'SNMP' 
+ls -alR | grep framework
+ls -alR | grep update
+ls -alR ~ | grep xlogs
+ls -alR ~/Support/ |fgrep -i install
+ls -d */**/reports.log >msp-logs-pathlist | while read filename; do fgrep -Hi 'Problem during artifact generation' $filename; done < msp-logs-pathlist
+ls -d -R | fgrep -a1 'reports.log' 
+ls -ltr ./*/info.txt | cut -d. -f2,3  > ~/infotxt | cat ~/infotxt | xargs -a ~/infotxt grep -i 'e'
+ls -ltr ./*/info.txt | cut -d. -f2,3  > ~/infotxt | cat ~/infotxt | xargs -d'\n' grep -i -- 'client'
+ls -ltr ./*/info.txt | cut -d. -f2,3  > ~/infotxt | cat ~/infotxt | xargs -d'\n' grep -i -- 'e'
+ls -ltr ./*/info.txt | cut -d. -f2,3  > ~/infotxt | xargs -a ~/infotxt grep -i 'e'
+ls -R . | fgrep SMTP
+ls -R . | grep -i 'SNMP' 
+
+ls -R | xargs  fgrep info.txt
+ls -R | xargs cat | fgrep info.txt
+ls -r | xargs cat | grep 'bit' 
+ls -R | xargs cat | grep 'bit' 
+ls -Ral ../ | grep -i audit
+ls -Ral ../ | grep Audit
+ls -Ral ../../ | grep -i audit
+ls -Rl . | fgrep SMTP
+ls /dev | grep sdb
+ls | xargs cat | grep 'bit' 
+ps -A | grep ssh
+ps -a | grep ssh
+ps -aux | grep '(thunar|nautilus)'
+ps -aux | grep 'thunar\|nautilus'
+ps -aux | grep 'thunar|nautilus'
+ps aux | grep baobab
+ps aux | grep cron
+ps aux | grep crond
+ps aux | grep deja
+ps aux |grep xflock
+strings -n 10 /dev/urandom | grep 0
+strings -n 10 /dev/urandom | grep 0-9
+strings -n 10 /dev/urandom | grep 1[0-9]
+strings -n 10 /dev/urandom | grep [0-9]
+strings -n 14 /dev/urandom | grep [0-9]
+strings -n 15 /dev/urandom | fgrep (0-9)
+strings -n 15 /dev/urandom | fgrep (0123456789)
+strings -n 15 /dev/urandom | fgrep [0-9]
+strings -n 15 /dev/urandom | fgrep [0123456789]
+strings -n 15 /dev/urandom | fgrep {0-9}
+strings -n 15 /dev/urandom | grep [0-9]
+strings -n 16 /dev/urandom | grep 0
+strings -n 16 /dev/urandom | grep [0-9]
+subl grep--cve-2013-0169-no-nulls 
+subl grep-cve-2013-0169 
+sudo dmidecode | grep "Serial Number:"
+sudo dmidecode|grep -C10i bios
+sudo dmidecode|grep -iC10 1366
+sudo dmidecode|grep -iC10 bios
+sudo dmidecode|grep -iC10 display
+sudo dmidecode|grep -iC10 screen
+sudo fgrep "core: Auxiliary failed: NoMethodError undefined method `DBImportError' for Msf:Module" ~/custdata-local
+sudo fgrep -R "BREAK-IN" /var/log/auth.log
+sudo fgrep -Ri  'export' . > ../grep_export
+sudo fgrep -Ri "BREAK-IN" /var/log/auth.log
+sudo fgrep -Ri xscreensave /usr
+sudo fgrep -Ria "BREAK-IN" /var/log/auth.log
+sudo fgrep -Ria 'http://updates.metasploit.com/packages/46f83395793940a0a8bde63cdf418783aa0339e4.bin' ~/
+sudo fgrep xscreensave /usr
+sudo grep 'e' /var/log/dmesg
+sudo grep 'intel' /var/log/dmesg
+sudo grep 'intel' dmesg
+sudo grep -R 'Enumerating shares...' ~/custdata-local/
+sudo grep -RA10 'Enumerating shares...' ~/custdata-local/
+sudo grep -Ri '$' ~/custdata-local/
+sudo grep -Ri '\$' ~/custdata-local/
+sudo grep -Ri 'c\$' ~/custdata-local/
+sudo grep -Ri 'Enumerating shares...' ~/custdata-local/
+sudo grep -Ri 'Retrieving info for' ~/custdata-local/
+sudo grep -Ri 'share' ~/custdata-local/
+sudo grep -Ri 'shares' ~/custdata-local/
+sudo grep -Ri 'winreg-enumerate-lanman-shares' ~/custdata-local/
+
+tr <  ./grep-cve-2013-0169 -d '\000' > grep--cve-2013-0169-no-nulls
+
+while read filename; do fgrep -Hi 'Arch' $filename; done < pathlist
+while read filename; do fgrep -Hi 'Problem during artifact generation' $filename; done < msp-logs-pathlist
+while read filename; do fgrep -Hi 'Problem during artifact generation' $filename; done < pathlist
+while read filename; do fgrep -Hi 'Problem during artifact generation' $filename; done <msp-report-logs 
+while read filename; do grep  'w' $filename; done < pathlist
+while read filename; do zgrep -Hi 'a' $filename; done < pathlist
+while read filename; do zgrep -Hi 'Arch' $filename; done < pathlist
+while read filename; do zgrep -i 'a' $filename; done < pathlist
+while read filename; do zgrep -i 'w' $filename; done < pathlist
+
+zgrep  'dns' ~/custdata-local/188259/2016_04_25_211552088/support_to_unzip.zip 
+zgrep  'InterleavePool' ~/custdata-local/185732/nsclogs/*.gz
+zgrep  'pool' ~/custdata-local/185732/nsclogs/*.gz
+zgrep  'resolve-additional-dns' ~/custdata-local/188259/2016_04_25_211552088/support_to_unzip.zip 
+zgrep "Failed password" /var/log/auth.log* | awk '{print $9}' | sort | uniq -c | sort -nr | less
+zgrep '.192' derp.zip
+zgrep '00.192' derp.zip
+zgrep '00\.192' derp.zip
+zgrep '01.192' derp.zip
+zgrep '01\.192' derp.zip
+zgrep '03.192' derp.zip
+zgrep '03\.192' derp.zip
+zgrep '10' support_to_unzip.zip 
+zgrep '10.6.104.75'  ./185732/nsclogs/nsc.log.1.gz 
+zgrep '10.8' support_to_unzip.zip 
+zgrep '10.87.176.1' support_to_unzip.zip 
+zgrep '108' support_to_unzip.zip 
+zgrep '10\.8' support_to_unzip.zip 
+zgrep '10\.87\.176\.1' support_to_unzip.zip 
+zgrep '83C9BF5A116EDFD628AA6A933201D36F046BAEAF' support_to_unzip.zip 
+zgrep '\.' derp.zip
+zgrep '\.192' derp.zip
+zgrep 'ds.finished' derp.zip
+zgrep 'ds\.finished' derp.zip
+zgrep 'e' support_to_unzip.zip 
+zgrep 'interleavePool' ~/custdata-local/185732/
+zgrep 'interleavePool' ~/custdata-local/185732/nsclogs/*
+zgrep 'nsc' support_to_unzip.zip 
+zgrep 'Version'  ./185732/nsclogs/nsc.log.1.gz 
+zgrep ( derp.txt 
+zgrep - 'pool' ~/custdata-local/185732/nsclogs/*.gz
+zgrep -a10 "2016" ../*/nsc.log.*
+zgrep -a10 "2016" ../*/nsc.log.* | fgrep schedule
+zgrep -a10 "2016" nsc.log.*
+zgrep -a10 "2016-02" ../*/nsc.log.* | fgrep schedule
+zgrep -a10 "2016-02" nsc.log.*
+zgrep -a10 "2016\-02" nsc.log.*
+zgrep -a10 2016-02 nsc.log.*
+zgrep -a10 2016-02 nsc.log.* | fgrep -i schedule
+zgrep -a10 schedule nsc.log.* | fgrep -i 2016-02
+zgrep -i 'nsc' support_to_unzip.zip 
+zgrep -i 'scan' support_to_unzip.zip 
+zgrep -i 'starting' FIGAME-20160726-1336.log.zip 
+zgrep -i 'starting' FIGAME-20160726-1336.log.zip ll
+zgrep -i 'starting' support_to_unzip.zip 
+zgrep -ia10 "mah oob" ../*/nsc.log.* | fgrep schedule
+zgrep -ia10 "mah\ oob" ../*/nsc.log.*
+zgrep -ia10 "mah\ oob" ../*/nsc.log.* | fgrep schedule
+zgrep -ia10 "mah\ oob" ./nsc.log.*
+zgrep -irs 'denied' .
+zgrep -irs error /custdata-local
+zgrep -is error /custdata-local
+zgrep -Ri
+zgrep -Ri 'denied' .
+zgrep -Ri 'nsc' support_to_unzip.zip 
+zgrep -Ri 'pool' ~/custdata-local/185732/
+zgrep -ri 'pool' ~/custdata-local/185732/
+zgrep -Ri 'resolve-additional-dns' ~/custdata-local/188259/
+zgrep -RiH 'Starting scan against' ./* | cut -d":" -f7 | sort -u | cut -d" " -f6
+zgrep -Rio 'Advertising.*Service' ~/custdata-local/*/*.log | cut -d":" -f2 | sort -u
+zgrep 1.3 derp.txt 
+zgrep 192.168 derp.txt 
+zgrep 192.168 derp.txt.zip 
+zgrep 192\.168 derp.txt 
+zgrep 192\.168 derp.txt.zip 
+zgrep 1\.3 derp.txt 
+zgrep \( derp.txt 
+zgrep nsc.ks .
+zgrep scheduler nsc.log.*
